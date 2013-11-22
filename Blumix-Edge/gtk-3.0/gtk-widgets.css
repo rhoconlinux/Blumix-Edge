@@ -960,9 +960,9 @@ GtkModelMenuItem GtkBox GtkImage {
     padding-right: 4px;
 }
 
-/************
- * notebook *
- ************/
+/******************
+ * notebook & tabs*
+ ******************/
 .notebook {
     padding: 0;
     border-width: 1px;
