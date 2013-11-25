@@ -147,9 +147,9 @@
 
 .content-view .menu {
     padding: 0;
-    border-radius: 0;
+    border-radius: 3;/*0*/
     border-style: none;
-    background-color: @menu_bg_color;
+    background-color: @bg_color;/**/
     background-image: none;
     color: @menu_fg_color;
 }

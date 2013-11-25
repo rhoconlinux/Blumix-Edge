@@ -779,13 +779,20 @@ GtkInfoBar {
     color: alpha(@theme_fg_color, 0.7);
 }
 
+
+
+
+
+
+
 /********
  * menu *
  ********/
 GtkTreeMenu.menu,
 GtkMenuToolButton.menu,
 GtkComboBox .menu {
-    background-color: @menu_bg_color;
+    background-color: @menu_bg_color; /*@menu_bg_color*/ /*?*/
+        border-radius: 4;
 }
 
 .primary-toolbar .menu,
@@ -795,11 +802,12 @@ GtkComboBox .menu {
 .header-bar .menu,
 .header-bar .primary-toolbar .menu,
 .menu {
-    padding: 0;
+    padding: 2; /*engorda el contorno de la caja*/
     border-radius: 0;
     border-style: none;
-    background-color: @menu_bg_color;
+    background-color: shade(@menu_bg_color, 1.0); /*<<<<<<<<<<<<<<<<<<<< configuración de caja de menu, color de fondo*/
     color: @menu_fg_color;
+ /*box-shadow: 0 0 1px #333;*/
 }
 
 .menu.button:hover,
@@ -814,6 +822,8 @@ GtkComboBox .menu {
 
 .context-menu {
     font: initial;
+        border-radius: 4;
+
 }
 
 /* ubuntu software center menu */
@@ -839,21 +849,27 @@ GtkComboBox .menu {
  ***************/
 .menubar.menuitem,
 .menubar .menuitem {
-    padding: 3px 5px;
-    border-width: 1px;
+    padding: 5px 5px 5px 5px; /*arriba derecha abajo izquierda... si diferencia entre 1 y 3 entonces hay un movimiento*/ 
+    border-width: 1px 1px 1px 1px;
     border-style: solid;
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
+    border-color: transparent; /*igual que el fondo*/
+    background-color: transparent;/*transparent*/ /*este es transparente porque es como la selección pero todo el tiempo*/ 
+background-image: none;
     color: @menubar_fg_color;
+    border-radius: 5; /*elementos de la barra de menu, por ejemplo los menues de la terminal = full rounding for mac style*/ 
 }
 
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
-    border-color: mix(@menubar_bg_color, @menubar_fg_color, 0.21);
+    padding-bottom: 3px ;
+    border-color: @menubar_bg_color;
+        border-width: 0px; /*lo saqué! este es para controlar el grosor del borde, junto con el de arriba que controla el color, valores positivos achican el area*/
     background-color: mix(@menubar_bg_color, @menubar_fg_color, 0.21);
     background-image: none;
     color: shade(@menubar_fg_color, 1.08);
+    background-image: #b2b2b2;
+/*box-shadow: 0 0 1px #333;*/ /*perfecta salida, mac-ish next project*/
+
 }
 
 .menubar .menuitem *:hover {
@@ -865,7 +881,9 @@ GtkComboBox .menu {
  ************/
 GtkTreeMenu .menuitem {
     padding: 0;
-    border-width: 0;
+    border-width: 5;
+    border-radius: 3; /*?? roundness*/
+
 }
 
 .menuitem,
@@ -874,7 +892,7 @@ GtkTreeMenu .menuitem {
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
-    border-radius: 0;
+    border-radius: 3; /*menu item selection roundness*/
     background-color: transparent;
     background-image: none;
     color: @menu_fg_color;
@@ -885,8 +903,9 @@ GtkTreeMenu .menuitem {
 .menu .menuitem:active,
 .menu .menuitem:hover {
     border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color; /*fondo de cada item, no de la caja de menu*/
     background-image: none;
+    border-radius: 3; /*menuitems click derechos y desplegables, para cada elemento, bg #B2B2B2*/
 }
 
 .menu .menuitem:active,
@@ -916,6 +935,7 @@ GtkTreeMenu .menuitem {
 .menuitem.radio:active {
     border-style: none;
     background-color: transparent;
+    border-radius: 3;
 }
 
 .menuitem.arrow {
@@ -937,11 +957,14 @@ GtkTreeMenu .menuitem {
     background-color: @menu_bg_color;
     background-image: none;
     color: @menu_fg_color;
+    border-radius: 13; /*?? roundness*/
+
 }
 
 .menuitem .entry:active,
 .menuitem .entry:focus {
     border-color: shade(@menu_bg_color, 0.7);
+    border-radius: 3;
 }
 
 .menuitem .accelerator {
@@ -1480,7 +1503,7 @@ OsScrollbar:insensitive {
     -GtkWidget-separator-height: 1;
 
     border-style: none;
-    color: shade(@menu_bg_color, 0.9);
+    color: shade(@menu_bg_color, 1.0); /*0.9*/
 }
 
 GtkComboBox .separator {
