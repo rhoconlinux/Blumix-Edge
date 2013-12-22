@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Numix</name>
+	<name>Blumix borders are a Numix Mod</name>
 	<author>Satyajit Sahoo, modded by Rho: rhoconlinux.wordpress.com </author>
 	<copyright>GPL-3.0+</copyright>
-	<date>8 March 2013</date>
+	<date>December 2013</date>
 	<description>Blumix Mutter Theme</description>
 </info>
 
@@ -207,11 +207,11 @@
 </draw_ops>
 
 <draw_ops name="close_focused_prelight">
-	<image filename="close_focused_prelight.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="close.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="close_focused_pressed">
-	<image filename="close_focused_pressed.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="close_pressed.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="close_unfocused">
@@ -232,11 +232,11 @@
 </draw_ops>
 
 <draw_ops name="maximize_focused_prelight">
-	<image filename="maximize_focused_prelight.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="maximize.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="maximize_focused_pressed">
-	<image filename="maximize_focused_pressed.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="maximize_pressed.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="maximize_unfocused">
@@ -257,11 +257,11 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_focused_prelight">
-	<image filename="unmaximize_focused_prelight.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="unmaximize.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="unmaximize_focused_pressed">
-	<image filename="unmaximize_focused_pressed.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="unmaximize_pressed.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="unmaximize_unfocused">
@@ -282,11 +282,11 @@
 </draw_ops>
 
 <draw_ops name="minimize_focused_prelight">
-	<image filename="minimize_focused_prelight.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="minimize.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="minimize_focused_pressed">
-	<image filename="minimize_focused_pressed.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="minimize_pressed.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="minimize_unfocused">
