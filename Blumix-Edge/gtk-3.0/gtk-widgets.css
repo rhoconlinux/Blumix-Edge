@@ -2103,6 +2103,7 @@ GtkColorButton.button {
     border-color: shade(@toolbar_bg_color, 0.7);
     background-color: shade(@toolbar_bg_color, 1.10);
     background-image: none;
+        border-radius: 4px; /*5 ene*/
 }
 
 .primary-toolbar .button:active,
@@ -2111,12 +2112,14 @@ GtkColorButton.button {
     border-color: shade(@toolbar_bg_color, 0.8);
     background-color: shade(@toolbar_bg_color, 0.95);
     background-image: none;
+        border-radius: 4px; /*5 ene*/
 }
 
 .primary-toolbar .button:active:hover,
 .toolbar .button:active:hover,
 .header-bar .button:active:hover {
     border-color: shade(@toolbar_bg_color, 0.7);
+        border-radius: 4px; /*5 ene*/
 }
 
 .primary-toolbar .button:focus,
