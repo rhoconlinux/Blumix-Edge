@@ -2215,17 +2215,20 @@ GtkColorButton.button {
     border-color: shade(@theme_bg_color, 0.7);
     background-color: shade(@theme_bg_color, 1.10);
     background-image: none;
+            border-radius: 4px; /*5 ene*/
 }
 
 .inline-toolbar.toolbar .button:active {
     border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
+            border-radius: 4px; /*5 ene*/
 }
 
 .inline-toolbar.toolbar .button:active:hover {
     border-color: shade(@theme_bg_color, 0.7);
 }
+        border-radius: 4px; /*5 ene*/
 
 .inline-toolbar.toolbar .button:focus,
 .inline-toolbar.toolbar .button:hover:focus,
