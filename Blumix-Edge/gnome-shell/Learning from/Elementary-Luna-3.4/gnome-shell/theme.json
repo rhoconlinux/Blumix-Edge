@@ -1,0 +1,10 @@
+{ 
+   "shell-theme": {
+   "name": "Elementary-Luna-3.4", 
+   "author": "Half-Left", 
+   "version": "1.3",
+   "type":   "custom",
+   "thumbnail": "preview-elementary-luna.jpg", 
+   "url": "http://half-left.deviantart.com/art/GNOME-Shell-Elementary-Luna-251149793" 
+    }
+}

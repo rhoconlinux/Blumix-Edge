@@ -1,0 +1,413 @@
+.gnomenu-panel-box {
+}
+
+.gnomenu-panel-button {
+    margin: 0px;
+    padding: 0px 16px;
+}
+
+.gnomenu-panel-menu-button {
+    margin: 0px;
+    padding: 0px 16px;
+}
+
+.gnomenu-panel-menu-button:hover {
+}
+
+.gnomenu-panel-menu-button:active {
+}
+
+.gnomenu-main-menu-box {
+	padding: .4em 1em;
+}
+
+.gnomenu-menu-top-pane {
+    padding: 0px 0px 10px 0px;
+}
+
+.gnomenu-menu-middle-pane {
+    padding: 0px 0px 0px 0px;
+}
+
+.gnomenu-menu-bottom-pane {
+    padding: 10px 0px 0px 0px;
+}
+
+.gnomenu-user-group-box {
+	border-image: url("button-2.png") 4;
+	padding: 0px
+}
+
+.gnomenu-user-group-button {
+	padding: 8px 20px;
+}
+
+.gnomenu-user-group-button:insensitive {
+    color: #9f9f9f;
+}
+
+.gnomenu-user-group-button:hover,
+.gnomenu-user-group-button:active {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-hover-m.png") 6;
+	padding: 8px 20px;
+	color: #323232;
+}
+
+.gnomenu-user-group-button:checked,
+.gnomenu-user-group-button:open {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-pressed-m.png") 6;
+	padding: 8px 20px;
+	color: #323232;
+}
+
+.gnomenu-user-group-button:first-child:hover,
+.gnomenu-user-group-button:first-child:active {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-hover-f.png") 6;
+	padding: 8px 20px;
+	color: #323232;
+}
+
+.gnomenu-user-group-button:first-child:checked,
+.gnomenu-user-group-button:first-child:open {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-pressed-f.png") 6;
+	padding: 8px 20px;
+	color: #323232;
+}
+
+.gnomenu-user-group-button:last-child:hover,
+.gnomenu-user-group-button:last-child:active {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-hover-l.png") 6;
+	padding: 8px 20px;
+	color: #323232;
+}
+
+.gnomenu-user-group-button:last-child:checked,
+.gnomenu-user-group-button:last-child:open {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-pressed-l.png") 6;
+	padding: 8px 20px;
+	color: #323232;
+}
+
+.gnomenu-user-group-button-label {
+    font-size: 9pt;
+}
+
+.gnomenu-user-group-button:active {
+}
+
+.gnomenu-view-mode-box-wrapper {
+}
+
+.gnomenu-view-mode-box {
+    border-image: url("button.png") 4;
+}
+
+.gnomenu-view-mode-button {
+	padding: 4px;
+	text-shadow: rgba(0,0,0,0) 0 0;
+	color: #323232;
+}
+
+.gnomenu-view-mode-button:first-child:hover,
+.gnomenu-view-mode-button:first-child:active {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-hover-f.png") 6;
+	padding: 4px;
+	color: #323232;
+}
+
+.gnomenu-view-mode-button:first-child:checked,
+.gnomenu-view-mode-button:first-child:open {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-pressed-f.png") 6;
+	padding: 4px;
+	color: #323232;
+}
+
+.gnomenu-view-mode-button:last-child:hover,
+.gnomenu-view-mode-button:last-child:active {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-hover-l.png") 6;
+	padding: 4px;
+	color: #323232;
+}
+
+.gnomenu-view-mode-button:last-child:checked,
+.gnomenu-view-mode-button:last-child:open {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-pressed-l.png") 6;
+	padding: 4px;
+	color: #323232;
+}
+
+.gnomenu-search-box {
+}
+
+#gnomenuMenuMainbox #searchEntry {
+    height: 16px;
+    width: 300px;
+}
+
+#gnomenuMenuMainbox .search-entry-icon {
+	color: #323232;
+    padding: 2px 6px;
+}
+.gnomenu-favorites-scrollbox {
+	border-image: url("separator.png") 10;
+	padding: 6px;
+	padding-bottom: 16px;
+}
+
+.gnomenu-favorites-box {
+    padding: 6px;
+}
+
+.gnomenu-favorite-button {
+    padding: 3px 4px;
+}
+
+.gnomenu-favorite-button:active {
+}
+
+.gnomenu-categories-workspaces-wrapper {
+    padding: 0px 0px 0px 0px;
+}
+
+.gnomenu-categories-workspaces-scrollbox {
+    border-image: url("separator.png") 10;
+    height: 380px;
+    padding: 7px 3px 7px 0px;
+}
+
+.gnomenu-workspaces-background {
+    padding: 12px 8px 3px 5px;
+}
+
+.gnomenu-categories-box {
+    padding-left: 3px;
+    padding-right: 4px;
+}
+
+.gnomenu-category-button {
+    padding: 0px;
+}
+
+.gnomenu-category-button-label {
+    padding: 6px 10px 7px 10px;
+}
+.gnomenu-category-button:active,
+.gnomenu-category-button-selected {
+}
+
+.gnomenu-power-group-box {
+	border-image: url("button.png") 4;
+    padding: 0px 0;
+}
+
+.gnomenu-power-group-button {
+    padding: 5px 12px;
+}
+
+.gnomenu-power-group-button:hover,
+.gnomenu-power-group-button:active {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-hover-m.png") 6;
+	padding: 5px 12px;
+	color: #323232;
+}
+
+.gnomenu-power-group-button:checked,
+.gnomenu-power-group-button:open {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: none;
+	padding: 5px 12px;
+	color: #323232;
+}
+
+.gnomenu-power-group-button:last-child:hover,
+.gnomenu-power-group-button:last-child:active {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: none;
+	padding: 5px 12px;
+	color: #323232;
+}
+
+.gnomenu-power-group-button:last-child:checked,
+.gnomenu-power-group-button:last-child:open {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-pressed-l.png") 6;
+	padding: 5px 12px;
+	color: #323232;
+}
+
+.gnomenu-power-group-button:first-child:hover,
+.gnomenu-power-group-button:first-child:active {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-hover-f.png") 6;
+	padding: 5px 12px;
+	color: #323232;
+}
+
+.gnomenu-power-group-button:first-child:checked,
+.gnomenu-power-group-button:first-child:open {
+	background-gradient-direction: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: url("button-pressed-f.png") 6;
+	padding: 5px 12px;
+	color: #323232;
+}
+
+.gnomenu-power-group-button:active {
+}
+
+.gnomenu-applications-scrollbox {
+    border-image: url("separator.png") 10;
+    padding: 0px 2px 4px 2px;
+    width: 480px;
+}
+
+.gnomenu-applications-box-wrapper {
+}
+
+.gnomenu-applications-list-box {
+    padding-bottom: 0px;
+    padding-left: 44px;
+    padding-right: 0px;
+    padding-top: 8px;
+}
+
+.gnomenu-application-button {
+    padding: 0px 12px;
+    width: 398px;
+}
+
+.gnomenu-application-button-label {
+    padding: 7px 24px 8px 24px
+}
+
+.gnomenu-application-button:active,
+.gnomenu-application-button-selected {
+}
+
+.gnomenu-applications-grid-box {
+    padding-bottom: 0px;
+    padding-left: 2px;
+    padding-right: 4px;
+    padding-top: 1px;
+}
+
+.gnomenu-application-grid-button {
+    padding: 5px;
+    width: 82px;
+    height: 67px;
+}
+
+.gnomenu-application-grid-button:hover,
+.gnomenu-application-grid-button:active {
+	background-color: #e1dfe1;
+	background-gradient-direction: none;
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 3px;
+	box-shadow: 0 0 rgba(0,0,0,0);
+	text-shadow: rgba(0,0,0,0) 0 0;
+	border-image: none;
+	padding: 5px;
+	color: #323232;
+}
+
+.gnomenu-application-grid-button-label {
+    text-align: center;
+    width: 54px;
+}
+
+.gnomenu-application-grid-button:active,
+.gnomenu-application-grid-button-selected {
+}
+
+.gnomenu-selected-app-box {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    text-align: right;
+    max-width: 100px;
+}
+
+.gnomenu-selected-app-title {
+    height: 19px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.gnomenu-selected-app-description {
+    height: 17px;
+    font-size: 9pt;
+}

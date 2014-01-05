@@ -1,0 +1,34 @@
+12/10/2011
+
+-[Message Area, Status menu, app-switcher] Minor fixes.
+
+15/10/2011
+
+-[Message Area] More fixes.
+
+27/01/2012
+
+- A lot of fixes everywhere!
+
+08/02/2012:
+
+- Fixed the icon clipping problem in the Dash and add an improved hover effect.
+- Added some transitions her and there.
+- Fixed the search headers in the Dash.
+- Improved the style of the ws-switcher.
+- Better scrollbars.
+- Bug fixes.
+- Added a style to hide the panel when in Overview mode.
+
+30/05/2012: 1.4
+
+- Fixed for GNOME Shell 3.4.
+- Adopted the latest changes in the Elementary design.
+- New switches.
+- Added fixes to the Todo list extension.
+- Support for Bolt extension.
+- Support for Extensions List extension.
+
+27/11/2012: 1.6
+
+- Fixed for GNOME Shell 3.6.

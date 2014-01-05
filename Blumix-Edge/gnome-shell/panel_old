@@ -1,0 +1,171 @@
+
+
+/* Panel */
+
+#panel {
+    color: rgba(255,255,255,1.0);
+
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(45,45,45,1.0);
+    background-gradient-end: rgba(0,0,0,1.0);
+    border-bottom-width:1px;
+    border-image-outset:inherit 5px;
+    border-color: rgba(0,0,0,0.77);
+    
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.4);
+        /*box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.9);*/
+    
+    box-shadow: none;
+    font-weight: bold;
+    height: 2.1em; /*ancho del panel*/
+    transition-duration: 500ms;
+}
+
+#panel.lock-screen {
+    background-color: rgba(0,0,0,0.3);
+}
+
+#panel.unlock-screen,
+#panel.login-screen {
+    background-color: transparent;
+}
+
+#panelLeft, #panelCenter {
+    spacing: 4px;
+}
+
+#panelLeft:ltr {
+    padding-right: 4px;
+}
+
+#panelLeft:rtl {
+    padding-left: 4px;
+}
+
+#panelRight:ltr {
+    padding-left: 4px;
+}
+
+#panelRight:rtl {
+    padding-right: 4px;
+}
+
+.panel-corner {
+}
+
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus {
+}
+
+.panel-corner.lock-screen,
+.panel-corner.unlock-screen,
+.panel-corner.login-screen {
+    -panel-corner-background-color: transparent;
+    -panel-corner-border-color: transparent;
+}
+
+#appMenu {
+    spinner-image: url("process-working.svg");
+    spacing: 7px;
+}
+
+/* used for the app menu header only */
+.label-shadow {
+    color: transparent;
+}
+
+.panel-button #appMenuIcon {
+    /*panelicon_true
+    panelicon_true*/
+    /**/
+    width: 0;
+    /**/
+    app-icon-bottom-clip: 0;
+}
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon {
+    app-icon-bottom-clip: 0;
+}
+
+.app-menu-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.panel-button {
+    -natural-hpadding: 12px;
+    -minimum-hpadding: 6px;
+    border: 0px solid transparent;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    transition-duration: 0ms;
+}
+
+#panel.unlock-screen .panel-button,
+#panel.lock-screen .panel-button,
+#panel.login-screen .panel-button {
+    color: #e6e6e6;
+}
+
+#panel.unlock-screen .panel-button:hover,
+#panel.lock-screen .panel-button:hover,
+#panel.login-screen .panel-button:hover,
+#panel.unlock-screen .panel-button:active,
+#panel.lock-screen .panel-button:active,
+#panel.login-screen .panel-button:active,
+#panel.unlock-screen .panel-button:focus,
+#panel.lock-screen .panel-button:focus,
+#panel.login-screen .panel-button:focus {
+    color: white;
+}
+
+.panel-button:hover {
+    color: rgb(255,255,255);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(104,104,104,0.43928571428571428); /*hover sobre el panel de los iconos*/
+    background-gradient-end: rgba(89,89,89,0.43928571428571428);
+    border-color: rgba(89,89,89,0.43928571428571428);
+}
+
+.panel-button:active,
+.panel-button:overview,
+.panel-button:focus {
+    color: rgb(255,255,255);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(104,104,104,0.43928571428571428);
+    background-gradient-end: rgba(89,89,89,0.43928571428571428);
+    border-color: rgba(89,89,89,0.43928571428571428);
+}
+
+.panel-status-button:active,
+.panel-status-button:checked,
+.panel-status-button:focus {
+    color: rgb(255,255,255);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(104,104,104,0.43928571428571428);/*hover sobre el panel de los iconos, cuando estan activos luego de click*/
+    background-gradient-end: rgba(89,89,89,0.43928571428571428);
+    border-color: rgba(89,89,89,0.43928571428571428);
+}
+
+.panel-button:active > .system-status-icon,
+.panel-button:checked > .system-status-icon,
+.panel-button:focus > .system-status-icon {
+}
+
+.panel-menu {
+    -boxpointer-gap: 3px;
+}
+
+.panel-status-button-box {
+    spacing: 4px;
+}
+
+.lock-screen-status-button-box {
+    spacing: 8px;
+}
+
+
+

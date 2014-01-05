@@ -5,8 +5,8 @@
 @define-color text_color #333333;
 @define-color selected_bg_color #91A6FF;
 @define-color selected_fg_color #f9f9f9;
-@define-color tooltip_bg_color #2d2d2d;
-@define-color tooltip_fg_color #dedede;
+@define-color tooltip_bg_color #dedede;
+@define-color tooltip_fg_color #333333;
 
 /* colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_bg_color @bg_color;
@@ -57,6 +57,79 @@
 @define-color wm_title_unfocused #888888;
 @define-color wm_border_focused #484848;
 @define-color wm_border_unfocused #393939;
+
+
+
+/*************************************************************************/
+/************************NAUTILUS MOD*************************************************/
+/*************************************************************************/
+/*nautilus mod*/
+@define-color sidebar_background #c1c1c1;
+@define-color sidebar_icon       shade(@sidebar_background, 0.70);
+@define-color sidebar_selected_bg shade(@theme_selected_bg_color, 1.00);
+@define-color sidebar_fg_color @theme_text_color;
+
+/*
+NO DUPS CHECK
+@define-color theme_bg_color @bg_color;
+@define-color theme_fg_color @fg_color;
+@define-color theme_base_color @base_color;
+@define-color theme_text_color @text_color;
+@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_fg_color @tooltip_fg_color;
+*/
+
+/* ADDITIONAL COLOR DEFINITIONS */
+/*REDUNDANTS FIRST*/
+/*@define-color theme_selected_bg_color shade(#4a75b8, 1.00);*/
+/* @define-color theme_selected_bg_color shade(#3c81de, 0.90); */
+/*@define-color theme_bg_color @bg_color;*/
+/*@define-color theme_text_color @text_color;*/
+/*@define-color theme_fg_color @fg_color;*/
+/*------------------------------end redundants----*/
+
+@define-color theme_shadow_color alpha(#fff, 0.24);
+@define-color theme_selected_shadow_color alpha(#000, 0.18);
+
+@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_fg_color @tooltip_fg_color;
+@define-color theme_base_color @base_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+@define-color menu_bg_color shade(@theme_bg_color, 1.06);
+@define-color menu_fg_color shade(@theme_fg_color, 1.00);
+@define-color menu_shadow_color @theme_shadow_color;
+
+@define-color theme_bg_dark_color #dedede;
+@define-color theme_fg_dark_color #737373; /*texto de breadcrumbs no selecctionados*/
+@define-color theme_text_dark_color #737373; /*texto de breadcrumbs selecctionados*/
+@define-color theme_shadow_dark_color alpha(#fff, 0.22);
+@define-color theme_highlight_color alpha(#fff, 0.26);
+
+@define-color theme_button_border_dark shade(@theme_bg_dark_color, 0.75);
+@define-color theme_entry_border_dark @theme_button_border_dark;
+@define-color theme_path_bg_color shade(@theme_bg_dark_color, 0.97);
+@define-color theme_path_active_color shade(@theme_bg_dark_color, 0.95);
+@define-color theme_tab_dark_active1 shade(@theme_bg_dark_color, 0.85);
+@define-color theme_tab_dark_active2 shade(@theme_tab_dark_active1, 1.25);
+@define-color theme_mdi_border_color shade(@theme_bg_dark_color, 0.80);
+
+@define-color menu_shadow_dark_color alpha(#fff, 0.24);
+@define-color menu_bg_dark_color shade(@theme_bg_dark_color, 1.05);
+@define-color menu_fg_dark_color @theme_fg_dark_color;
+@define-color menu_line_dark_color shade(@theme_bg_dark_color, 0.87);
+@define-color menu_line_light_color shade(@theme_bg_dark_color, 1.03);
+/*************************************************************************/
+/************************NAUTILUS MOD*************************************************/
+/*************************************************************************/
+
+
+
+
+
+
+
 
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");

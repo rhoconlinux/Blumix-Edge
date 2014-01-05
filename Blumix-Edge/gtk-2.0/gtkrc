@@ -26,13 +26,13 @@ gtk-auto-mnemonics	= 1 # Disables ugly lines under menu items
 style "murrine-default" {
 	GtkArrow::arrow-scaling= 0.6
 
-	GtkButton::child-displacement-x = 3
-	GtkButton::child-displacement-y = 0
-	GtkButton::default-border = { 0, 0, 0, 0 }
+	GtkButton::child-displacement-x = 0 #posición del texto en los botones
+    GtkButton::child-displacement-y = 0
+	GtkButton::default-border = { 1, 1, 1, 1 }
 	GtkButtonBox::child-min-height = 26
 	GtkCheckButton::indicator-size = 16
     GtkCheckButton::indicator-spacing = 7
-    GtkDialog::content-area-border =3
+    GtkDialog::content-area-border =5
     
 	# The following line hints to gecko (and possibly other appliations)
 	# that the entry should be drawn transparently on the canvas.
@@ -86,7 +86,7 @@ style "murrine-default" {
 	GtkTreeView::expander-size = 11
 	GtkTreeView::vertical-separator = 3
 
-	GtkWidget::focus-line-width = 0
+	GtkWidget::focus-line-width = 0 #1
 	# The following line prevents the Firefox tabs
 	# from jumping a few pixels when you create a new tab
 	GtkWidget::focus-padding = 0
@@ -150,7 +150,7 @@ style "murrine-default" {
 		glow_shade = 1.0 # amount of glow
 		gradient_shades = { 1.0, 1.0, 1.0, 1.0 } # gradient to draw on widgets
 		highlight_shade = 1.0 # amount of highlight
-		lightborder_shade = 1.0 # amount of inset light border
+		lightborder_shade = 1.0 # 1 def, 0 deja oscuro, más de 1 le mete un efecto inset blanco - amount of inset light border
 		lightborderstyle = 0 # 0 = lightborder on top side, 1 = lightborder on all sides
 		listviewheaderstyle = 0 # 0 = flat, 1 = glassy, 2 = raised
 		listviewstyle = 0 # 0 = none, 1 = dotted, 2 = line
@@ -165,6 +165,12 @@ style "murrine-default" {
 		sliderstyle = 0 # 0 = none, 1 = handles
 		stepperstyle = 1 # 0 = standard, 1 = integrated stepper handles
 		toolbarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient
+        #shading test
+        #------------
+        #gradient_shades = { 0.08, 0.08, 0.08, 0.08 }
+		#border_shades = { 0.0, 0.0 }
+		#trough_shades = {  0.0, 0.0  }
+		#trough_border_shades = {  0.0, 0.0  }
    }
 }
 
@@ -186,28 +192,28 @@ style "murrine-thin" {
 # Notebook
 
 style "murrine-notebook-bg" {
-	bg[NORMAL] = @base_color
-	bg[ACTIVE] = shade (0.87, @base_color)
+	bg[NORMAL] = shade (1.07, @bg_color)
+	bg[ACTIVE] = shade (0.87, @base_color) #087 porque es blanco entonces para dejarlo del musmo estulo
 }
 
 style "murrine-notebook" = "murrine-notebook-bg" {
-	xthickness = 1
-	ythickness = 1
+	xthickness = 5 #espaciados de los tabs, afecta también a los widgets con tabs horizontales
+	ythickness = 5
 	engine "murrine" 
 	{
-		roundness = 3 # Roundness of notebook tabs.
+		roundness = 2 # Roundness of notebook tabs.
 	}
     }
 # Various Standard Widgets
 
 style "murrine-button"  = "murrine-wider" {
 	bg[NORMAL] = shade (1.08, @bg_color)
-	bg[PRELIGHT] = shade (1.10, @bg_color)
+	bg[PRELIGHT] = shade (1.0, @selected_fg_color)
 	bg[ACTIVE] = shade (0.95, @bg_color)
 	bg[INSENSITIVE] = shade (0.85, @bg_color)
 
   	engine "murrine" {
-    		roundness = 2
+    		roundness = 3
 	}
 }
 
@@ -215,7 +221,7 @@ style "murrine-scrollbar"
 {
 	engine "murrine"
 	{
-		border_shades     = {.2, .6} #.8 .6
+		#border_shades     = {.2, .6} #.8 .6
 		border_colors     = FALSE
 		contrast          = 1.0
 		glazestyle        = 1
@@ -243,7 +249,13 @@ style "murrine-scale" = "murrine-thin" {
 		border_shades = { 1.0, 1.0 }
 		trough_shades = {  1.0, 1.0  }
 		trough_border_shades = {  1.0, 1.0  }
-	}
+        
+        #defaults
+        #gradient_shades = { 1.08, 1.08, 1.08, 1.08 }
+		#border_shades = { 1.0, 1.0 }
+		#trough_shades = {  1.0, 1.0  }
+		#trough_border_shades = {  1.0, 1.0  }
+}
 }
 
 style "murrine-progressbar" = "murrine-wide" {
@@ -272,7 +284,7 @@ style "murrine-treeview" {
 }
 
 style "murrine-frame-title" {
-	fg[NORMAL] = lighter (@fg_color)
+	fg[NORMAL] = @bg_color # lighter (@fg_color)
 }
 
 style "murrine-tooltips" {
@@ -312,7 +324,7 @@ style "murrine-radiocheck" = "murrine-default" {
 
 style "murrine-entry" = "murrine-wider" {
 	engine "murrine" {
-		border_shades = { 1.15, 1.15 }
+		border_shades = { 1.40, 1.40 } #{ 1.15, 1.15 } cajas de libreoffice del tamaño de las letras :)
 	}
 }
 
@@ -321,14 +333,27 @@ style "metacity-frame" = "murrine-default" {
 }
 
 style "murrine-statusbar" { }
+
+
 style "murrine-comboboxentry" = "murrine-entry" { }
-style "murrine-hscale" = "murrine-scale" { }
-style "murrine-vscale" = "murrine-scale" { }
+#style "murrine-comboboxentry"
+#{
+#	engine "murrine"
+#	{
+#		contrast      = 0.4
+#		reliefstyle   = 4
+#		border_shades = {1.03,0.8}
+#		shadow_shades = {0.5,0.0}
+#	}
+#}
+
+
+style "murrine-hscale" = "murrine-entry" { }#"murrine-scale" { }
+style "murrine-vscale" = "murrine-entry" { }#"murrine-scale" { }
 #style "murrine-hscrollbar" = "murrine-scrollbar" { }
 #style "murrine-vscrollbar" = "murrine-scrollbar" { }
 
 # Menus
-
 style "murrine-menu" = "murrine-thin" {
 	bg[NORMAL] = @menu_bg_color
 	bg[PRELIGHT] = @selected_bg_color
@@ -744,9 +769,9 @@ style "inkscape-toolbar-fix" {
 	}
 }
 
-#widget "*GtkHandleBox*" style "inkscape-toolbar-fix"
-#widget "*HandleBox*CommandsToolbar*" style "inkscape-toolbar-fix"
-#widget "*HandleBox*SnapToolbar*" style "inkscape-toolbar-fix"
+widget "*GtkHandleBox*" style "inkscape-toolbar-fix"
+widget "*HandleBox*CommandsToolbar*" style "inkscape-toolbar-fix"
+widget "*HandleBox*SnapToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*SelectToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*NodeToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*TweakToolbar*" style "inkscape-toolbar-fix"

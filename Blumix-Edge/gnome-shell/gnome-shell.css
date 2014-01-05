@@ -19,6 +19,7 @@
 
 /* Text Styles */
 
+
 /* default text style */
 stage {
     font-family: Rosario;
@@ -188,12 +189,44 @@ StScrollBar StButton#hhandle:active {
     min-width: 200px;
 }
 
-.popup-submenu-menu-item:open {
-    background-color: rgba(243,243,243,1.0);
+
+.popup-submenu-menu-item:hover {
+	color: #333;
+    border: 2px solid rgba(232,232,232,1.0);
+    border-radius:6px;
+    background-gradient-direction: vertical;
+    background-gradient-start: #A9B9FF;
+    background-gradient-end: #A9B9FF;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1.2);
+    /*text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;*/
+
+}
+.popup-submenu-menu-item:open { /*pressed button of submenu*/
+	color: #333;
+    border: 2px solid transparent;
+    border-radius:4px;
+    background-gradient-direction: vertical;
+    background-gradient-start: transparent;
+    background-gradient-end: transparent;
+/*    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1.2);*/
+    /*text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;*/
+
 }
 
+
+/*.popup-submenu-menu-item:open {
+    	color: #333;
+    border: 2px solid rgba(232,232,232,1.0);
+    border-radius:6px;
+    background-gradient-direction: vertical;
+    background-gradient-start: #A9B9FF;
+    background-gradient-end: #A9B9FF;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1.2);
+    text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;
+}*/
+
 .popup-sub-menu {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0,0,0,0.05); /*submenu background color*/
     border-color: rgba(0,0,0,0.1);
     border-top-width: 1px;
     border-bottom-width: 1px;
@@ -222,7 +255,7 @@ StScrollBar StButton#hhandle:active {
 
 .popup-combo-menu {
     color: rgba(51,51,51,1.0);
-    background-color: rgba(243,243,243,1.0);
+    background-color: rgba(222,222,222,1.0);
     padding: 1em 0em;
     border: 1px solid rgba(170,170,170,1.0);
     border-radius: 6px;
@@ -244,28 +277,54 @@ StScrollBar StButton#hhandle:active {
 .popup-menu-item {
     padding: .4em 1.75em;
     spacing: 1em;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
+    
     /**/
-    border-left-width: 0;
-    border-right-width: 0;
+/*    border-left-width: 0;
+    border-right-width: 0;*/
     /**/
     /*arrow_false
     arrow_false*/
     transition-duration: 0ms;
 }
 
+
+.popup-menu-item:hover {
+	color: #333;
+    border: 2px solid transparent;/*rgba(243,243,243,1.0)*/
+    border-radius:6px;
+    background-gradient-direction: vertical;
+    background-gradient-start: #A9B9FF;
+    background-gradient-end: #A9B9FF;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1.2);
+    /*text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;*/
+}
+
+.popup-menu-item:active {
+    color: #333;
+    border: 2px solid transparent;
+    border-radius:6px;
+    background-gradient-direction: vertical;
+    background-gradient-start: #A9B9FF;
+    background-gradient-end: #A9B9FF;
+    box-shadow: inset 0px 0px 1px 1px rgba(102,127,214,0.8);
+    /*text-shadow: rgba(250,250,250,0.4) 0px 1px 0px;*/ /*super nice but not this time. next project: agrega una sombra blanca al texto que lo hace embedded*/
+}
+
+/*
 .popup-menu-item:active {
     color: rgb(255,255,255);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(104,104,104,0.43928571428571428);
     background-gradient-end: rgba(89,89,89,0.43928571428571428);
     border-color: rgba(89,89,89,0.43928571428571428);
+*/
     /**/
     /**/
     /*arrow_false
     border-radius: 6px;
     arrow_false*/
-}
+/*}*/
 
 .popup-menu-item:insensitive {
     color: rgba(120,120,120,1.0);
@@ -339,7 +398,7 @@ StScrollBar StButton#hhandle:active {
 .toggle-switch-intl {
     background-image: url("toggle-off.png");
     background-size: contain;
-    background-color: rgba(233,233,233,1.0);
+    background-color: rgba(145,166,255,0.3); /*#91A6FF 145,166,255     rgba(233,233,233,1.0)    */
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 6px;
 }
@@ -348,7 +407,7 @@ StScrollBar StButton#hhandle:active {
 .toggle-switch-intl:checked {
     background-image: url("toggle-on.png");
     background-size: contain;
-    background-color: rgba(89,89,89,0.43928571428571428);
+    background-color: rgba(145,166,255,1.0);
 }
 
 .nm-menu-item-icons {
@@ -356,7 +415,6 @@ StScrollBar StButton#hhandle:active {
 }
 
 /* Buttons */
-
 .candidate-page-button,
 .notification-button,
 .notification-icon-button,
@@ -397,8 +455,8 @@ StScrollBar StButton#hhandle:active {
 .app-view-control:focus {
     color: rgb(255,255,255);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(89,89,89,0.43928571428571428);
-    background-gradient-end: rgba(84,84,84,0.43928571428571428);
+    background-gradient-start: rgba(145,166,255,1.0);
+    background-gradient-end: rgba(145,166,255,1.0);
     border-color: rgba(59,59,59,0.43928571428571428);
 }
 
@@ -409,8 +467,8 @@ StScrollBar StButton#hhandle:active {
 .app-view-control:focus:hover {
     color: rgb(255,255,255);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(94,94,94,0.43928571428571428);
-    background-gradient-end: rgba(89,89,89,0.43928571428571428);
+    background-gradient-start: rgba(145,166,255,1.0);
+    background-gradient-end: rgba(145,166,255,1.0);
     border-color: rgba(59,59,59,0.43928571428571428);
 }
 
@@ -595,6 +653,37 @@ StScrollBar StButton#hhandle:active {
     border: 1px solid rgba(255,255,255,0.2);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Panel */
 
 #panel {
@@ -608,15 +697,11 @@ StScrollBar StButton#hhandle:active {
     border-color: rgba(0,0,0,0.77);
     
     box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.4);
+        /*box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.9);*/
     
-    /*box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.9);*/
-    
-    /**/
-    /*dropshadow_false*/
     box-shadow: none;
-    /*dropshadow_false*/
     font-weight: bold;
-    height: 2.1em;
+    height: 2.1em; /*ancho del panel*/
     transition-duration: 500ms;
 }
 
@@ -649,6 +734,8 @@ StScrollBar StButton#hhandle:active {
     padding-right: 4px;
 }
 
+
+/*Panel corner angle*/
 .panel-corner {
 }
 
@@ -666,7 +753,7 @@ StScrollBar StButton#hhandle:active {
 
 #appMenu {
     spinner-image: url("process-working.svg");
-    spacing: 4px;
+    spacing: 7px;
 }
 
 /* used for the app menu header only */
@@ -690,17 +777,18 @@ StScrollBar StButton#hhandle:active {
 }
 
 .app-menu-icon {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
 }
 
 .panel-button {
     -natural-hpadding: 12px;
     -minimum-hpadding: 6px;
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     border-top-width: 0;
     border-bottom-width: 0;
     transition-duration: 0ms;
+    spacing: 3em;
 }
 
 #panel.unlock-screen .panel-button,
@@ -724,7 +812,7 @@ StScrollBar StButton#hhandle:active {
 .panel-button:hover {
     color: rgb(255,255,255);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(104,104,104,0.43928571428571428);
+    background-gradient-start: rgba(104,104,104,0.43928571428571428); /*hover sobre el panel de los iconos*/
     background-gradient-end: rgba(89,89,89,0.43928571428571428);
     border-color: rgba(89,89,89,0.43928571428571428);
 }
@@ -744,7 +832,7 @@ StScrollBar StButton#hhandle:active {
 .panel-status-button:focus {
     color: rgb(255,255,255);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(104,104,104,0.43928571428571428);
+    background-gradient-start: rgba(104,104,104,0.43928571428571428);/*hover sobre el panel de los iconos, cuando estan activos luego de click*/
     background-gradient-end: rgba(89,89,89,0.43928571428571428);
     border-color: rgba(89,89,89,0.43928571428571428);
 }
@@ -766,10 +854,30 @@ StScrollBar StButton#hhandle:active {
     spacing: 8px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* User Menu */
 
+/* ===================================================================
+ * User Menu 
+ * ===================================================================*/
+
 #panelUserMenu {
-    spacing: 4px;
+    spacing: 1em;
 }
 
 .status-chooser {
@@ -782,36 +890,27 @@ StScrollBar StButton#hhandle:active {
 }
 
 .status-chooser-user-icon {
-    border: 1px solid #666;
-    border-radius: 6px;
-    width: 48pt;
-    height: 48pt;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
     background-size: contain;
-    transition-duration: 0ms;
 }
 
 .status-chooser-user-icon:hover {
-    border: 1px solid rgba(89,89,89,0.43928571428571428);
 }
 
 .status-chooser-user-name {
-    font-weight: bold;
-    font-size: 1em;
+    font-size: 12pt;
+    font-weight: normal !important;
+    color: #323232 !important;
     min-width: 100pt;
 }
 
 .status-chooser-combo {
-    border: 1px solid transparent;
 }
 
 .status-chooser-combo.popup-combo-menu {
-    color: rgba(51,51,51,1.0);
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(243,243,243,1.0);
-    background-gradient-end: rgba(255,255,255,1.0);
-    padding: .4em 0em;
-    border-radius: 6px;
-    border: 1px solid rgba(170,170,170,1.0);
+
 }
 
 .status-chooser-status-item,
@@ -820,9 +919,9 @@ StScrollBar StButton#hhandle:active {
 }
 
 .system-status-icon {
-    icon-size: 1.09em;
-    transition-duration: 0ms;
+    icon-size: 14px;
 }
+
 
 /* Overview */
 
