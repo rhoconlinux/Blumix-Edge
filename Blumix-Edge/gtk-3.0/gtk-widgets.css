@@ -249,6 +249,7 @@ GtkAssistant .sidebar {
     border-color: shade(@theme_selected_bg_color, 0.8);
     background-color: shade(@theme_selected_bg_color, 1.08);
     color: @theme_selected_fg_color;
+    border-radius:4px;
 }
 
 .button.default:hover {
