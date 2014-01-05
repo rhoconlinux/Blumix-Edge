@@ -2227,8 +2227,9 @@ GtkColorButton.button {
 
 .inline-toolbar.toolbar .button:active:hover {
     border-color: shade(@theme_bg_color, 0.7);
+            border-radius: 4px; /*5 ene*/
 }
-        border-radius: 4px; /*5 ene*/
+
 
 .inline-toolbar.toolbar .button:focus,
 .inline-toolbar.toolbar .button:hover:focus,
