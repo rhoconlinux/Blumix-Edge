@@ -2728,7 +2728,7 @@ GtkColorButton.button {
     border-style: solid;
     border-color: shade(alpha(@theme_tooltip_bg_color, 0.45), 0.4);
     border-radius: 4px;
-    background-color: alpha(@theme_tooltip_bg_color, 0.9);
+    background-color: alpha(@theme_tooltip_bg_color, 0.8);
     background-image: none;
     color: @theme_tooltip_fg_color;
         box-shadow: inset 0 0 1px 0 shade(alpha(@theme_tooltip_bg_color, 0.7), 1.1);;
