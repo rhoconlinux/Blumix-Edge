@@ -2135,6 +2135,7 @@ GtkColorButton.button {
 .header-bar .button:active:focus,
 .header-bar .button:active:hover:focus {
     border-color: shade(@toolbar_bg_color, 0.7);
+        border-radius: 4px; /*5 ene*/
 }
 
 .primary-toolbar .button:insensitive,
@@ -2145,6 +2146,7 @@ GtkColorButton.button {
     background-image: none;
         border-width:4px;
     border-color: @bg_color;
+            border-radius: 4px; /*5 ene*/
 }
 
 .primary-toolbar .button:active *:insensitive,
@@ -2155,6 +2157,7 @@ GtkColorButton.button {
     background-image: none;
         border-width:4px;
     border-color: @bg_color;
+            border-radius: 4px; /*5 ene*/
 }
 
 .primary-toolbar .entry,
