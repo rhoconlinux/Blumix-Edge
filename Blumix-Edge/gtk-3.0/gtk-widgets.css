@@ -2093,7 +2093,7 @@ GtkColorButton.button {
     border-color: shade(@toolbar_bg_color, 0.8);
     background-color: shade(@toolbar_bg_color, 1.08);
     background-image: none;
-    color: @toolbar_fg_color;
+    color: red;
         border-radius: 2px; /*5 ene*/
 }
 
