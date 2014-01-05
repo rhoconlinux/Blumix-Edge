@@ -173,6 +173,8 @@ GtkClutterOffscreen {
 .header-bar .button:active *:insensitive,
 .entry:insensitive {
     box-shadow: none;
+        border-radius:4px; /*boton apretado*/
+
 }
 
 /*************
