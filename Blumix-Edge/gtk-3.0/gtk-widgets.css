@@ -2160,6 +2160,9 @@ GtkColorButton.button {
             border-radius: 4px; /*5 ene*/
 }
 
+
+
+/*Entry Boxes on Primary Toolbar*/
 .primary-toolbar .entry,
 .toolbar .entry,
 .header-bar .entry { /*cuadro de búsqueda (busqueda) de gnome-tweak*/
