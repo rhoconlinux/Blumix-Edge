@@ -134,13 +134,10 @@ GtkClutterOffscreen {
 /* transitions */
 .button {
     transition: border 400ms ease-in-out;
-    
 }
 
 .entry {
     transition: border 400ms ease-out;
-            border-radius:4px; /*boton apretado de los menues*/
-
 }
 
 .entry:focus {
