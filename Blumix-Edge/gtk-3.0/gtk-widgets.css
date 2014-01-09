@@ -2189,7 +2189,7 @@ GtkColorButton.button {
 .toolbar .entry:focus,
 .header-bar .entry:active,
 .header-bar .entry:focus {
-    border-color: shade(@selected_bg_color, 1.05);
+    border-color: shade(@selected_bg_color_noplank, 1.05);
 }
 
 /* inline-toolbar */
