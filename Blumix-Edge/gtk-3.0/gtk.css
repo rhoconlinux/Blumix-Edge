@@ -4,6 +4,7 @@
 @define-color base_color #f9f9f9;
 @define-color text_color #333333;
 @define-color selected_bg_color #91A6FF; /*plank workaround: exclusive color for dock item indicator*/
+@define-color selected_bg_color_noplank #91A6FF; /*this is the true stuff*/
 @define-color selected_fg_color #f9f9f9;
 @define-color tooltip_bg_color #333333;
 @define-color tooltip_fg_color #f9f9f9;
@@ -13,7 +14,7 @@
 @define-color theme_fg_color @fg_color;
 @define-color theme_base_color @base_color;
 @define-color theme_text_color @text_color;
-@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_bg_color @selected_bg_color_noplank;
 @define-color theme_selected_fg_color @selected_fg_color;
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
@@ -75,7 +76,7 @@ NO DUPS CHECK
 @define-color theme_fg_color @fg_color;
 @define-color theme_base_color @base_color;
 @define-color theme_text_color @text_color;
-@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_bg_color @selected_bg_color_noplank;
 @define-color theme_selected_fg_color @selected_fg_color;
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
