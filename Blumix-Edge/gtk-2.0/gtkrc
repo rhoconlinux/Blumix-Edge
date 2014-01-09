@@ -151,10 +151,10 @@ style "murrine-default" {
 		gradient_shades = { 1.0, 1.0, 1.0, 1.0 } # gradient to draw on widgets
 		highlight_shade = 1.0 # amount of highlight
 		lightborder_shade = 1.0 # 1 def, 0 deja oscuro, más de 1 le mete un efecto inset blanco - amount of inset light border
-		lightborderstyle = 0 # 0 = lightborder on top side, 1 = lightborder on all sides
+		lightborderstyle = 1 # 0 = lightborder on top side, 1 = lightborder on all sides (7/1)
 		listviewheaderstyle = 0 # 0 = flat, 1 = glassy, 2 = raised
 		listviewstyle = 0 # 0 = none, 1 = dotted, 2 = line
-		menubaritemstyle = 0 # 0 = menuitem look, 1 = button look
+		menubaritemstyle = 1 # 0 = menuitem look, 1 = button look
 		menubarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle = 0 # 0 = flat, 1 = glassy, 2 = striped
 		menustyle = 0 # 0 = none, 1 = vertical striped
@@ -208,8 +208,8 @@ style "murrine-notebook" = "murrine-notebook-bg" {
 
 style "murrine-button"  = "murrine-wider" {
 	bg[NORMAL] = shade (1.08, @bg_color)
-	bg[PRELIGHT] = shade (1.0, @selected_fg_color)
-	bg[ACTIVE] = shade (0.95, @bg_color)
+	bg[PRELIGHT] = shade (1.0, @base_color) #@selected_fg_color
+	bg[ACTIVE] = shade (1.0, @selected_fg_color)
 	bg[INSENSITIVE] = shade (0.85, @bg_color)
 
   	engine "murrine" {
@@ -458,7 +458,7 @@ style "murrine-toolbar" = "murrine-thin" {
 style "murrine-toolbutton" = "murrine-button" {
 	bg[NORMAL] = shade (1.0, @toolbar_bg_color)
 	bg[PRELIGHT] = shade (1.10, @toolbar_bg_color)
-	bg[SELECTED] = @selected_bg_color
+	bg[SELECTED] = shade (1.10, @bg_color) #@toolbar_bg_color
 	bg[ACTIVE] = shade (0.95, @toolbar_bg_color)
 	bg[INSENSITIVE] = shade (0.85, @toolbar_bg_color)
 
