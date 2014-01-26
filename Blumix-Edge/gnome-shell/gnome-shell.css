@@ -227,8 +227,8 @@ StScrollBar StButton#hhandle:active {
 
 .popup-sub-menu {
     background-gradient-direction: vertical;
-    background-gradient-start: #A9B9FF;
-    background-gradient-end: #A9B9FF;
+    background-gradient-start: #dedede;
+    background-gradient-end: #dedede;
     border-color: rgba(0,0,0,0.1);
     border-top-width: 1px;
     border-bottom-width: 1px;
