@@ -2156,6 +2156,7 @@ GtkCheckButton:selected:focus {
 	padding: 1px;
 }
 
+
 .toolbar .button.text-button {
 	padding: 2px 16px;
 }
@@ -2930,30 +2931,48 @@ GtkAssistant .sidebar {
  *************/
 
 GtkSwitch {
-	border-radius: 8px;
-	padding: 2px;
-	background-color: transparent;
-}
-
-GtkSwitch.trough,
-GtkSwitch.trough:insensitive {
-	border: none;
-	border-image: none;
-	color: transparent;
-	box-shadow: none;
-	background-color: transparent;
-	background-size: 48px 26px;
-	background-position: center center;
-	background-repeat: no-repeat;
-	text-shadow: none;
+    padding: 3px;
+    border-radius: 30px;
+/*    font: bold condensed;*/
+    border-width:1px;
+    border-color: shade(@bg_color,1.84);
+        background-color: @theme_selected_bg_color;
 }
 
 GtkSwitch.slider {
-	background-color: transparent;
-	border: none;
-	border-image: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: shade(@theme_bg_color, 1.08);
+    background-image: none;
 }
 
+GtkSwitch.slider:insensitive {
+    border-color: shade(@theme_bg_color, 0.85);
+    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
+}
+
+GtkSwitch.trough {
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: shade(@theme_bg_color, 0.95);
+    background-image: none
+    color: @theme_fg_color;
+}
+
+GtkSwitch.trough:active {
+    border-color: shade(@theme_selected_bg_color, 0.9);
+    background-color: @theme_selected_bg_color;
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+GtkSwitch.trough:insensitive {
+    border-color: shade(@theme_bg_color, 0.85);
+    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+}
 /***********************
  * Tree and Icon views *
  ***********************/
@@ -3491,7 +3510,7 @@ GtkBubbleWindow .toolbar {
 	border-width: 1px;
 	border-style: solid;
 
-	box-shadow: 0 2px 8px 3px @wm_shadow;
+	box-shadow: 0 2px 8px 3px @wm_shadow, 0px 0px 3px 2px black;
 
 	/* this is used for the resize cursor area */
 	margin: 10px;

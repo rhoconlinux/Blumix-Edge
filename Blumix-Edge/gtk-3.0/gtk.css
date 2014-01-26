@@ -129,6 +129,40 @@ NO DUPS CHECK
 
 
 
+/******
+ * WM *
+ ******/
+@define-color wm_title shade(@theme_fg_color,1.8);
+@define-color wm_unfocused_title @theme_unfocused_fg_color;
+@define-color wm_highlight #ffffff;
+@define-color wm_title_highlight_dark alpha(#dedede, 0.7);
+@define-color wm_title_highlight #ffffff;
+@define-color wm_title_shadow @wm_title_highlight;
+
+
+/*window border degradee in headerbars*/
+@define-color wm_bg_a shade (@theme_bg_color, 1.0);
+@define-color wm_bg_b @theme_bg_color;
+
+@define-color wm_shadow alpha(#333333, 0.47); /*alto más oscuro*/
+@define-color wm_border shade(@theme_bg_color,0.8);
+
+@define-color wm_button_bg_a shade (@theme_bg_color, 1.0);
+@define-color wm_button_bg_b shade (@theme_bg_color, 0.5);/*.85*/
+@define-color wm_button_bg_c shade (@theme_bg_color, 0.8);
+@define-color wm_button_bg_d shade (@theme_bg_color, 0.9);
+
+@define-color wm_button_bg_hover_a shade (@wm_button_bg_a, 1.1);
+@define-color wm_button_bg_hover_b shade (@wm_button_bg_b, 1.1);
+@define-color wm_button_bg_hover_c shade (@wm_button_bg_c, 1.1);
+@define-color wm_button_bg_hover_d shade (@wm_button_bg_d, 1.1);
+
+@define-color wm_button_bg_active_a shade (@theme_bg_color, 0.7);
+@define-color wm_button_bg_active_b shade (@theme_bg_color, 0.9);
+@define-color wm_button_bg_active_c shade (@theme_bg_color, 0.9);
+
+
+
 
 
 @import url("gtk-widgets.css");

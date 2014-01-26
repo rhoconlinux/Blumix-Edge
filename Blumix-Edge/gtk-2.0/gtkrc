@@ -1,9 +1,13 @@
 # Blumix GTK Theme: a Numix Mod
 
 #CRETITS:  
-#gtk2 scrollbars style (modded) | Theme: ffuu | Author: lassekongo83
-#structure and main gtk2 theme (modded -a LOT): Numix. 
+#Author: rhoconlinux > rhoconlinux.wordpress.com
 
+#Acknowledgements:
+#-----------------
+#gtk2 scrollbars style (modded) | Theme: ffuu | Author: lassekongo83
+#structure and main gtk2 theme (modded -a LOT): Numix.
+#structure and main gtk2 theme (modded -a LOT): Adwaita-GIT.
 
 
 gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#A9B9FF\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#dedede\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#dedede\nmenubar_fg_color:#747474\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#dedede\nmenu_fg_color:#555555\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
@@ -22,6 +26,8 @@ gtk-auto-mnemonics	= 1 # Disables ugly lines under menu items
 
 
 # Default Style
+
+
 
 style "murrine-default" {
 	GtkArrow::arrow-scaling= 0.6
@@ -79,24 +85,26 @@ style "murrine-default" {
 	GtkScrolledWindow::scrollbar-spacing = 0 #check
 	GtkScrolledWindow::scrollbars-within-bevel = 0 #check
 
-	GtkSeparatorMenuItem::horizontal-padding = 0
+	GtkSeparatorMenuItem::horizontal-padding = 1
 
-	GtkToolbar::internal-padding = 0
+	GtkToolbar::internal-padding = 2
 
 	GtkTreeView::expander-size = 11
 	GtkTreeView::vertical-separator = 3
 
-	GtkWidget::focus-line-width = 0 #1
+	GtkWidget::focus-line-width = 2 #1
 	# The following line prevents the Firefox tabs
 	# from jumping a few pixels when you create a new tab
 	GtkWidget::focus-padding = 0
 
-	GtkWidget::wide-separators = 0
-	GtkWidget::separator-width = 0
-	GtkWidget::separator-height = 0
+	GtkWidget::wide-separators = 1
+	GtkWidget::separator-width = 2
+	GtkWidget::separator-height = 2
+    
+    
 
-	GtkWindow::resize-grip-height = 0
-	GtkWindow::resize-grip-width = 0
+	GtkWindow::resize-grip-height = 2
+	GtkWindow::resize-grip-width = 2
 
 	WnckTasklist::fade-overlay-rect = 0
 
@@ -136,6 +144,8 @@ style "murrine-default" {
 	text[SELECTED] = @selected_fg_color
 	text[ACTIVE] = @selected_fg_color
 	text[INSENSITIVE] = mix (0.5, @base_color, @text_color)
+
+
 
 	engine "murrine" {
 		animation = TRUE
@@ -180,8 +190,8 @@ style "murrine-wide" {
 }
 
 style "murrine-wider" {
-	xthickness = 3
-	ythickness = 3
+	xthickness = 4
+	ythickness = 4
 }
 
 style "murrine-thin" {
@@ -325,6 +335,7 @@ style "murrine-radiocheck" = "murrine-default" {
 style "murrine-entry" = "murrine-wider" {
 	engine "murrine" {
 		border_shades = { 1.40, 1.40 } #{ 1.15, 1.15 } cajas de libreoffice del tamaño de las letras :)
+        roundness = 4
 	}
 }
 
@@ -344,6 +355,7 @@ style "murrine-comboboxentry" = "murrine-entry" { }
 #		reliefstyle   = 4
 #		border_shades = {1.03,0.8}
 #		shadow_shades = {0.5,0.0}
+#       roundness = 2
 #	}
 #}
 

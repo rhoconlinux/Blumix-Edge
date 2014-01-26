@@ -215,8 +215,22 @@ NautilusWindow .scrollbar.slider.fine-tune:prelight:active {
 
 /*---------------------scroll fix-----------------------------*/
 
+/*-----------------ojo-------------------*/
+/*fix ventana de fondo general de nautilus: forza fondo blanco en pantalla central*/
+NautilusWindow .view {
+    background-color: @theme_base_color;
+    color: @theme_text_color;
+    border-radius:0px; 
+}
+/*5 ene ...tiene que ser clonada del widget esta parte sino no va, forzado a cero porque sino no lo toma*/
+
+/*---------------------scroll fix-----------------------------*/
+/*---------------------scroll fix-----------------------------*/
 
 
+
+
+/*
 NautilusWindow > GtkGrid > .pane-separator,
 NautilusWindow > GtkGrid > .pane-separator:hover {
 	border-width: 0 1px 0 0;
@@ -227,10 +241,10 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
 }
 
 NautilusNotebook.notebook {
-	/*border-right-width: 0;
+	border-right-width: 0;
 	border-left-width: 0;
 	border-bottom-width: 0;
-*/    border-radius:4px;
+    border-radius:4px;
 border-width:2px;
     border-color: @bg_color;
 }
@@ -238,14 +252,87 @@ border-width:2px;
 NautilusNotebook .frame {
 	border-width: 0;
 }
+*/
 
-/*fix ventana de fondo general de nautilus: forza fondo blanco en pantalla central*/
-NautilusWindow .view {
-    background-color: @theme_base_color;
-    color: @theme_text_color;
-    border-radius:0px; 
+NautilusWindow > GtkGrid > .pane-separator,
+NautilusWindow > GtkGrid > .pane-separator:hover {
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: @borders;
+    background-color: @sidebar_bg;
+    color: shade (@theme_bg_color, 0.9);
 }
-/*5 ene ...tiene que ser clonada del widget esta parte sino no va, forzado a cero porque sino no lo toma*/
+
+NautilusWindow > GtkGrid > .pane-separator:backdrop,
+NautilusWindow > GtkGrid > .pane-separator:hover:backdrop {
+    border-color: @unfocused_borders;
+    background-color: @sidebar_bg_unfocused;
+}
+
+NautilusNotebook.notebook {
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+
+NautilusNotebook .frame { /*ventana central de nautilus, el frame es la garcha de borde del lado de adentro*/
+    border-width: 0px; /*fixed: forzado a cero para que funcione el fix del scroll... puede ser interesante esta feature*/
+}
+
+Nautilus .button {
+    icon-shadow: 0 1px @button_text_shadow;
+        border-radius:4px;
+    border-width:1px;
+}
+
+NautilusToolbar .button {
+    icon-shadow: 0 1px @button_text_shadow;
+        border-radius:4px;
+    border-width:1px;
+}
+
+NautilusToolbar .button:active {
+    icon-shadow: 0 1px @button_active_text_shadow;
+    border-radius:4px;
+    border-width:1px;
+}
+
+NautilusToolbar .button:insensitive,
+NautilusToolbar .button:active *:insensitive {
+    icon-shadow: none;
+    border-radius:4px;
+    border-width:1px;
+}
+
+NautilusQueryEditor .search-bar.toolbar {
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+NautilusQueryEditor .toolbar {
+    padding-top: 3px;
+    padding-bottom: 2px;
+
+    border-width: 1px 0 0 0;
+    border-style: solid;
+}
+
+NautilusQueryEditor .toolbar:nth-child(2) {
+    border-color: @borders;
+}
+
+NautilusQueryEditor .toolbar:last-child,
+NautilusQueryEditor .search-bar.toolbar:only-child {
+    border-bottom-width: 1px;
+    border-bottom-color: @borders;
+}
+
+NautilusQueryEditor .toolbar:backdrop:nth-child(2) {
+    border-color: @unfocused_borders;
+}
+
+
+
 
 
 
@@ -304,6 +391,7 @@ NautilusWindow .toolbar .button *,
 NautilusWindow .toolbar.menubar .linked .button *,
 NautilusWindow .toolbar.menubar .button *  {
     padding: 0px;
+    border-radius:60px;
 }
 
 /* buttons pathbar */
@@ -577,9 +665,9 @@ TerminalWindow .scrollbar.slider.vertical:active {
 }
 */
 
-/*********
+********
  * gedit *
- *********/
+ ********
 GeditWindow .pane-separator, 
 GeditWindow .pane-separator:hover {
     border-width: 0 1px 1px 1px;

@@ -181,6 +181,7 @@
 /*************
  * GtkSwitch *
  *************/
+/*
 GtkSwitch.trough {
  	background-image: url("assets/switch-off.svg");
 }
@@ -196,6 +197,7 @@ GtkSwitch.trough:insensitive {
 GtkSwitch.trough:active:insensitive {
 	background-image: url("assets/switch-on-ins.svg");
 }
+*/
 
 /*********************
  * GtkScale's slider *
