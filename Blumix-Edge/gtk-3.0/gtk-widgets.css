@@ -3463,7 +3463,7 @@ GtkBubbleWindow .toolbar {
 .titlebar .titlebutton:hover {
     background-image: linear-gradient(to bottom,
                                       @button_hover_gradient_color_a,
-                                      @button_hover_gradient_color_b); /*barra activa*/
+                                      @button_hover_gradient_color_b); /*barra headerbar activa */
 }
 
 .titlebar .titlebutton:active {
@@ -3501,7 +3501,7 @@ GtkBubbleWindow .toolbar {
 .window-frame {
     border-radius: 7px 7px 0 0;
     /* lamefun trick to get rounded borders regardless of CSD use */
-    border-width: 0px;    
+    border-width: 1px;    
     box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
 
     /* this is used for the resize cursor area */
