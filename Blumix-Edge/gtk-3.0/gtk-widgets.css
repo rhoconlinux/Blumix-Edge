@@ -3469,7 +3469,8 @@ GtkBubbleWindow .toolbar {
 .titlebar .titlebutton:active {
     background-image: linear-gradient(to bottom,
                                       @borders,
-                                      shade(@theme_bg_color, 0.95)
+                                      shade(@theme_bg_color, 1.15) /*pressed close button de la headerbar*/
+                                      shade(@theme_bg_color, 1.05)
                                       );
     color: @theme_selected_fg_color;
     icon-shadow: none;
