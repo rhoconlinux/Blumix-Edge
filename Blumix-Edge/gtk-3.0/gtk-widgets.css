@@ -3507,7 +3507,7 @@ GtkBubbleWindow .toolbar {
 }
 
 .window-frame.tiled {
-    border-radius: 0px;
+    border-radius: 1px;
     background-color: @theme_bg_color;
 }
 
