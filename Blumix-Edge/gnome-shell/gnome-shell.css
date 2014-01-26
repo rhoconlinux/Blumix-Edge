@@ -232,7 +232,7 @@ StScrollBar StButton#hhandle:active {
     border-color: rgba(222,222,222,0.9);
     border-top-width: 1px;
     border-bottom-width: 1px;
-        box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1.2);
+/*        box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1.2);*/
 }
 
 .popup-sub-menu:scrolled .popup-menu-item:ltr {
