@@ -3463,7 +3463,7 @@ GtkBubbleWindow .toolbar {
 .titlebar .titlebutton:hover {
     background-image: linear-gradient(to bottom,
                                       @button_hover_gradient_color_a,
-                                      @button_hover_gradient_color_b);
+                                      @button_hover_gradient_color_b); /*barra activa*/
 }
 
 .titlebar .titlebutton:active {
