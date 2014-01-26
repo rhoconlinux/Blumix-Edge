@@ -3506,6 +3506,10 @@ GtkBubbleWindow .toolbar {
     border-color: #dedede;
     box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
 
+    
+    /* CON LA COMA SE SUPERPONEN LAS SOMBRAS. COOL. posicion x (negativo izquierda)" "posicion y (negativo arriba)" "espesor difuminado"px "ancho sin difuminar"px */
+    
+    
     /* this is used for the resize cursor area */
     margin: 10px;
 }
