@@ -3415,7 +3415,7 @@ GtkBubbleWindow .toolbar {
                                       @wm_bg_a,
                                       @wm_bg_b);
     border-radius: 7px 7px 0px 0px;
-        border-color:transparent; /*fixed header separator border in inactive window*/
+        border-color:#dedede; /*fixed header separator border in inactive window*/
     border-width:0; /*fixed header separator border in inactive window*/
     
 }
