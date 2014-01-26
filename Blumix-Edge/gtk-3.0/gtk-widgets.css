@@ -3500,7 +3500,7 @@ GtkBubbleWindow .toolbar {
     border-radius: 7px 7px 0 0;
     /* lamefun trick to get rounded borders regardless of CSD use */
     border-width: 0px;    
-    box-shadow: 0px 0px 0 1px #333333, 0 0 1px 0px shade(#333333,0.7), 0px 0px 3px 0px alpha(@wm_shadow,0.7), 5px 6px 8px 1px @wm_shadow; /* CON LA COMA SE SUPERPONEN LAS SOMBRAS. COOL. posicion x (negativo izquierda)" "posicion y (negativo arriba)" "espesor difuminado"px "ancho sin difuminar"px */
+    box-shadow: 0px 0px 0 1px #333333, 0 0 1px 0px #333333,0.7, 0px 0px 3px 0px shade(@wm_shadow,0.7), 5px 6px 8px 1px @wm_shadow; /* CON LA COMA SE SUPERPONEN LAS SOMBRAS. COOL. posicion x (negativo izquierda)" "posicion y (negativo arriba)" "espesor difuminado"px "ancho sin difuminar"px */
 
     /* this is used for the resize cursor area */
     margin: 15px; /*area de dibujo de la puta sombra*/
