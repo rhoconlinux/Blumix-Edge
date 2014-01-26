@@ -229,7 +229,7 @@ StScrollBar StButton#hhandle:active {
     background-gradient-direction: vertical;
     background-gradient-start: #dedede;
     background-gradient-end: #dedede;
-    border-color: rgba(0,0,0,0.1);
+    border-color: rgba(0,0,0,0.9);
     border-top-width: 1px;
     border-bottom-width: 1px;
 }
