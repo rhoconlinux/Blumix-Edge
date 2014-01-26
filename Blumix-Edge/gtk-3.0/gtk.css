@@ -144,7 +144,7 @@ NO DUPS CHECK
 @define-color wm_bg_a shade (@theme_bg_color, 1.0);
 @define-color wm_bg_b @theme_bg_color;
 
-@define-color wm_shadow alpha(#333333, 0.47); /*alto más oscuro*/
+@define-color wm_shadow alpha(#333333, 0.53); /*alto más oscuro*/
 @define-color wm_border shade(@theme_bg_color,0.8);
 
 @define-color wm_button_bg_a shade (@theme_bg_color, 1.0);
