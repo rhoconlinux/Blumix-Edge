@@ -1,0 +1,28 @@
+UnityPanelWidget,
+.unity-panel {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (#282828),
+                                     to   (#323232));
+
+    border-width:   0px;
+	border-style:   none;
+    box-shadow:     none; 
+}
+
+.unity-panel.menubar,
+.unity-panel .menubar {
+    color:          #f4f4f4;
+    text-shadow:    0px 1px alpha(#000, 0.30);
+
+    border-width:   0px;
+	border-style:   none;
+    box-shadow:     none;   
+}
+
+.unity-panel.menuitem,
+.unity-panel .menuitem {
+    border-width: 0px;
+
+    /* icon-shadow: 0 1 shade (@bg_color, 1.06); */
+}
+

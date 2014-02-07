@@ -1,0 +1,34 @@
+Remove or put textures
+-----------------------
+
+The textures affects the following parts of the theme:
+
+1.- Titlebars
+2.- Toolbars
+3.- Menubars
+
+
+the folder '../Uncomplicated/textures/' contains two subfolders:
+
+'../Uncomplicated/textures/noise/'				(with textures)
+'../Uncomplicated/textures/transparent/'		(without textures)
+
+In each of these folders are two files
+'background-noise-toolbar.png' and 'metacity-noise.png'
+
+To remove textures:
+--------------------------
+copy the contents of '../Uncomplicated/textures/transparent/' as follows
+
+copy 'background-noise-toolbar.png' into '../Uncomplicated/gtk-3.0/assets/"
+copy 'background-noise-toolbar.png' into '../Uncomplicated/gtk-2.0/assets/"
+copy 'metacity-noise.png' into '../Uncomplicated/metacity-1/"
+
+To make textures:
+--------------------------
+copy the contents of '../Uncomplicated/textures/noise/' as follows
+
+copy 'background-noise-toolbar.png' into '../Uncomplicated/gtk-3.0/assets/"
+copy 'background-noise-toolbar.png' into '../Uncomplicated/gtk-2.0/assets/"
+copy 'metacity-noise.png' into '../Uncomplicated/metacity-1/"
+

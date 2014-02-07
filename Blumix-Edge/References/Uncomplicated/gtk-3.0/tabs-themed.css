@@ -1,0 +1,198 @@
+/*****************
+ * Notebooks and *
+ * tabs          *
+ *****************/
+
+.notebook {
+    -GtkNotebook-tab-overlap: 0;
+    -GtkNotebook-tab-curvature: 2;
+	-GtkNotebook-initial-gap: 3;
+    -GtkWidget-focus-line-width: 0;
+
+    padding: 1px;
+
+	background-image: none; 
+    background-color: shade(@theme_bg_color, 1.01);
+
+    border-style: none;
+	border-radius: 4px;
+    border-width: 0px;
+    border-image: none;
+    
+    box-shadow: inset  0px  1px alpha(shade(@theme_tab_active_bg_color, 0.45), 0.33),
+                inset  1px  0px alpha(shade(@theme_tab_active_bg_color, 0.45), 0.33),
+                inset -1px  0px alpha(shade(@theme_tab_active_bg_color, 0.45), 0.33),
+                inset  0px -1px alpha(shade(@theme_tab_active_bg_color, 0.45), 0.33);
+
+}
+
+.notebook GtkDrawingArea {
+	background-color: shade (@theme_bg_color, 1.01);
+}
+
+.notebook tab {
+	background-image: linear-gradient(to bottom, 
+									  shade(@theme_bg_color, 0.92),
+									  shade(@theme_bg_color, 0.92) 30%,
+                                      shade(@theme_bg_color, 0.92));
+
+    border-width: 1px;
+    border-style: solid;
+	border-radius: 3px; 
+	border-color: transparent;
+    box-shadow: none;
+}
+
+.notebook tab:active {
+	background-image: linear-gradient(to bottom, 
+									  shade(@theme_tab_active_bg_color, 1.47),
+                                      shade(@theme_tab_active_bg_color, 1.40));
+
+	border-color: transparent;
+
+}
+
+.notebook tab GtkLabel {
+    padding: 0px;
+	color: @theme_text_color;
+	text-shadow: 0px 1px @theme_shadow_color;
+}
+
+.notebook tab.top {
+    padding: 3px 5px 3px 5px;
+    border-bottom-width: 0px;
+    box-shadow: inset  0px  1px alpha(#000, 0.15),
+                inset  1px  0px alpha(#000, 0.15),
+                inset -1px  0px alpha(#000, 0.15),
+                inset  0px -1px alpha(#000, 0.01);
+}
+
+.notebook tab.top:active {
+    padding: 4px 5px 4px 5px;
+    box-shadow: inset  0px  1px alpha(#000, 0.23),
+                inset  1px  0px alpha(#000, 0.23),
+                inset -1px  0px alpha(#000, 0.23),
+                inset  0px -1px alpha(#000, 0.01);
+}
+
+.notebook tab.bottom {
+    padding: 2px 5px 4px 5px;
+    border-top-width: 0px;
+    box-shadow: inset  0px  1px alpha(#000, 0.01),
+                inset  1px  0px alpha(#000, 0.23),
+                inset -1px  0px alpha(#000, 0.23),
+                inset  0px -1px alpha(#000, 0.23);
+}
+
+.notebook tab.bottom:active {
+    padding: 3px 5px 5px 5px;
+    box-shadow: inset  0px  1px alpha(#000, 0.01),
+                inset  1px  0px alpha(#000, 0.15),
+                inset -1px  0px alpha(#000, 0.15),
+                inset  0px -1px alpha(#000, 0.15);
+}
+
+.notebook tab.right {
+    padding: 1px 8px 1px 6px;
+    border-left-width: 0px; 
+    box-shadow: inset  0px  1px alpha(#000, 0.23),
+                inset  1px  0px alpha(#000, 0.01),
+                inset -1px  0px alpha(#000, 0.23),
+                inset  0px -1px alpha(#000, 0.23);
+}
+
+.notebook tab.right:active {
+    padding: 1px 9px 1px 7px;
+    box-shadow: inset  0px  1px alpha(#000, 0.15),
+                inset  1px  0px alpha(#000, 0.01),
+                inset -1px  0px alpha(#000, 0.15),
+                inset  0px -1px alpha(#000, 0.15);
+}
+
+.notebook tab.left {
+    padding: 1px 6px 1px 8px;
+    border-right-width: 0px; 
+    box-shadow: inset  0px  1px alpha(#000, 0.23),
+                inset  1px  0px alpha(#000, 0.23),
+                inset -1px  0px alpha(#000, 0.01),
+                inset  0px -1px alpha(#000, 0.23);
+}
+
+.notebook tab.left:active {
+    padding: 1px 7px 1px 9px;
+    box-shadow: inset  0px  1px alpha(#000, 0.15),
+                inset  1px  0px alpha(#000, 0.15),
+                inset -1px  0px alpha(#000, 0.01),
+                inset  0px -1px alpha(#000, 0.15);
+}
+
+
+
+/* Notebook - close button */
+.notebook tab .button,
+.notebook tab .button:active,
+.notebook tab .button:hover {
+	padding: 0px;
+    border-image: none;
+    border-style: none;
+    background-image: none;
+    background-color: transparent;
+}
+
+.notebook tab .button GtkImage {
+    border-radius: 0px;
+    color: shade(@theme_fg_color, 0.85);
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 0;
+    icon-shadow: none;
+}
+
+.notebook tab .button GtkImage:hover {
+    color: shade(@theme_fg_color, 0.95);
+    border-color: alpha(black, 0.1); 
+}
+
+.notebook tab .button GtkImage:active,
+.notebook tab .button GtkImage:active:hover {
+    background-color: alpha(black, 0.15); 
+    color: shade(@theme_fg_color, 1.00);
+    icon-shadow: none;
+    border-color: alpha(black, 0.27) 
+                  alpha(black, 0.13) 
+                  alpha(black, 0.13) 
+                  alpha(black, 0.13); 
+}
+
+TerminalWindow .notebook,
+EphyWindow .notebook,
+GeditWindow .notebook {
+    padding: 1px 0px 0px 0px;
+    border-radius: 0px;
+   
+}
+
+TerminalWindow .notebook tab,
+EphyWindow .notebook tab,
+GeditWindow .notebook tab,
+TerminalWindow .notebook tab:active,
+EphyWindow .notebook tab:active,
+GeditWindow .notebook tab:active {
+    border-radius: 3px;   
+}
+
+NemoWindow .notebook,
+NautilusWindow .notebook {
+    padding: 1px 0px 0px 0px;
+    background-color: @theme_base_color;
+    border-radius: 0px;
+}
+
+NemoWindow .notebook tab,
+NautilusWindow .notebook tab,
+NemoWindow .notebook tab:active,
+NautilusWindow .notebook tab:active {
+    border-radius: 3px;
+}
+

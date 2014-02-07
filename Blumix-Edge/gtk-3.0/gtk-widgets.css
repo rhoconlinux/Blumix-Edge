@@ -26,6 +26,9 @@
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
     -GtkNotebook-initial-gap: 0;
+    -GtkNotebook-has-tab-gap: false;
+    -GtkNotebook-tab-overlap: 1;
+    -GtkNotebook-tab-curvature: 1;
     -GtkPaned-handle-size: 4;
     -GtkProgressBar-min-horizontal-bar-height: 12;
     -GtkProgressBar-min-vertical-bar-width: 12;
@@ -1041,97 +1044,131 @@ GtkModelMenuItem GtkBox GtkImage {
  * notebook & tabs*
  ******************/
 .notebook {
-    padding: 0;
-    border-width: 1px;
+    padding-top: 0px; /*marco general de ABAJO de las tabs*/
+    border-width: 0px;
     border-style: solid;
-    border-color: shade(@theme_base_color, 0.7);
-    border-radius: 0;
-    background-color: @theme_base_color;
+    border-color:#dedede; /*fix tab bottom border*/
+    border-radius: 9px;
+    background-color: #dedede;
     background-image: none;
-    background-clip: border-box;
+/*  background-clip: border-box;
+    border-width: 3px 0 0 0;
+    */
+    
 }
 
 .notebook.frame {
-    border-width: 1px;
+    border-width: 5px; /*padding no aplica*/
 }
 
 .notebook.header {
-    border-width: 0;
-    background-color: shade(@theme_base_color, 0.95);
+    border-width: 5px;
+    background-color: shade(@theme_base_color, 1.95);
 }
 
 .notebook.header.frame {
-    border-color: shade(@theme_base_color, 0.75);
+    border-color: shade(@theme_base_color, 1.75);
 }
 
 .notebook.header.frame.top {
-    border-width: 1px 1px 0 1px;
+    border-width: 0px 0px 0px 0px;
 }
 
 .notebook.header.frame.right {
-    border-width: 1px 1px 1px 0;
+    border-width: 0px 0px 0px 0px;
 }
 
 .notebook.header.frame.bottom {
-    border-width: 0 1px 1px 1px;
+    border-width: 5px 0px 0px 0px;
 }
 
 .notebook.header.frame.left {
-    border-width: 1px 0 1px 1px;
+    border-width: 0px 0px 0px 0px;
 }
 
 .notebook GtkViewport {
-    border-width: 0;
+    border-width: 5px 0px 0px 0px;
     background-color: @theme_base_color;
     color: @theme_text_color;
 }
 
 .notebook tab {
-    padding: 4px;
-    border-color: shade(@theme_base_color, 0.75);
+    padding: 0px;
+    border-color: shade(@theme_bg_color, 1.0); /*tab inactiva*/
     border-radius: 0;
-    background-color: shade(@theme_base_color, 0.85);
-    background-image: none;
+    background-color: shade(@theme_bg_color, 1.0); /*tab inactiva*/
+    padding-right: 9px;
+    background-image: radial-gradient(60% 55%, closest-side, 
+                                    shade(@theme_bg_color, 0.08),
+                                    shade(@theme_bg_color, 1.0) 85%,
+                                    shade(@theme_bg_color, 1.0));
 }
 
 .notebook tab:active {
-    border-color: shade(@theme_base_color, 0.7);
-    background-color: @theme_base_color;
+    border-color: shade(@theme_bg_color, 1.0); 
+    background-color: @theme_bg_color;
+    border-color:#dedede;
     background-image: none;
+    border-width:0px; /*cambia el centro del texto*/
 }
 
 .notebook tab.top {
-    border-width: 1px 1px 0 1px;
+    border-width: 0px 0px 0px 0px;
+    padding-top:9px;
+        padding-right: 9px;
+    padding-bottom:5px;
+    border-color:#dedede;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.notebook tab.top:active {
-    border-top-color: @theme_selected_bg_color;
+.notebook tab.top:active { /*borde y fondo de la tab activa*/
+    border-color: #dedede;
+    border-width:0;
+    background-color:#dedede;
+    padding-right: 9px;
+/*
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+*/
+    border-radius:12px;
+    color: #333333;
+    background-image: linear-gradient(to right,
+                                    shade(@theme_bg_color, 1.0),
+                                    shade(@theme_bg_color, 1.0) 25%,
+                                    shade(@theme_bg_color, 1.04) 93%,
+                                    shade(@theme_bg_color, 1.06) 96%,
+                                    shade(@theme_bg_color, 0.85) 96%,
+                                    shade(@theme_bg_color, 1.0) 98%,
+                                    shade(@theme_bg_color, 1.0));
 }
 
 .notebook tab.right {
-    border-width: 1px 1px 1px 0;
+    border-width: 0px 0px 0px 0px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
 
 .notebook tab.right:active {
     border-right-color: @theme_selected_bg_color;
+ color: #333333;   
 }
 
 .notebook tab.bottom {
-    border-width: 0 1px 1px 1px;
+    border-width: 0px 0px 0px 0px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+    border-color:black;
 }
 
 .notebook tab.bottom:active {
     border-bottom-color: @theme_selected_bg_color;
+    border-width:0px;
+    color: #333333;
 }
 
 .notebook tab.left {
-    border-width: 1px 0 1px 1px;
+    border-width: 0px 0px 0px 0px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -1141,12 +1178,18 @@ GtkModelMenuItem GtkBox GtkImage {
 }
 
 .notebook tab GtkLabel {
-    color: mix(@theme_text_color, @theme_base_color, 0.3);
+/*    color: mix(@theme_text_color, @theme_base_color, 0.3);*/ /*texto del tab*/
+        border-width:0px;
+        color: #9e9e9e;
 }
+
+
 
 .notebook .active-page,
 .notebook tab .active-page GtkLabel {
-    color: @theme_text_color;
+    /*color: @theme_text_color;*/
+        border-width:0px;
+    color: #333333;
 }
 
 /* close button styling */

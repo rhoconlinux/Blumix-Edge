@@ -1,0 +1,37 @@
+Uncomplicated v1.03
+
+Author: Rafa Cobreros rafacobreros@gmail.com
+License: GPL
+Original theme in: http://gnome-look.org/content/show.php/Uncomplicated?content=157986
+
+----------------------
+Remove or put textures
+-----------------------
+
+The textures affects the following parts of the theme:
+1.- Titlebars
+2.- Toolbars
+3.- Menubars
+
+-----------------------------------------------------------*
+* To remove textures:                                      *
+* copy files from '../Uncomplicated/textures/transparent/' *
+*----------------------------------------------------------*
+
+-----------------------------------------------------------*
+* To make textures (BY DEFAULT):                           *
+* copy files from '../Uncomplicated/textures/noise/'       *
+*----------------------------------------------------------*
+
+where to copy the files
+-----------------------
+copy 'background-noise-toolbar.png' into '../Uncomplicated/gtk-3.0/assets/"
+copy 'background-noise-toolbar.png' into '../Uncomplicated/gtk-2.0/assets/"
+copy 'metacity-noise.png'           into '../Uncomplicated/metacity-1/"
+
+NOTES:
+Note that the destination will change depending on the theme used
+(Uncomplicated, Uncomplicated-Mint, Uncomplicated-Orange o Uncomplicated-Tricolor)
+
+close/open session for the changes to take effect
+

@@ -1,0 +1,192 @@
+/*****************
+ * Notebooks and *
+ * tabs          *
+ *****************/
+GtkNotebook {
+    padding: 0px;
+}
+
+.notebook {
+    -GtkNotebook-tab-overlap: 6;
+    -GtkNotebook-tab-curvature: 4;
+	-GtkNotebook-initial-gap: 0;
+    -GtkWidget-focus-line-width: 0;
+
+	background-image: none; 
+    background-color: shade(@theme_bg_color, 1.01);
+
+    border-style: solid;
+	border-radius: 4px;
+    border-width: 1px;
+
+    border-color: shade(@notebook_border, 0.90);
+/*    -unico-border-gradient: -gtk-gradient (linear,
+                                             left top, left bottom,
+                                             from (shade(@notebook_border, 1.00)),
+                                             to   (shade(@notebook_border, 1.30))) 1;*/
+    box-shadow: none; 
+}
+
+.notebook GtkDrawingArea {
+	background-color: shade (@theme_bg_color, 1.01);
+}
+
+.notebook tab {
+	background-image: linear-gradient(to bottom, 
+									  shade(@theme_bg_color, 0.98),
+									  shade(@theme_bg_color, 0.90) 30%,
+                                      shade(@theme_bg_color, 0.85));
+
+    border-width: 1px;
+    border-style: solid;
+	border-radius: 4px; 
+	border-color: shade(@notebook_border, 0.90);
+	border-top-color: shade(@notebook_border, 0.95);
+}
+
+.notebook tab:active {
+    background-color: shade(@theme_tab_active_bg_color, 1.01);
+
+    background-image: linear-gradient(to bottom, 
+                                      shade(@theme_bg_color, 1.00),
+                                      shade(@theme_bg_color, 1.00) 30%,
+                                      shade(@theme_bg_color, 1.01));
+
+	border-color: shade(@notebook_border, 0.85);
+	border-top-color: shade(@notebook_border, 1.00);
+
+}
+
+.notebook tab GtkLabel {
+    padding: 0px;
+	color: @theme_text_color;
+	text-shadow: 0px 1px @theme_shadow_color;
+}
+
+.notebook tab.top {
+    padding: 2px 12px 2px 6px;
+    border-bottom-width: 0px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    box-shadow: none;    
+}
+
+.notebook tab.top:active {
+    padding: 2px 12px 2px 6px;
+
+}
+
+.notebook tab.bottom {
+    padding: 2px 5px 5px 5px;
+    border-top-width: 0px;
+    box-shadow: none;
+}
+
+.notebook tab.bottom:active {
+    padding: 3px 5px 6px 5px;
+}
+
+.notebook tab.right {
+    padding: 1px 6px 1px 5px;
+    border-left-width: 0px; 
+    box-shadow: none;
+}
+
+.notebook tab.right:active {
+    padding: 1px 7px 1px 6px;
+}
+
+.notebook tab.left {
+    padding: 1px 5px 1px 6px;
+    border-right-width: 0px; 
+    box-shadow: none;
+}
+
+.notebook tab.left:active {
+    padding: 1px 6px 1px 7px;
+}
+
+/* Notebook - close button */
+.notebook tab .button,
+.notebook tab .button:active,
+.notebook tab .button:hover {
+	padding: 0px;
+    border-image: none;
+    border-style: none;
+    background-image: none;
+    background-color: transparent;
+}
+
+.notebook tab .button GtkImage {
+    border-radius: 0px;
+    color: shade(@theme_fg_color, 0.85);
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 0;
+    icon-shadow: none;
+}
+
+.notebook tab .button GtkImage:hover {
+    color: shade(@theme_fg_color, 0.95);
+    border-color: alpha(black, 0.1); 
+}
+
+.notebook tab .button GtkImage:active,
+.notebook tab .button GtkImage:active:hover {
+    background-color: alpha(black, 0.15); 
+    color: shade(@theme_fg_color, 1.00);
+    icon-shadow: none;
+    border-color: alpha(black, 0.27) 
+                  alpha(black, 0.13) 
+                  alpha(black, 0.13) 
+                  alpha(black, 0.13); 
+}
+
+TerminalWindow .notebook,
+EphyWindow .notebook,
+GeditWindow .notebook {
+    padding: 0px 0px 0px 0px;
+    border-radius: 0px;
+   
+}
+
+TerminalWindow .notebook tab,
+EphyWindow .notebook tab,
+GeditWindow .notebook tab,
+TerminalWindow .notebook tab:active,
+EphyWindow .notebook tab:active,
+GeditWindow .notebook tab:active {
+
+}
+
+NemoWindow .notebook,
+NautilusWindow .notebook {
+    -GtkNotebook-initial-gap: 3;
+    padding: 0px 0px 0px 0px;
+    background-color: @theme_base_color;
+    border-width: 1px;
+    border-radius: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    /*box-shadow: none;*/
+    /*box-shadow: inset  0px  1px alpha(#000, 0.35);*/
+}
+
+NemoWindow .notebook tab.top,
+NautilusWindow .notebook tab.top {
+	padding: 3px 12px 3px 6px;
+	border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+
+NautilusWindow .notebook tab.top:active,
+NemoWindow .notebook tab.top:active {
+	padding: 4px 12px 4px 6px;
+    /*border-top-color: alpha(#fff, 0.00);
+    box-shadow: inset 0px  1px shade(@notebook_border, 0.90);*/
+}
+

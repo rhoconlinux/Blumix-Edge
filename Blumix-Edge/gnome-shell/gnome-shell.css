@@ -357,7 +357,7 @@ StScrollBar StButton#hhandle:active {
     height: 1em;
     min-width: 15em;
     -slider-height: 0.2em;
-    -slider-background-color: rgba(0,0,0,0.3);
+    -slider-background-color: rgba(250,250,250,0.3);
     -slider-border-color: transparent;
     -slider-active-background-color: rgba(255,255,255,0.8);
     -slider-active-border-color: rgba(72,72,72,0.3);
@@ -385,6 +385,7 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu-icon {
     icon-size: 1.09em;
+    color: rgba(51,51,51,1.0);
 }
 
 .popup-battery-percentage {
@@ -415,6 +416,7 @@ StScrollBar StButton#hhandle:active {
 
 .nm-menu-item-icons {
     spacing: .5em;
+    color: rgba(120,120,120,1.0);
 }
 
 /* Buttons */
@@ -424,10 +426,10 @@ StScrollBar StButton#hhandle:active {
 .hotplug-notification-item,
 .modal-dialog-button,
 .app-view-control {
-    color: rgba(51,51,51,1.0);
+    color: rgba(204,204,204,1.0);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(245,245,245,1.0);
-    background-gradient-end: rgba(240,240,240,1.0);
+    background-gradient-start: rgba(51,51,51,1.0);
+    background-gradient-end: rgba(51,51,51,1.0);
     border-width: 1px;
     border-color: rgba(198,198,198,1.0);
     /**/
@@ -436,7 +438,7 @@ StScrollBar StButton#hhandle:active {
     /*buttonbold_false
     font-weight: normal;
     buttonbold_false*/
-    transition-duration: 0ms;
+    transition-duration: 500ms;
 }
 
 .candidate-page-button:hover,
@@ -444,11 +446,11 @@ StScrollBar StButton#hhandle:active {
 .notification-icon-button:hover,
 .hotplug-notification-item:hover,
 .modal-dialog-button:hover {
-    color: rgba(51,51,51,1.0);
+    color: rgba(204,204,204,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(250,250,250,1.0);
     background-gradient-end: rgba(245,245,245,1.0);
-    border-color: rgba(204,204,204,1.0);
+    border-color: rgba(70,70,70,1.0);
 }
 
 .notification-button:focus,
@@ -479,7 +481,7 @@ StScrollBar StButton#hhandle:active {
 .notification-icon-button:focus:active,
 .hotplug-notification-item:focus:active,
 .modal-dialog-button:focus:active,
-.app-view-control:focus:active {
+.app-view-control:focus:active { /*botones de las cajas de dialogos! por ejemplo de donde se SELECCIONA la wifi*/
     color: rgb(255,255,255);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(69,69,69,0.43928571428571428);
