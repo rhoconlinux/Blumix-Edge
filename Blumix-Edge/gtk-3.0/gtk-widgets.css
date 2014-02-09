@@ -3583,4 +3583,60 @@ GtkBubbleWindow .toolbar {
 
 
 
+/*********
+ * Panel *
+ ********/
+
+.panel {
+    background-color: alpha (#000, 0.07);
+    color: #fff;
+    font-weight: bold;
+}
+
+.panel-shadow {
+    background-color: @transparent;
+    background-image: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (alpha (#000, 0.3)),
+                     to (alpha (#000, 0.0)));
+}
+
+.panel-app-button {
+    -GtkMenuItem-horizontal-padding: 6px;
+}
+
+.composited-indicator {
+    background-color: @transparent;
+    color: #fff;
+    padding: 0 2px;
+}
+
+.composited-indicator.menuitem:active,
+.composited-indicator.menuitem:prelight {
+    border-style: none;
+    -unico-inner-stroke-width: 0;
+    background-image: none;
+}
+
+/************
+ * Terminal *
+ ***********/
+
+TerminalScreen {
+    -TerminalScreen-background-darkness: 0.85;
+
+    background-color: #000;
+
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 
