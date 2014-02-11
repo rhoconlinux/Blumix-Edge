@@ -1047,9 +1047,9 @@ GtkModelMenuItem GtkBox GtkImage {
     padding-top: 0px; /*marco general de ABAJO de las tabs*/
     border-width: 0px;
     border-style: solid;
-    border-color:#dedede; /*fix tab bottom border*/
+    border-color:@bg_color; /*fix tab bottom border*/
     border-radius: 3px;
-    background-color: #dedede;
+    background-color: @bg_color;
     background-image: none;
 /*  background-clip: border-box;
     border-width: 3px 0 0 0;
@@ -1107,7 +1107,7 @@ GtkModelMenuItem GtkBox GtkImage {
 .notebook tab:active {
     border-color: shade(@theme_bg_color, 1.0); 
     background-color: @theme_bg_color;
-    border-color:#dedede;
+    border-color:@bg_color;
     background-image: none;
     border-width:0px; /*cambia el centro del texto*/
 }
@@ -1117,15 +1117,15 @@ GtkModelMenuItem GtkBox GtkImage {
     padding-top:9px;
         padding-right: 9px;
     padding-bottom:5px;
-    border-color:#dedede;
+    border-color:@bg_color;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
 .notebook tab.top:active { /*borde y fondo de la tab activa*/
-    border-color: #dedede;
+    border-color: @bg_color;
     border-width:0;
-    background-color:#dedede;
+    background-color:@bg_color;
     padding-right: 9px;
 /*
     border-top-left-radius:4px;
@@ -1443,7 +1443,7 @@ GtkLevelBar.vertical {
 /*fondo de la scrollbar*/
 .scrollbar {
     border-width: 4px;/*1*/
-    border-color:#dedede
+    border-color:@bg_color
     border-style: solid;
     padding: 2px;
     border-radius: 5px;
@@ -1463,7 +1463,7 @@ GtkLevelBar.vertical {
 .scrollbar.trough {
     /*border-width: 0;*/
     border-width: 1px;
-    border-color: #dedede; /*fix border de la scrollbar*/
+    border-color: @bg_color; /*fix border de la scrollbar*/
     border-radius: 1px; /*fix border de la scrollbar*/
     background-color: shade(@theme_bg_color, 0.99); /*@theme_bg_color para gris @base_color para blanco*/
     background-image: none;
@@ -3558,7 +3558,7 @@ GtkBubbleWindow .toolbar {
     border-radius: 7px 7px 0 0;
     /* lamefun trick to get rounded borders regardless of CSD use */
     border-width: 1px;    
-    border-color: #dedede;
+    border-color: @bg_color;
     box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
 
     

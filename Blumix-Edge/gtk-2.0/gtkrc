@@ -5,22 +5,37 @@
 
 #Acknowledgements:
 #-----------------
-#gtk2 scrollbars style (modded) | Theme: ffuu | Author: lassekongo83
 #structure and main gtk2 theme (modded -a LOT): Numix.
 #structure and main gtk2 theme (modded -a LOT): Adwaita-GIT.
+#structure and main gtk2 theme (modded -a LOT): Absolute Gtk2. 
+#gtk2 scrollbars style (modded) | Theme: ffuu | Author: lassekongo83
+#gtk2 toolbar line fix style (modded) | Theme: Uncomplicated
+
 
 
 #COLORS:
 #-------
 
-gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede"
-gtk-color-scheme = "selected_bg_color:#A9B9FF\nselected_fg_color:#f9f9f9"
-gtk-color-scheme = "text_color:#333333\nfg_color:#555555\nlink_color:#fc6f5d\nmenubar_fg_color:#777777\ntoolbar_fg_color:#777777"
-gtk-color-scheme = "tooltip_fg_color:#dedede\ntoolbar_bg_color:#dedede\ntooltip_bg_color:#2d2d2d"
-gtk-color-scheme = "menu_bg_color:#dedede\nmenu_fg_color:#555555"
-gtk-color-scheme = "panel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc"
-gtk-color-scheme = "menubar_bg_color:#dedede"
+#fondo
+#----------
+gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#e6e6e6"
+gtk-color-scheme = "menubar_bg_color:#e6e6e6"
+gtk-color-scheme = "tooltip_fg_color:#e6e6e6\ntoolbar_bg_color:#e6e6e6\ntooltip_bg_color:#2d2d2d"
 
+#elementos
+#-----------
+gtk-color-scheme = "selected_bg_color:#A9B9FF\nselected_fg_color:#f9f9f9"
+gtk-color-scheme = "menu_bg_color:#e6e6e6"
+gtk-color-scheme = "panel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc"
+
+#textos
+#----------
+gtk-color-scheme = "text_color:#333333\nfg_color:#555555\nlink_color:#fc6f5d"
+gtk-color-scheme = "menubar_fg_color:#777777\ntoolbar_fg_color:#777777\nmenu_fg_color:#777777"
+
+
+#dark mode
+#------------
 gtk-color-scheme = "theme_bg_dark_color:#EBEBEB\ntheme_fg_dark_color:#484848\ntheme_text_dark_color:#363636"
 gtk-color-scheme = "sidebar_background:#f1f2f3\nbutton_base:#ffffff"
 
@@ -31,7 +46,6 @@ gtk-color-scheme = "sidebar_background:#f1f2f3\nbutton_base:#ffffff"
 
 
 #..........................
-
 ### EXTERNAL FILES >> al otro ###
 include "scrollbar.rc" # Scrollbar styling
 include "firefox.rc" # Firefox styling
@@ -170,7 +184,7 @@ style "murrine-default" {
 		colorize_scrollbar = FALSE
 		comboboxstyle = 0 # 0 = normal combobox, 1 = colorized combobox below arrow
 		contrast = 1.0 # overal contrast with borders border
-		focusstyle = 1 # 0 = none, 1 = grey dotted, 2 = colored with fill, 3 = colored glow
+		focusstyle = 0 # 0 = none, 1 = grey dotted, 2 = colored with fill, 3 = colored glow ...este es punto focus de los botones
 		glazestyle = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave, 3 = top curved highlight, 4 = beryl highlight
 		glowstyle = 1 # 0 = glow on top, 1 = glow on bottom, 2 = glow on top and bottom, 3 = glow on middle vertically, 4 = glow on middle horizontally, 5 = glow on all sides
 		glow_shade = 1.0 # amount of glow
@@ -273,7 +287,7 @@ style "murrine-scrollbar"
 {
 	engine "murrine"
 	{
-		#border_shades     = {.2, .6} #.8 .6
+		#border_shades     = {.8, .6} #.8 .6
 		border_colors     = FALSE
 		contrast          = 1.0
 		glazestyle        = 1
@@ -298,8 +312,8 @@ style "murrine-scale" = "murrine-thin" {
 	engine "murrine" {
 		roundness = 8
 		gradient_shades = { 1.08, 1.08, 1.08, 1.08 }
-		border_shades = { 1.0, 1.0 }
-		trough_shades = {  1.0, 1.0  }
+		border_shades = { 1.5, 1.5 } #fix border 
+		trough_shades = {  1.5, 1.5  }
 		trough_border_shades = {  1.0, 1.0  }
         
         #defaults
@@ -499,16 +513,18 @@ style "murrine-menubaritem" {
 		roundness = 2
 	}
     
-    
-    	engine "pixmap" # for similarity to the GTK3 theme
-	{
-		image
-		{
-			function	= BOX
-			file		= "assets/background-noise-toolbar.png"
-			stretch		= FALSE
-		}
-	}
+    #------------------------------------------------------------------------------ fix 2 para los handlers
+#    	engine "pixmap" # for similarity to the GTK3 theme
+#	{
+#		image
+#		{
+#			function	= BOX
+#			file		= "assets/background-noise-toolbar.png"
+#			stretch		= FALSE
+#		}
+#	}
+    #------------------------------------------------------------------------------ fix 2 para los handlers
+
 }
 
 # Toolbars
@@ -528,9 +544,8 @@ style "murrine-toolbar" = "murrine-thin" {
 	fg[ACTIVE] = @toolbar_fg_color
 	fg[INSENSITIVE] = mix (0.5, @toolbar_bg_color, @toolbar_fg_color)
 
-	xthickness	= 1 #fix grosor de los putos separadores gtk2 del toolbar
-	ythickness	= 1
-
+	xthickness	= 0 #fix grosor de los putos separadores gtk2 del toolbar
+	ythickness	= 0
 	engine "murrine" {
     		roundness = 2
             	separatorstyle          = 0
@@ -540,7 +555,7 @@ style "murrine-toolbar" = "murrine-thin" {
 		gradient_shades     	= {1.00, 1.00, 1.00, 1.00}    
 	}
     
-    
+    #------------------------------------------------------------------------------
     #fix de los putos bordes de toolbar gracias Uncomplicated! :)
     engine "pixmap" # for similarity to the GTK3 theme
 	{
@@ -552,6 +567,10 @@ style "murrine-toolbar" = "murrine-thin" {
 		}
 	}
 
+    #------------------------------------------------------------------------------
+
+
+    #------------------------------------------------------------------------------ fix 2 para los handlers
 GtkPaned::handle-size = 1
 
   engine "pixmap" {
@@ -564,6 +583,7 @@ GtkPaned::handle-size = 1
   	  }
   	}
 
+    #------------------------------------------------------------------------------ fix 2 para los handlers
 
 
 }

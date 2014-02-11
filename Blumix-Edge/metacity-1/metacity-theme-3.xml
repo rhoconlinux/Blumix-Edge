@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Blumix borders are a Numix Mod</name>
-	<author>Satyajit Sahoo, modded by Rho: rhoconlinux.wordpress.com </author>
+	<name>Blumix borders</name>
+	<author>Satyajit Sahoo made Numix, the theme was modded by Rho: rhoconlinux.wordpress.com </author>
 	<copyright>GPL-3.0+</copyright>
 	<date>December 2013</date>
 	<description>Blumix Mutter Theme</description>
 </info>
 
 <!-- ::: CONSTANTS ::: -->
-<constant name="C_titlebar" value="gtk:custom(wm_bg,#DEDEDE)" />
-<constant name="C_border_focused" value="gtk:custom(wm_border_focused,#DEDEDE)" />
+<constant name="C_titlebar" value="gtk:custom(wm_bg,#e6e6e6)" />
+<constant name="C_border_focused" value="gtk:custom(wm_border_focused,#e6e6e6)" />
 <constant name="C_border_unfocused" value="gtk:custom(wm_border_unfocused,#888888)" />
 <constant name="C_title_focused" value="gtk:custom(wm_title_focused,#dcdcdc)" />
 <constant name="C_title_unfocused" value="gtk:custom(wm_title_unfocused,#888888)" />
@@ -108,7 +108,7 @@
 
 <!-- ::: WINDOW DECORATIONS ::: -->
 <draw_ops name="entire_background_focused">
-	<rectangle color="#DEDEDE" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#e6e6e6" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
@@ -116,7 +116,7 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_focused">
-	<rectangle color="#DEDEDE" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#e6e6e6" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_fill_attached_focused">
@@ -124,7 +124,7 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
-	<rectangle color="#DEDEDE" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#e6e6e6" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
@@ -140,7 +140,7 @@
 </draw_ops>
 
 <draw_ops name="border_focused">
-	<rectangle color="#DEDEDE" x="0" y="0" width="width-1" height="height-1" filled="false" />
+	<rectangle color="#e6e6e6" x="0" y="0" width="width-1" height="height-1" filled="false" />
 </draw_ops>
 
 <draw_ops name="border_unfocused">
@@ -203,7 +203,7 @@
 <!-- note: negative values in x or y causes gnome-shell to crash -->
 <!-- close icon -->
 <draw_ops name="close_focused">
-	<image filename="close_focused_normal.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="close_focused_normal.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="close_focused_prelight">
@@ -215,7 +215,7 @@
 </draw_ops>
 
 <draw_ops name="close_unfocused">
-	<image filename="close_unfocused.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="close_unfocused.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="close_unfocused_prelight">
@@ -228,7 +228,7 @@
 
 <!-- maximize icon -->
 <draw_ops name="maximize_focused">
-	<image filename="maximize_focused_normal.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="maximize_focused_normal.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="maximize_focused_prelight">
@@ -278,7 +278,7 @@
 
 <!-- minimize icon -->
 <draw_ops name="minimize_focused">
-	<image filename="minimize_focused_normal.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="minimize_focused_normal.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="minimize_focused_prelight">
