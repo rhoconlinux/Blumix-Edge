@@ -1,18 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
-<linearGradient id="linearGradient36471">
-<stop offset="0" style="stop-color:#fff"/>
-<stop offset="1" style="stop-color:#fff;stop-opacity:0"/>
-</linearGradient>
-<linearGradient id="linearGradient36429">
-<stop offset="0" style="stop-color:#fff"/>
-<stop offset="1" style="stop-color:#fff;stop-opacity:0"/>
-</linearGradient>
-<radialGradient cx="47.429" cy="167.168" gradientTransform="matrix(2.59193 0 0 .57582 -20.68706 48.40049)" xlink:href="#linearGradient36429" id="radialGradient7461" r="37" gradientUnits="userSpaceOnUse"/>
-<radialGradient cx="49.067" cy="242.504" gradientTransform="matrix(3.42184 0 0 .03365 -61.309 138.5071)" r="37.007" id="radialGradient7488" xlink:href="#linearGradient36471" gradientUnits="userSpaceOnUse"/>
-</defs>
-<g transform="matrix(1.62133 0 0 1.62133 -17.83461 -158.8901)">
-<rect width="182.226" x="12.597" y="76.159" rx="8.864" ry="3.459" height="71.116" style="opacity:.372;fill:url(#radialGradient7461)"/>
-<path connector-curvature="0" style="opacity:.35;fill:none;stroke:url(#radialGradient7488);stroke-width:.612" d="m 194.80022,146.83551 -182.559919,0"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7355" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="80" width="300" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata4175">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs7357">
+  <radialGradient id="radialGradient7461" gradientUnits="userSpaceOnUse" cy="167.17" cx="47.429" gradientTransform="matrix(2.5919 0 0 .57582 -20.687 48.4)" r="37">
+   <stop id="stop36431" style="stop-color:#fff" offset="0"/>
+   <stop id="stop36433" style="stop-color:#fff;stop-opacity:0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="radialGradient7488" gradientUnits="userSpaceOnUse" cx="49.067" cy="242.5" r="37.007" gradientTransform="matrix(3.4218 0 0 .033653 -61.309 138.51)">
+   <stop id="stop36473" style="stop-color:#fff" offset="0"/>
+   <stop id="stop36475" style="stop-color:#fff;stop-opacity:0" offset="1"/>
+  </radialGradient>
+ </defs>
+ <g id="layer1" transform="matrix(1.6213 0 0 1.6213 -431.63 -272.57)">
+  <g id="g30864" transform="translate(255.22 70.118)">
+   <rect id="rect14000" style="opacity:.37188;fill:url(#radialGradient7461)" rx="8.8641" ry="3.4593" height="71.116" width="182.23" y="76.159" x="12.597"/>
+   <path id="rect34520" style="opacity:.35;stroke:url(#radialGradient7488);stroke-width:.61184;fill:none" d="m194.8 146.84h-182.56" connector-curvature="0"/>
+  </g>
+ </g>
 </svg>
