@@ -526,7 +526,7 @@ StScrollBar StButton#vhandle:active {
 	border-top: none;
 	border-right: none;
 	border-left: none;
-padding-top:5px;
+padding-top:5px; /*lo vuelve mas grueso*/
 padding-left:20px;
 padding-right:20px;
 
