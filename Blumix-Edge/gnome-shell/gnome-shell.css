@@ -573,13 +573,11 @@ padding-right:20px;
 
 /*Panel corner angle*/
 .panel-corner {
-background-color:rgba(0,0,0,0.0);
 }
 
 .panel-corner:active,
 .panel-corner:overview,
 .panel-corner:focus {
-background-color:rgba(0,0,0,0.0);
 }
 
 .panel-corner.lock-screen,
