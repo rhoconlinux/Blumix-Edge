@@ -509,7 +509,6 @@ style "murrine-menubaritem" {
 			stretch		= FALSE
 		}
 	}
-    
 }
 
 # Toolbars
