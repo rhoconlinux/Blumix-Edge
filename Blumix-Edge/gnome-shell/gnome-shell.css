@@ -570,6 +570,7 @@ StScrollBar StButton#vhandle:active {
 .panel-corner:active,
 .panel-corner:overview,
 .panel-corner:focus {
+background-color:rgba(0,0,0,10)
 }
 
 .panel-corner.lock-screen,
