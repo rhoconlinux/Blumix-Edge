@@ -519,7 +519,7 @@ StScrollBar StButton#vhandle:active {
 
     background-gradient-direction: vertical;
     background-gradient-start: rgba(45,45,45,1.0);
-    background-gradient: rgba(45,45,45,1.0) 50%;
+    background-gradient: rgba(245,45,45,1.0) 50%;
     background-gradient-end: rgba(0,0,0,1.0);
     border-bottom-width:1px;
     border-image-outset:inherit 5px;
