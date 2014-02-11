@@ -525,6 +525,7 @@ StScrollBar StButton#vhandle:active {
 	border-radius: 13px;
 	border-top: none;
 	border-right: 10px;
+border-right-color: transparent;
 	border-left: 10px;
 
     /*box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.4); GNOME SHELL 3.10 SHADOW PROBLEMS*/
