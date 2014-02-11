@@ -551,6 +551,21 @@ style "murrine-toolbar" = "murrine-thin" {
 			stretch		= FALSE
 		}
 	}
+
+GtkPaned::handle-size = 1
+
+  engine "pixmap" {
+    image { # for the thin gray line separating the sidepane and viewpane
+      function    = HANDLE
+      recolorable = TRUE
+      file        = "transparent_dot.png"
+      stretch     = TRUE
+      border      = { 0, 0, 0, 0 }
+  	  }
+  	}
+
+
+
 }
 
 style "murrine-toolbutton" = "murrine-button" {
