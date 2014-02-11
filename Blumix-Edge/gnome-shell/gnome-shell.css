@@ -283,7 +283,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .nm-dialog-header {
-    font-size: 12pt;
+    font-size: 9pt;
     font-weight: bold;
 }
 
@@ -407,7 +407,7 @@ StScrollBar StButton#vhandle:active {
 .modal-dialog StEntry {
     color: rgb(51,51,51);
     caret-color: rgba(51,51,51,0.7);
-    font-size: 12pt;
+    font-size: 9pt;
     caret-size: 1px;
     selected-color: black;
     padding: .25em .5em;
@@ -428,7 +428,7 @@ StScrollBar StButton#vhandle:active {
 .login-dialog StEntry:focus,
 .notification StEntry:focus,
 .modal-dialog StEntry {
-    font-size: 12pt;
+    font-size: 9pt;
     font-weight: bold;
     color: rgb(51,51,51);
     border: 1px solid rgba(255,255,255,0.6);
@@ -447,7 +447,7 @@ StScrollBar StButton#vhandle:active {
 #searchEntry {
     color: rgba(255,255,255,0.6);
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 9pt;
     background-gradient-direction: vertical;
     background-gradient-start: rgba(255,255,255,0.15);
     background-gradient-end: rgba(255,255,255,0.3);
@@ -741,7 +741,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .window-caption {
-    font-size: 12pt;
+    font-size: 9pt;
     font-weight: bold;
     padding: .5em 1em;
     -shell-caption-spacing: .5em;
@@ -792,7 +792,7 @@ StScrollBar StButton#vhandle:active {
 .messages-indicator {
     color: white;
     height: 32px;
-    font-size: 12pt;
+    font-size: 9pt;
     font-weight: bold;
 }
 
@@ -930,7 +930,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .dash-label {
-    font-size: 12pt;
+    font-size: 9pt;
     font-weight: bold;
     border-radius: 2px;
     background-color: rgba(0,0,0,0.5);
@@ -1506,7 +1506,7 @@ StScrollBar StButton#vhandle:active {
 .no-messages-label,
 .no-networks-label {
     font-family: Open Sans, cantarell, sans-serif;
-    font-size: 12pt;
+    font-size: 9pt;
     color: #999999;
 }
 .notification {
@@ -1961,7 +1961,7 @@ StScrollBar StButton#vhandle:active {
 .modal-dialog .run-dialog-entry {
     width: 20em;
     padding: .25em .5em;
-    font-size: 12pt;
+    font-size: 9pt;
     font-weight: bold;
     color: rgb(51,51,51);
     selection-background-color: rgb(51,51,51);
@@ -1996,7 +1996,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .end-session-dialog-subject {
-    font-size: 12pt;
+    font-size: 9pt;
     font-weight: bold;
     color: #fff;
 }
@@ -2194,7 +2194,7 @@ StScrollBar StButton#vhandle:active {
 
 .polkit-dialog-user-layout {
     spacing: 32px;
-    font-size: 12pt;
+    font-size: 9pt;
 }
 
 .polkit-dialog-user-layout:rtl {
@@ -2267,7 +2267,7 @@ StScrollBar StButton#vhandle:active {
     min-height: 32px;
     min-width: 32px;
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 9pt;
     background-gradient-direction: vertical;
     background-gradient-start: rgba(255,255,255,.05);
     background-gradient-end: rgba(255,255,255,.25);
@@ -2490,7 +2490,7 @@ StScrollBar StButton#vhandle:active {
 
 .login-dialog-prompt-box {
     color: white;
-    font-size: 12pt;
+    font-size: 9pt;
     font-weight: bold;
     width: 20em;
     selection-background-color: white;
