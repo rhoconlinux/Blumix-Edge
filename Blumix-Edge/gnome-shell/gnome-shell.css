@@ -534,7 +534,8 @@ padding-right:20px;
 */
     /*box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.4); GNOME SHELL 3.10 SHADOW PROBLEMS*/
         /*box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.9);*/
-    
+        text-shadow: 0 1 alpha (#000, 0.1);
+    icon-shadow: 0 1 alpha (#000, 0.1);
     box-shadow: none;
     font-weight: bold;
     height: 2.1em; /*ancho del panel*/
