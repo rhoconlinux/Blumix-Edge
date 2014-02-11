@@ -10,11 +10,27 @@
 #structure and main gtk2 theme (modded -a LOT): Adwaita-GIT.
 
 
-gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#A9B9FF\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#dedede\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#dedede\nmenubar_fg_color:#747474\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#dedede\nmenu_fg_color:#555555\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
+#COLORS:
+#-------
 
+gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede"
+gtk-color-scheme = "selected_bg_color:#A9B9FF\nselected_fg_color:#f9f9f9"
+gtk-color-scheme = "text_color:#333333\nfg_color:#555555\nlink_color:#fc6f5d\nmenubar_fg_color:#777777\ntoolbar_fg_color:#777777"
+gtk-color-scheme = "tooltip_fg_color:#dedede\ntoolbar_bg_color:#dedede\ntooltip_bg_color:#2d2d2d"
+gtk-color-scheme = "menu_bg_color:#dedede\nmenu_fg_color:#555555"
+gtk-color-scheme = "panel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc"
+gtk-color-scheme = "menubar_bg_color:#dedede"
+
+gtk-color-scheme = "theme_bg_dark_color:#EBEBEB\ntheme_fg_dark_color:#484848\ntheme_text_dark_color:#363636"
+gtk-color-scheme = "sidebar_background:#f1f2f3\nbutton_base:#ffffff"
+
+
+#notas y viejos
 #selected_fg_color:#91A6FF por ejemplo en los checks de libreoffice
+#"base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#91A6FF\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#dedede\nselected_fg_color:#dedede\nmenubar_bg_color:#dedede\nmenubar_fg_color:#747474\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#dedede\nmenu_fg_color:#555555\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
 
-#"base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#91A6FF\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#dedede\nselected_fg_color:#7E7E7E\nmenubar_bg_color:#dedede\nmenubar_fg_color:#747474\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#dedede\nmenu_fg_color:#555555\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
+
+#..........................
 
 ### EXTERNAL FILES >> al otro ###
 include "scrollbar.rc" # Scrollbar styling
@@ -34,7 +50,7 @@ style "murrine-default" {
 
 	GtkButton::child-displacement-x = 0 #posición del texto en los botones
     GtkButton::child-displacement-y = 0
-	GtkButton::default-border = { 1, 1, 1, 1 }
+	GtkButton::default-border = { 0, 0, 0, 0 }
 	GtkButtonBox::child-min-height = 26
 	GtkCheckButton::indicator-size = 16
     GtkCheckButton::indicator-spacing = 7
@@ -53,17 +69,17 @@ style "murrine-default" {
 	GtkMenu::horizontal-padding = 0
 	GtkMenu::vertical-padding = 0
 
-	GtkMenuBar::internal-padding = 0
-	GtkMenuBar::window-dragging = 1
+	GtkMenuBar::internal-padding = 1
+	GtkMenuBar::window-dragging = 2
 
 	GtkMenuItem::arrow-scaling= 0.5
 
-	GtkPaned::handle-size = 1
+	GtkPaned::handle-size = 5
 
-	GtkProgressBar::min-horizontal-bar-height = 12
-	GtkProgressBar::min-vertical-bar-width = 12
+	GtkProgressBar::min-horizontal-bar-height = 9
+	GtkProgressBar::min-vertical-bar-width = 9
 
-	GtkRange::trough-border = 0
+	GtkRange::trough-border = 1
 	GtkRange::slider-width = 12
 	GtkRange::stepper-size = 12
 	GtkRange::stepper_spacing = 0
@@ -97,9 +113,9 @@ style "murrine-default" {
 	# from jumping a few pixels when you create a new tab
 	GtkWidget::focus-padding = 0
 
-	GtkWidget::wide-separators = 1
-	GtkWidget::separator-width = 2
-	GtkWidget::separator-height = 2
+	GtkWidget::wide-separators = 0 #1
+	GtkWidget::separator-width = 0 #2
+	GtkWidget::separator-height = 0 #2
     
     
 
@@ -118,8 +134,8 @@ style "murrine-default" {
 	GtkToolbar::shadow-type = GTK_SHADOW_NONE # Makes toolbars flat and unified
 	GtkMenuBar::shadow-type = GTK_SHADOW_NONE # Makes menubars flat and unified
 
-	xthickness = 2
-	ythickness = 2
+	xthickness = 0 #borde de las putas ventanas internas :=)
+	ythickness = 0
 
 	fg[NORMAL] = @fg_color
 	fg[PRELIGHT] = @fg_color
@@ -171,9 +187,11 @@ style "murrine-default" {
 		progressbarstyle = 0 # 0 = none, 1 = diagonal striped, 2 = vertical striped
 		reliefstyle = 0 # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
 		roundness = 2 # roundness of widgets
-		scrollbarstyle = 2 # 0 = none, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
-		sliderstyle = 0 # 0 = none, 1 = handles
-		stepperstyle = 1 # 0 = standard, 1 = integrated stepper handles
+
+        scrollbarstyle = 1 # 0 = none, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
+
+        sliderstyle = 0 # 0 = none, 1 = handles
+		stepperstyle = 0 # 0 = standard, 1 = integrated stepper handles
 		toolbarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient
         #shading test
         #------------
@@ -181,6 +199,7 @@ style "murrine-default" {
 		#border_shades = { 0.0, 0.0 }
 		#trough_shades = {  0.0, 0.0  }
 		#trough_border_shades = {  0.0, 0.0  }
+        handlestyle = 1
    }
 }
 
@@ -190,14 +209,37 @@ style "murrine-wide" {
 }
 
 style "murrine-wider" {
-	xthickness = 4
+	xthickness = 4 #4
 	ythickness = 4
+    engine "murrine" 
+	{
+		roundness = 6 # Roundness of notebook tabs.
+	}
+
 }
 
 style "murrine-thin" {
-	xthickness = 5
+	xthickness = 5 #5 la puta entrada de firefox necesita esto de este tamaño ^_^
 	ythickness = 5
+    engine "murrine" 
+	{
+		roundness = 6 # Roundness of notebook tabs.
+	}
+
+ 
 }
+
+#handlers
+
+style "handle" {
+
+}
+
+class "GtkPaned"	style "handle"
+
+
+
+
 
 # Notebook
 
@@ -207,8 +249,8 @@ style "murrine-notebook-bg" {
 }
 
 style "murrine-notebook" = "murrine-notebook-bg" {
-	xthickness = 5 #espaciados de los tabs, afecta también a los widgets con tabs horizontales
-	ythickness = 5
+	xthickness = 4 #espaciados de los tabs, afecta también a los widgets con tabs horizontales
+	ythickness = 4
 	engine "murrine" 
 	{
 		roundness = 2 # Roundness of notebook tabs.
@@ -298,8 +340,8 @@ style "murrine-frame-title" {
 }
 
 style "murrine-tooltips" {
-	xthickness = 5
-	ythickness = 5
+	xthickness = 0 #5 a ver que hace
+	ythickness = 0
 
 	bg[NORMAL] = @tooltip_bg_color
 	bg[SELECTED] = @tooltip_bg_color
@@ -427,6 +469,17 @@ style "murrine-menubar" {
 		roundness = 2
         border_colors = FALSE
 	}
+    
+    
+    engine "pixmap" # for similarity to the GTK3 theme
+	{
+		image
+		{
+			function	= BOX
+			file		= "assets/background-noise-toolbar.png"
+			stretch		= FALSE
+		}
+	}
 }
 
 style "murrine-menubaritem" {
@@ -445,16 +498,30 @@ style "murrine-menubaritem" {
 	engine "murrine" {
 		roundness = 2
 	}
+    
+    
+    	engine "pixmap" # for similarity to the GTK3 theme
+	{
+		image
+		{
+			function	= BOX
+			file		= "assets/background-noise-toolbar.png"
+			stretch		= FALSE
+		}
+	}
+    
 }
 
 # Toolbars
 
 style "murrine-toolbar" = "murrine-thin" {
 	bg[NORMAL] = @toolbar_bg_color
-	bg[PRELIGHT] = shade (1.02, @toolbar_bg_color)
+	# bg[PRELIGHT] = shade (1.02, @toolbar_bg_color)
+    bg[PRELIGHT] = @selected_bg_color
 	bg[SELECTED] = @selected_bg_color
-	bg[ACTIVE] = shade (0.9, @toolbar_bg_color)
-	bg[INSENSITIVE] = @toolbar_bg_color
+	# bg[ACTIVE] = shade (0.9, @toolbar_bg_color)
+	bg[ACTIVE] = @toolbar_bg_color
+    bg[INSENSITIVE] = @toolbar_bg_color
 
 	fg[NORMAL] = @toolbar_fg_color
 	fg[PRELIGHT] = @toolbar_fg_color
@@ -462,8 +529,28 @@ style "murrine-toolbar" = "murrine-thin" {
 	fg[ACTIVE] = @toolbar_fg_color
 	fg[INSENSITIVE] = mix (0.5, @toolbar_bg_color, @toolbar_fg_color)
 
+	xthickness	= 1 #fix grosor de los putos separadores gtk2 del toolbar
+	ythickness	= 1
+
 	engine "murrine" {
     		roundness = 2
+            	separatorstyle          = 0
+		lightborderstyle        = 0		
+		contrast                = 0.5       # Regula el contraste del borde inferior de la toolbar
+		lightborder_shade		= 1.0       # Regula el contraste del borde de la toolbar     
+		gradient_shades     	= {1.00, 1.00, 1.00, 1.00}    
+	}
+    
+    
+    #fix de los putos bordes de toolbar gracias Uncomplicated! :)
+    engine "pixmap" # for similarity to the GTK3 theme
+	{
+		image
+		{
+			function	= BOX
+			file		= "assets/background-noise-toolbar.png"
+			stretch		= FALSE
+		}
 	}
 }
 
@@ -491,7 +578,7 @@ widget_class "*Toolbar*.*Separator*" style "murrine-toolbar"
 # Panels
 
 style "murrine-panel" = "murrine-thin" {
-	xthickness = 2
+	xthickness = 0 #2
 
 	bg[NORMAL] = @panel_bg_color
 	bg[PRELIGHT] =  mix (0.21, @panel_fg_color, @panel_bg_color)

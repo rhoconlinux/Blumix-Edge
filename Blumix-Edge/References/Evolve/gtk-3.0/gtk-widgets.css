@@ -1518,6 +1518,7 @@ GtkLevelBar.vertical {
       background-position: center;
 }
 
+
 /* overlay scrollbar */
 OsThumb {
     color: shade(@theme_bg_color, 0.7);

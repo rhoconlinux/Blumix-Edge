@@ -152,10 +152,16 @@ NautilusWindow .pane-separator {
 NautilusWindow .scrollbar {
     border-width: 1px;/*1*/
     border-style: solid;
-    padding: 0;
+    border-color: #dedede;
+    padding: 0px;
 /*    border-radius: 3px;*/
     border-bottom-right-radius: 10px;
     border-top-right-radius: 0px;
+        -GtkRange-slider-width: 6; /*ancho de la scroll*/
+    -GtkRange-stepper-size: 0;
+    -GtkRange-stepper-spacing: 0;
+    -GtkRange-trough-border: 3;
+
 }
 
 NautilusWindow .scrollbars-junction,
@@ -166,7 +172,8 @@ NautilusWindow .scrollbar.trough {
     border-top-right-radius: 2px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-
+ /*   border-width: 9px;
+    border-color: red;*/
     /*border-radius: 3px;*/
     background-color: shade(@base_color, 1.0); /*@theme_bg_color para gris @base_color para blanco*/
     background-image: none;
@@ -182,11 +189,13 @@ NautilusWindow .scrollbar.button:active:hover {
     border-radius: 0;
     background-color: transparent;
     background-image: none;
-    color: shade(@base_color, 0.8); /*modo gris: shade(@theme_bg_color, 0.6)*/
+    color: shade(@base_color, 0.85); /*modo gris: shade(@theme_bg_color, 0.6)*/
 }
 
 NautilusWindow .scrollbar.slider {
     border-width: 3px;
+    padding: 3px;
+    background: 20px;
     /*border-left: 7px;*/
     border-color: transparent;
     border-radius: 7px;
@@ -256,11 +265,16 @@ NautilusNotebook .frame {
 
 NautilusWindow > GtkGrid > .pane-separator,
 NautilusWindow > GtkGrid > .pane-separator:hover {
-    border-width: 0 1px 0 0;
+    border-width: 0 2px 0 0;
     border-style: solid;
-    border-color: @borders;
+    padding: 2px 4px;
+    border-color: shade(@base_color,1.0); /*disminuir para hacer aparecer el separador*/
     background-color: @sidebar_bg;
     color: shade (@theme_bg_color, 0.9);
+    background-image: radial-gradient(60% 55%, closest-side, 
+                                    shade(@theme_bg_color, 0.08),
+                                    shade(@theme_bg_color, 1.0) 85%,
+                                    shade(@theme_bg_color, 1.0));
 }
 
 NautilusWindow > GtkGrid > .pane-separator:backdrop,

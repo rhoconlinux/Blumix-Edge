@@ -30,9 +30,9 @@
     -GtkNotebook-tab-overlap: 1;
     -GtkNotebook-tab-curvature: 1;
     -GtkPaned-handle-size: 4;
-    -GtkProgressBar-min-horizontal-bar-height: 12;
-    -GtkProgressBar-min-vertical-bar-width: 12;
-    -GtkRange-slider-width: 12;
+    -GtkProgressBar-min-horizontal-bar-height: 9;
+    -GtkProgressBar-min-vertical-bar-width: 9;
+    -GtkRange-slider-width: 7;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
     -GtkRange-trough-under-steppers: 1;
@@ -40,7 +40,7 @@
     -GtkScrollbar-has-forward-stepper: false;
     -GtkScrollbar-min-slider-length: 100;
     -GtkScrolledWindow-scrollbar-spacing: 0;
-    -GtkScrolledWindow-scrollbars-within-bevel: 2;
+    -GtkScrolledWindow-scrollbars-within-bevel: 1;
     -GtkStatusbar-shadow-type: none;
     -GtkTextView-error-underline-color: @error_color;
     -GtkToolButton-icon-spacing: 6;
@@ -560,7 +560,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 .frame {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
+    border-color: shade(@theme_bg_color, 1.0);
     border-radius: 0;
 }
 
@@ -570,8 +570,8 @@ GtkComboBox.combobox-entry .button:insensitive {
 GtkScrolledWindow.frame {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
+    border-color: shade(@theme_bg_color, 1.0); /*fix borde de las ventanas con scroll, así quedan anulados*/ 
+    border-radius: 4px;
 }
 
 /* avoid double borders when a viewport is 
@@ -1048,7 +1048,7 @@ GtkModelMenuItem GtkBox GtkImage {
     border-width: 0px;
     border-style: solid;
     border-color:#dedede; /*fix tab bottom border*/
-    border-radius: 9px;
+    border-radius: 3px;
     background-color: #dedede;
     background-image: none;
 /*  background-clip: border-box;
@@ -1131,7 +1131,7 @@ GtkModelMenuItem GtkBox GtkImage {
     border-top-left-radius:4px;
     border-top-right-radius:4px;
 */
-    border-radius:12px;
+    border-radius:4px;
     color: #333333;
     background-image: linear-gradient(to right,
                                     shade(@theme_bg_color, 1.0),
@@ -1231,7 +1231,7 @@ GtkModelMenuItem GtkBox GtkImage {
 GtkProgressBar {
     padding: 0;
     border-width: 1px;
-    border-radius: 2px; /*checkear linkhoi*/
+    border-radius: 4px; /*checkear linkhoi*/
 }
 
 .progressbar,
@@ -1442,17 +1442,29 @@ GtkLevelBar.vertical {
 
 /*fondo de la scrollbar*/
 .scrollbar {
-    border-width: 0px;/*1*/
+    border-width: 4px;/*1*/
+    border-color:#dedede
     border-style: solid;
-    padding: 0;
+    padding: 2px;
     border-radius: 5px;
+    
+    -GtkRange-slider-width: 6; /*ancho de la scroll*/
+    -GtkRange-stepper-size: 0;
+    -GtkRange-stepper-spacing: 0;
+    -GtkRange-trough-border: 3;
+
+    -GtkScrollbar-has-backward-stepper: 0;
+    -GtkScrollbar-has-forward-stepper: 0;
+    
+    -GtkScrollbar-min-slider-length: 30;	
 }
 
 .scrollbars-junction,
 .scrollbar.trough {
     /*border-width: 0;*/
-    border-left: 0px;
-    border-radius: 1px;
+    border-width: 1px;
+    border-color: #dedede; /*fix border de la scrollbar*/
+    border-radius: 1px; /*fix border de la scrollbar*/
     background-color: shade(@theme_bg_color, 0.99); /*@theme_bg_color para gris @base_color para blanco*/
     background-image: none;
     /*padding: 12px;*/
@@ -1474,7 +1486,7 @@ GtkLevelBar.vertical {
     /*border-left: 7px;*/
     border-color: transparent;
     border-radius: 7px;
-    background-color: shade(@base_color, 0.74);
+    background-color: shade(@base_color, 0.70);
 }
 
 /*mouse over*/

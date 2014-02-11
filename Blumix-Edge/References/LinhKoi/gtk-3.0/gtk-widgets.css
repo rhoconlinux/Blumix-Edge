@@ -12,11 +12,12 @@
 
 	-GtkTextView-error-underline-color: @error_color;
 
-	-GtkPaned-handle-size: 5;
+	-GtkPaned-handle-size: 7;
 
 	-GtkCheckButton-indicator-size: 16;
 	-GtkCheckMenuItem-indicator-size: 12;
 
+    
 	/* The size for scrollbars. The slider is 2px smaller, but we keep it
 	 * up so that the whole area is sensitive to button presses for the
 	 * slider. The stepper button is larger in both directions, the slider
@@ -2148,7 +2149,7 @@ GtkCheckButton:selected:focus {
 .toolbar {
 	border-style: none;
 	border-color: darker (@theme_bg_color);
-	padding: 6px;
+	padding: 2px;
 	background-color: @theme_bg_color;
 }
 

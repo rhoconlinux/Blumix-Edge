@@ -155,6 +155,8 @@ style "default" {
 	}
 }
 
+
+
 style "test" = "default" {
   fg[NORMAL]       	=  "#00FF00"
   fg[ACTIVE]       	=  "#00FF00"
