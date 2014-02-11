@@ -14,8 +14,8 @@
    width="20"
    height="20"
    id="svg2985"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="seperator.svg">
+   inkscape:version="0.48+devel r"
+   sodipodi:docname="separator.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -25,15 +25,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="847"
+     inkscape:window-width="1366"
+     inkscape:window-height="711"
      id="namedview23"
      showgrid="false"
      inkscape:zoom="11.8"
-     inkscape:cx="10"
+     inkscape:cx="-5.5084746"
      inkscape:cy="10"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -128,6 +128,6 @@
     <path
        d="m 0.9999999,46 0,1 L 11,47 21,47 21,46 11,46 0.9999999,46 z"
        id="rect2992-0-2-5"
-       style="fill:url(#linearGradient3797);fill-opacity:1;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:url(#linearGradient3797);fill-opacity:1;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;opacity:0" />
   </g>
 </svg>
