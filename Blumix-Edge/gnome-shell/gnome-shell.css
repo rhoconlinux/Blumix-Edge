@@ -490,28 +490,60 @@ StScrollBar StButton#vhandle:active {
     border: 1px solid rgba(255,255,255,0.6);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Panel */
 
+#panel {
+    color: rgba(255,255,255,1.0);
 
-#panel,
-#panel.lock-screen,
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(45,45,45,1.0);
+    background-gradient-end: rgba(0,0,0,1.0);
+    border-bottom-width:1px;
+    border-image-outset:inherit 5px;
+    border-color: rgba(0,0,0,0.27);
+
+    /*box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.4); GNOME SHELL 3.10 SHADOW PROBLEMS*/
+        /*box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.9);*/
+    
+    box-shadow: none;
+    font-weight: bold;
+    height: 2.1em; /*ancho del panel*/
+    transition-duration: 500ms;
+}
+
+#panel.lock-screen {
+    background-color: rgba(0,0,0,0.3);
+}
+
 #panel.unlock-screen,
 #panel.login-screen {
-    border: 0px solid rgba(174,167,159,0.3);
-    color: rgba(0,0,0,0.0);
-    /*background-color: rgba(0,0,0,0.3);*/
-    
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(0, 0, 0, 0.3);
-    background-gradient-end: rgba(0, 0, 0, 0.86);
-    
-    height: 2em;
-    font-size: 10pt;
-    font-weight: bold;
-    box-shadow: inset 0 -1px rgba(174,167,159,0.5);
+    background-color: transparent;
 }
+
 #panelLeft, #panelCenter {
-    spacing: 1em;
+    spacing: 4px;
 }
 
 #panelLeft:ltr {
@@ -530,10 +562,16 @@ StScrollBar StButton#vhandle:active {
     padding-right: 4px;
 }
 
-.panel-corner,
+
+/*Panel corner angle*/
+.panel-corner {
+}
+
 .panel-corner:active,
 .panel-corner:overview,
-.panel-corner:focus,
+.panel-corner:focus {
+}
+
 .panel-corner.lock-screen,
 .panel-corner.unlock-screen,
 .panel-corner.login-screen {
@@ -543,36 +581,48 @@ StScrollBar StButton#vhandle:active {
 
 #appMenu {
     spinner-image: url("process-working.svg");
-    spacing: 0;
-    padding: 0 1em;
+    spacing: 7px;
 }
 
 /* used for the app menu header only */
 .label-shadow {
-    color: rgba(0,0,0,0.43);
+    color: transparent;
 }
 
-.panel-button #appMenuIcon,
+.panel-button #appMenuIcon {
+    /*panelicon_true
+    panelicon_true*/
+    /**/
+    width: 0;
+    /**/
+    app-icon-bottom-clip: 0;
+}
+
 .panel-button:active #appMenuIcon,
 .panel-button:checked #appMenuIcon,
 .panel-button:focus #appMenuIcon {
-    app-icon-bottom-clip: 1px;
+    app-icon-bottom-clip: 0;
 }
 
 .app-menu-icon {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
 }
 
-.panel-button,
+.panel-button {
+    -natural-hpadding: 12px;
+    -minimum-hpadding: 6px;
+    border: 0px solid transparent;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    transition-duration: 0ms;
+    spacing: 3em;
+}
+
 #panel.unlock-screen .panel-button,
 #panel.lock-screen .panel-button,
 #panel.login-screen .panel-button {
-    -natural-hpadding: 1em;
-    -minimum-hpadding: 1em;
-    font-weight: bold;
-    color: rgba(255,255,255,0.8);
-    font-size: 9pt;
+    color: #e6e6e6;
 }
 
 #panel.unlock-screen .panel-button:hover,
@@ -588,93 +638,66 @@ StScrollBar StButton#vhandle:active {
 }
 
 .panel-button:hover {
-    color: white;
+    color: rgb(255,255,255);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(255,255,255,0.3);
-    background-gradient-end: rgba(255,255,255,0.15);
-    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.1);
+    background-gradient-start: rgba(104,104,104,0.43928571428571428); /*hover sobre el panel de los iconos*/
+    background-gradient-end: rgba(89,89,89,0.43928571428571428);
+    border-color: rgba(89,89,89,0.43928571428571428);
 }
 
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
+    color: rgb(255,255,255);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(255,255,255,0.4);
-    background-gradient-end: rgba(255,255,255,0.2);
-    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.15);
-    color: white;
+    background-gradient-start: rgba(104,104,104,0.43928571428571428);
+    background-gradient-end: rgba(89,89,89,0.43928571428571428);
+    border-color: rgba(89,89,89,0.43928571428571428);
 }
 
 .panel-status-button:active,
 .panel-status-button:checked,
 .panel-status-button:focus {
+    color: rgb(255,255,255);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(255,255,255,0.3);
-    background-gradient-end: rgba(255,255,255,0.15);
-    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.1);
+    background-gradient-start: rgba(104,104,104,0.43928571428571428);/*hover sobre el panel de los iconos, cuando estan activos luego de click*/
+    background-gradient-end: rgba(89,89,89,0.43928571428571428);
+    border-color: rgba(89,89,89,0.43928571428571428);
 }
 
 .panel-button:active > .system-status-icon,
 .panel-button:checked > .system-status-icon,
 .panel-button:focus > .system-status-icon {
-    icon-shadow: black 0px 0px 3px;
 }
 
 .panel-menu {
-    -boxpointer-gap: 1px;
+    -boxpointer-gap: 3px;
 }
 
-.panel-status-indicators-box,
-.panel-status-menu-box {
-    spacing: 1em;
+.panel-status-button-box {
+    spacing: 4px;
 }
 
-.system-status-icon {
-    icon-size: 1.3em;
-    padding: 0;
+.lock-screen-status-button-box {
+    spacing: 8px;
 }
 
-.aggregate-menu {
-    width: 25em;
-}
 
-.aggregate-menu .popup-menu-icon,
-.system-switch-user-submenu-icon {
-    icon-size: 1.3em;
-    padding: 0;
-    padding-right: 1em;
-    border: 0;
-}
 
-.system-menu-action {
-    background: transparent;
-    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.0);
-    border-radius: 2px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    border-color: transparent;
-    padding: 1em;
-}
 
-.system-menu-action:hover,
-.system-menu-action:focus,
-.system-menu-action:active {
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(53,177,239,.8);
-    background-gradient-end: rgba(23,147,209,.8);
-    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.3);
-    border-radius: 2px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
 
-.system-menu-action > StIcon {
-    icon-size: 1.5em;
-}
 
-.screencast-indicator {
-    color: red;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Overview */
 
