@@ -520,7 +520,6 @@ StScrollBar StButton#vhandle:active {
    	 background-gradient-start: rgba(45,45,45,1.0);
    	 background-gradient-end: rgba(0,0,0,1.0);
     border-bottom-width:1px;
-    border-image-outset:inherit 5px;
     border-color: rgba(0,0,0,0.27);
     box-shadow: none;
     font-weight: bold;
@@ -568,11 +567,13 @@ padding-right:20px;
 .panel-corner.lock-screen,
 .panel-corner.unlock-screen,
 .panel-corner.login-screen {
-    -panel-corner-background-color: transparent;
-    -panel-corner-border-color: transparent;
-    background-gradient-direction: vertical;
-   	 background-gradient-start: rgba(45,45,45,1.0);
+    -panel-corner-background-color: rgba(5,5,5,0.7);
+    -panel-corner-border-color: rgba(5,5,5,0.7);
+/* ....hack cuadrado en vez de angular... no se para que servirá.    
+background-gradient-direction: vertical;
+   	 background-gradient-start: 
    	 background-gradient-end: rgba(0,0,0,1.0);
+*/
 }
 
 
@@ -621,11 +622,7 @@ padding-right:20px;
 }
 
 .panel-button #appMenuIcon {
-    /*panelicon_true
-    panelicon_true*/
-    /**/
     width: 0;
-    /**/
     app-icon-bottom-clip: 0;
 }
 
@@ -646,7 +643,7 @@ padding-right:20px;
     border: 0px solid transparent;
     border-top-width: 0;
     border-bottom-width: 0;
-    transition-duration: 0ms;
+    transition-duration: 250ms;
     spacing: 3em;
 }
 
@@ -668,23 +665,32 @@ padding-right:20px;
     color: white;
 }
 
+
+
+
 .panel-button:hover {
-    color: rgb(255,255,255);
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(104,104,104,0.43928571428571428); /*hover sobre el panel de los iconos*/
-    background-gradient-end: rgba(89,89,89,0.43928571428571428);
-    border-color: rgba(89,89,89,0.43928571428571428);
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(104,104,104,0.43928571428571428); /*hover sobre el panel de los iconos*/
+	border-color: rgba(0,0,0,0.43928571428571428);
+	border-radius:15px;	
+	/*border-width:5px;*/    
+	/*padding-right: 13px;
+	padding-left: 13px;*/
 }
+
 
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
     color: rgb(255,255,255);
-    background-gradient-direction: vertical;
+    background-gradient-direction: vertical; /*boton activado del panel*/
     background-gradient-start: rgba(104,104,104,0.43928571428571428);
     background-gradient-end: rgba(89,89,89,0.43928571428571428);
     border-color: rgba(89,89,89,0.43928571428571428);
+border-radius:15px;	
 }
+
+
 
 .panel-status-button:active,
 .panel-status-button:checked,
@@ -694,12 +700,22 @@ padding-right:20px;
     background-gradient-start: rgba(104,104,104,0.43928571428571428);/*hover sobre el panel de los iconos, cuando estan activos luego de click*/
     background-gradient-end: rgba(89,89,89,0.43928571428571428);
     border-color: rgba(89,89,89,0.43928571428571428);
+	border-radius:15px;	
 }
 
 .panel-button:active > .system-status-icon,
 .panel-button:checked > .system-status-icon,
 .panel-button:focus > .system-status-icon {
 }
+
+
+
+
+
+
+
+
+
 
 .panel-menu {
     -boxpointer-gap: 3px;

@@ -13,23 +13,27 @@
 <constant name="C_border_focused" value="gtk:custom(wm_border_focused,#e6e6e6)" />
 <constant name="C_border_unfocused" value="gtk:custom(wm_border_unfocused,#888888)" />
 <constant name="C_title_focused" value="gtk:custom(wm_title_focused,#dcdcdc)" />
-<constant name="C_title_unfocused" value="gtk:custom(wm_title_unfocused,#888888)" />
+<constant name="C_title_unfocused" value="gtk:custom(wm_title_unfocused,#efefef)" />
 
 <!-- ::: GEOMETRY ::: -->
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="4" rounded_top_right="4" rounded_bottom_right="4" rounded_bottom_left="4">
-	<distance name="left_width" value="1" />
-	<distance name="right_width" value="3" />
+	<!-- ::: borders, menos de 3 en bottom saca el borde redondeado ::: -->
+    <distance name="left_width" value="1" />
+	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
+    <!-- ::: titulos ::: -->
 	<distance name="left_titlebar_edge" value="6" />
-	<distance name="right_titlebar_edge" value="5" />
-	<distance name="title_vertical_pad" value="1" />
+	<distance name="right_titlebar_edge" value="6" />
+	<distance name="title_vertical_pad" value="2" />
 	<aspect_ratio name="button" value="1.0" />
 	<border name="title_border" left="8" right="8" top="4" bottom="4" />
-	<border name="button_border" left="0" right="0" top="3" bottom="0" />
+	<border name="button_border" left="3" right="3" top="3" bottom="3" />
 </frame_geometry>
 
 <frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="5" rounded_top_right="5" parent="normal" />
 
+    
+    
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="true" rounded_top_right="true"  rounded_bottom_right="true" rounded_bottom_left="true">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
@@ -81,7 +85,7 @@
 <frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="1" rounded_top_right="1" parent="small">
 </frame_geometry>
 
-<!-- ::: TITLES ::: -->
+<!-- ::: TITLES centering y colors::: -->
 <draw_ops name="title_focused">
 	<title version="< 3.1"
                x="(0 `max` ((width - title_width) / 2)) + 2"
@@ -98,12 +102,12 @@
 	<title version="< 3.1"
                x="(0 `max` ((width - title_width) / 2)) + 2"
                y="(0 `max` ((height - title_height) / 2))"
-               color="C_title_unfocused" />
+               color="#d7d7d7" />
 	<title version=">= 3.1"
                x="(0 `max` ((frame_x_center - title_width/2) `min` (width - title_width))) + 2"
                y="(0 `max` ((height - title_height) / 2))"
                ellipsize_width="width"
-               color="C_title_unfocused" />
+               color="#d7d7d7" />
 </draw_ops>
 
 <!-- ::: WINDOW DECORATIONS ::: -->
@@ -124,7 +128,7 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
-	<rectangle color="#e6e6e6" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#efefef" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
@@ -148,10 +152,15 @@
 </draw_ops>
 
 <draw_ops name="rounded_border_focused">
-	<line color="#ECECEC" x1="2" y1="0" x2="width-3" y2="0" />
-	<line color="#ECECEC" x1="0" y1="height-1" x2="width-1" y2="height-1" />
+    <!-- linea SUPERIOR de todo de la ventana va para efecto sombra o refuerzo -->
+	<line color="#ffffff" x1="2" y1="0" x2="width-4" y2="0" />
+	<!-- linea abajo de todo de la ventana -->
+    <line color="#ECECEC" x1="0" y1="height-1" x2="width-1" y2="height-1" />
+    <!--  borde izquierdo la ventana x0 x0 si cambia tira una diagonal solo en el titulo es solo una linea, no cambiar-->
 	<line color="#ECECEC" x1="0" y1="2" x2="0" y2="height-2" />
+    <!--  borde derecho la ventana -->
 	<line color="#ECECEC" x1="width-1" y1="2" x2="width-1" y2="height-2" />
+    <!--  estos dos bastardos no se que son -->
 	<arc color="#ECECEC" x="0" y="0" width="3" height="3"  start_angle="270" extent_angle="190" />
 	<arc color="#ECECEC" x="width-3" y="0" width="2" height="3"  start_angle="0" extent_angle="90" />
 	<!-- double arcs for darker borders -->
@@ -160,7 +169,7 @@
 </draw_ops>
 
 <draw_ops name="rounded_border_unfocused">
-	<line color="#CECECE" x1="5" y1="0" x2="width-3" y2="0" />
+	<line color="#dedede" x1="5" y1="0" x2="width-3" y2="0" />
 	<line color="#CECECE" x1="0" y1="height-1" x2="width-1" y2="height-1" />
 	<line color="#CECECE" x1="0" y1="2" x2="0" y2="height-2" />
 	<line color="#CECECE" x1="width-1" y1="2" x2="width-1" y2="height-2" />
@@ -215,7 +224,7 @@
 </draw_ops>
 
 <draw_ops name="close_unfocused">
-	<image filename="close_unfocused.svg" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="close_focused_normal.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="close_unfocused_prelight">
@@ -240,7 +249,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_unfocused">
-	<image filename="maximize_unfocused.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="maximize_focused_normal.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="maximize_unfocused_prelight">
@@ -253,7 +262,7 @@
 
 <!-- unmaximize icon -->
 <draw_ops name="unmaximize_focused">
-	<image filename="unmaximize_focused_normal.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="maximize_focused_normal.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="unmaximize_focused_prelight">
@@ -265,7 +274,7 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_unfocused">
-	<image filename="unmaximize_unfocused.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="maximize_focused_normal.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="unmaximize_unfocused_prelight">
@@ -290,7 +299,7 @@
 </draw_ops>
 
 <draw_ops name="minimize_unfocused">
-	<image filename="minimize_unfocused.png" x="0" y="1" width="object_width" height="object_height" />
+	<image filename="minimize_focused_normal.svg" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="minimize_unfocused_prelight">

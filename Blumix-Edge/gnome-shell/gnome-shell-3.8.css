@@ -693,17 +693,12 @@ StScrollBar StButton#hhandle:active {
 
 #panel {
     color: rgba(255,255,255,1.0);
-
     background-gradient-direction: vertical;
     background-gradient-start: rgba(45,45,45,1.0);
     background-gradient-end: rgba(0,0,0,1.0);
     border-bottom-width:1px;
     border-image-outset:inherit 5px;
     border-color: rgba(0,0,0,0.27);
-
-    /*box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.4); GNOME SHELL 3.10 SHADOW PROBLEMS*/
-        /*box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.9);*/
-    
     box-shadow: none;
     font-weight: bold;
     height: 2.1em; /*ancho del panel*/
