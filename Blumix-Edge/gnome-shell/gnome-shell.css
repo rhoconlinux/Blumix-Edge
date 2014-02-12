@@ -517,8 +517,8 @@ StScrollBar StButton#vhandle:active {
 #panel {
     color: rgba(255,255,255,1.0);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(45,45,45,1.0);
-    background-gradient-end: rgba(0,0,0,1.0);
+   	 background-gradient-start: rgba(45,45,45,1.0);
+   	 background-gradient-end: rgba(0,0,0,1.0);
     border-bottom-width:1px;
     border-image-outset:inherit 5px;
     border-color: rgba(0,0,0,0.27);
@@ -560,6 +560,24 @@ padding-right:20px;
     
 }
 
+/*Panel corner angle*/
+.panel-corner,
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus,
+.panel-corner.lock-screen,
+.panel-corner.unlock-screen,
+.panel-corner.login-screen {
+    -panel-corner-background-color: transparent;
+    -panel-corner-border-color: transparent;
+    background-gradient-direction: vertical;
+   	 background-gradient-start: rgba(45,45,45,1.0);
+   	 background-gradient-end: rgba(0,0,0,1.0);
+}
+
+
+
+
 #panel.lock-screen {
     background-color: rgba(0,0,0,0.3);
 }
@@ -590,17 +608,7 @@ padding-right:20px;
 }
 
 
-/*Panel corner angle*/
-.panel-corner,
-.panel-corner:active,
-.panel-corner:overview,
-.panel-corner:focus,
-.panel-corner.lock-screen,
-.panel-corner.unlock-screen,
-.panel-corner.login-screen {
-    -panel-corner-background-color: transparent;
-    -panel-corner-border-color: transparent;
-}
+
 
 #appMenu {
     spinner-image: url("process-working.svg");
