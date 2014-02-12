@@ -516,29 +516,48 @@ StScrollBar StButton#vhandle:active {
 
 #panel {
     color: rgba(255,255,255,1.0);
-
     background-gradient-direction: vertical;
-	background-gradient-start: rgba(0,0,0,0.5);
-	background-gradient-end: rgba(0,0,0,0.4);
-	border: 1px solid rgba(255,255,255,0.2);
-	box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.6);
-	border-radius: 13px;
-	border-top: none;
-	border-right: none;
-	border-left: none;
-padding-top:1px; /*lo vuelve mas grueso*/
-/*
-nada
-padding-left:20px;
-padding-right:20px;
-*/
-    /*box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.4); GNOME SHELL 3.10 SHADOW PROBLEMS*/
-        /*box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.9);*/
-    
+    background-gradient-start: rgba(45,45,45,1.0);
+    background-gradient-end: rgba(0,0,0,1.0);
+    border-bottom-width:1px;
+    border-image-outset:inherit 5px;
+    border-color: rgba(0,0,0,0.27);
     box-shadow: none;
     font-weight: bold;
     height: 2.1em; /*ancho del panel*/
     transition-duration: 500ms;
+
+
+/* .........black mac
+    color: rgba(255,255,255,1.0); 
+	    background-gradient-direction: vertical;
+	background-gradient-start: rgba(0,0,0,0.5);
+	background-gradient-end: rgba(0,0,0,0.4);
+		border: 1px solid rgba(255,255,255,0.2);
+		border-radius: 13px;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+	padding-top:1px; 
+	box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.6);
+    	font-weight: bold;
+    	height: 2.1em; 
+    	transition-duration: 500ms;
+*/
+
+/* cheatsheet
+color: fuente
+height: ancho
+padding: lo ensancha más
+*/
+
+/*
+nada
+box-shadow: none;
+padding-left:20px;
+padding-right:20px;
+*/
+    
 }
 
 #panel.lock-screen {
