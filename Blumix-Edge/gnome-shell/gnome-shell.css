@@ -249,7 +249,7 @@ stage {
 
 .popup-menu #appMenuIcon {
     min-width: 200px;
-    padding-right: 4px;
+    padding-right: 0px;
     padding-left: 0px;
     padding-bottom: 4px;
 }
