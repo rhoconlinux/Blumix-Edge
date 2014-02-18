@@ -2267,7 +2267,7 @@ GtkColorButton.button {
 }
 
 .toolbar .button.text-button {
-    padding: 0px 30px;
+    padding: 2px 3px;
     border-radius:4px;
 }
 
