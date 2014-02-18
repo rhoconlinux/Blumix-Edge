@@ -2272,7 +2272,7 @@ GtkColorButton.button {
 }
 
 .toolbar .button.image-button {
-    padding: 0px 3px 3px 0px;
+    padding: 4px 3px 3px 4px;
         border-radius:4px;  
 }
 
