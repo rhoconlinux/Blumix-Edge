@@ -152,6 +152,9 @@ GtkClutterOffscreen {
     transition: border 400ms ease-in;
 }
 
+
+
+
 /* inset shadows */
 .button:active,
 .primary-toolbar .button:active,
@@ -1040,25 +1043,146 @@ GtkModelMenuItem GtkBox GtkImage {
     padding-right: 4px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /******************
  * notebook & tabs*
  ******************/
+
 .notebook {
-    padding-top: 0px; /*marco general de ABAJO de las tabs*/
-    border-width: 0px;
+    /*border-width: 0px;
     border-style: solid;
-    border-color:@bg_color; /*fix tab bottom border*/
     border-radius: 3px;
-    background-color: @bg_color;
     background-image: none;
-/*  background-clip: border-box;
+*/
+    padding-top: 6px; /*marco general de ABAJO de las tabs, levanta las tabs */
+    background-color: @bg_color; /*no afecta visible*/
+    /*  ;
     border-width: 3px 0 0 0;
+    border-color:blue; /*USELESS*/
     */
-    
 }
 
+.notebook tab {
+    padding-right: 9px;
+    padding-left: 9px;
+    padding-bottom: 9px;
+    padding-top: 0px;
+    
+    border-color:black;  /* shade(@theme_bg_color, 1.0); tab inactiva*/
+    border-radius: 20px;
+    border-width:1px;
+    
+    background-color: @theme_bg_color; /*tab inactiva*/
+}
+
+
+/*
+background-image: radial-gradient(60% 55%, closest-side, 
+                                    shade(@theme_bg_color, 0.08),
+                                    shade(@theme_bg_color, 1.0) 85%,
+                                    shade(@theme_bg_color, 1.0));
+*/
+
+.notebook tab:active {
+    border-color: shade(@theme_bg_color, 1.0); 
+    background-color: @theme_bg_color;
+    border-color:@bg_color;
+    background-image: none;
+    border-width:1px; /*cambia el centro del texto*/
+}
+
+
+.notebook tab.top {
+    padding-top:9px;
+    padding-right: 7px; /*espacio de aire cerca del boton de cerrar*/
+    padding-bottom:5px; /*centra el texto verticalmente*/
+    border-color:transparent;
+    background-color: transparent; /*cambia color y forma de la tab inactiva*/
+    transition: 400ms ease-in-out;
+
+  /*  border-width: 0px 0px 0px 0px; 
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    */
+
+}
+
+/*this is it: borde y fondo de la tab activa*/
+.notebook tab.top:hover{ 
+    transition: 400ms ease-in-out;
+    background-color:shade(@bg_color, 1.3); /*efectivo*/
+    font: bold condensed;
+    border-radius:5px; /*useless si border color está presente. Clave para el proximo mac theme*/
+    border-color: transparent; /*efectivo el color... pero le da la forma romboidal! transparent habilita las otras opciones*/
+    box-shadow: inset 0.5px 0 shade(@theme_bg_color, 0.8), /*izq ...muy grueso*/
+                inset 0 1px shade(@theme_bg_color, 0.8), /*arriba*/
+                inset -0.5px 0 shade(@theme_bg_color, 0.8), /*der, orig -1px 0*/
+                inset 0 -1px shade(@theme_bg_color, 0.8); /*abajo*/
+    
+    border-width:0px; /*0-1... USELESS*/
+    color: red; /*useless*/
+}
+
+
+.notebook tab.top:active { 
+    transition: 400ms ease-in-out;
+    background-color:shade(@bg_color, 1.07); /*efectivo*/
+    font: bold condensed;
+    border-radius:5px; /*useless si border color está presente. Clave para el proximo mac theme*/
+    border-color: transparent; /*efectivo el color... pero le da la forma romboidal! transparent habilita las otras opciones*/
+    box-shadow: inset 0.5px 0 shade(@theme_bg_color, 0.8), /*izq ...muy grueso*/
+                inset 0 1px shade(@theme_bg_color, 0.8), /*arriba*/
+                inset -0.5px 0 shade(@theme_bg_color, 0.8), /*der, orig -1px 0*/
+                inset 0 -1px shade(@theme_bg_color, 0.8); /*abajo*/
+    
+    border-width:0px; /*0-1... USELESS*/
+    color: red; /*useless*/
+
+}
+    /*padding-right: 9px;
+    padding-left: 9px;
+    padding-bottom: 9px;*/
+
+
+/*
+background-image: linear-gradient(to right,
+                                    shade(@theme_bg_color, 1.0),
+                                    shade(@theme_bg_color, 1.0) 25%,
+                                    shade(@theme_bg_color, 1.04) 93%,
+                                    shade(@theme_bg_color, 1.06) 96%,
+                                    shade(@theme_bg_color, 0.85) 96%,
+                                    shade(@theme_bg_color, 1.0) 98%,
+                                    shade(@theme_bg_color, 1.0));
+    
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+*/
+
+
+
+
+
+
+
+
+
+
+/*------------------------------crap?
+
 .notebook.frame {
-    border-width: 5px; /*padding no aplica*/
+    border-width: 5px; padding no aplica
 }
 
 .notebook.header {
@@ -1091,57 +1215,9 @@ GtkModelMenuItem GtkBox GtkImage {
     background-color: @theme_base_color;
     color: @theme_text_color;
 }
-
-.notebook tab {
-    padding: 0px;
-    border-color: shade(@theme_bg_color, 1.0); /*tab inactiva*/
-    border-radius: 0;
-    background-color: shade(@theme_bg_color, 1.0); /*tab inactiva*/
-    padding-right: 9px;
-    background-image: radial-gradient(60% 55%, closest-side, 
-                                    shade(@theme_bg_color, 0.08),
-                                    shade(@theme_bg_color, 1.0) 85%,
-                                    shade(@theme_bg_color, 1.0));
-}
-
-.notebook tab:active {
-    border-color: shade(@theme_bg_color, 1.0); 
-    background-color: @theme_bg_color;
-    border-color:@bg_color;
-    background-image: none;
-    border-width:0px; /*cambia el centro del texto*/
-}
-
-.notebook tab.top {
-    border-width: 0px 0px 0px 0px;
-    padding-top:9px;
-        padding-right: 9px;
-    padding-bottom:5px;
-    border-color:@bg_color;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.notebook tab.top:active { /*borde y fondo de la tab activa*/
-    border-color: @bg_color;
-    border-width:0;
-    background-color:@bg_color;
-    padding-right: 9px;
-/*
-    border-top-left-radius:4px;
-    border-top-right-radius:4px;
 */
-    border-radius:4px;
-    color: #333333;
-    background-image: linear-gradient(to right,
-                                    shade(@theme_bg_color, 1.0),
-                                    shade(@theme_bg_color, 1.0) 25%,
-                                    shade(@theme_bg_color, 1.04) 93%,
-                                    shade(@theme_bg_color, 1.06) 96%,
-                                    shade(@theme_bg_color, 0.85) 96%,
-                                    shade(@theme_bg_color, 1.0) 98%,
-                                    shade(@theme_bg_color, 1.0));
-}
+
+
 
 .notebook tab.right {
     border-width: 0px 0px 0px 0px;
@@ -1198,12 +1274,12 @@ GtkModelMenuItem GtkBox GtkImage {
 .notebook tab .button:hover {
     padding: 1px;
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 5px; /*borde de la x*/
     border-style: solid;
-    border-color: transparent;
+    border-color: #F68C8C; /*animation*/
+    color: mix(@theme_text_color, @theme_base_color, 0.5);
     background-image: none;
     background-color: transparent;
-    color: mix(@theme_text_color, @theme_base_color, 0.5);
 }
 
 .notebook tab .button:hover {
@@ -1216,6 +1292,31 @@ GtkModelMenuItem GtkBox GtkImage {
     border-color: shade(@theme_base_color, 0.7);
     background-color: shade(@theme_base_color, 0.95);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /******************
  * pane separator *
