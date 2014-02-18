@@ -2281,7 +2281,7 @@ GtkColorButton.button {
     -GtkWidget-window-dragging: true;
 
     padding: 0px;
-    border-width: 0 0 4px 0; /*separator of the toolbar and the resto of the window... es el segundo, el otro está arriba*/
+    border-width: 0 0 0px 0; /*separator of the toolbar and the resto of the window... es el segundo, el otro está arriba*/
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 1.0); /*shade(@toolbar_bg_color, 0.8) separador de la toobar mimetizado*/
     background-color: @toolbar_bg_color;
