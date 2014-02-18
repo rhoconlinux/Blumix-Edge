@@ -2308,8 +2308,8 @@ GtkColorButton.button {
 
 
 .primary-toolbar GtkComboBox,
-.primary-toolbar .button {
-    padding: 20px; /*borde del boton de la turba*/
+.primary-toolbar .button { /*borde del boton de la turba*/
+    padding: 20px; 
     border-width: 1px;
     border-color: transparent;
     border-radius: 2px;
