@@ -2297,7 +2297,7 @@ GtkColorButton.button {
 .primary-toolbar.toolbar {
     -GtkWidget-window-dragging: true;
 
-    padding: 0px;
+    padding: 4px;
     border-width: 0 0 4px 0; /*separator of the toolbar and the resto of the window... es el segundo, el otro está arriba*/
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 1.0); /*shade(@toolbar_bg_color, 0.8) separador de la toobar mimetizado*/
@@ -2309,7 +2309,7 @@ GtkColorButton.button {
 
 .primary-toolbar GtkComboBox,
 .primary-toolbar .button {
-    padding: 0px;
+    padding: 2px;
     border-width: 1px;
     border-color: transparent;
     border-radius: 2px;
