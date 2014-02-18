@@ -250,16 +250,17 @@ style "handle" {
 }
 class "GtkPaned"	style "handle"
 
-style "murrine-thin" {
-  GtkRange::slider-width  = 12
-  GtkScale::slider-length = 12
+
+#steppers
+
+style "murrine-scrollbar" = "murrine-button" {
+  GtkRange::trough-under-steppers = 0
+  bg[NORMAL]   = shade (0.95, @bg_color)
 
   engine "murrine" {
-    roundness  = 2
-    trough_border_shades = { .98, 1.1 }
+    roundness  = 3
   }
 }
-
 
 
 
