@@ -103,7 +103,7 @@ style "murrine-default" {
 	GtkScale::slider-width = 16
 	GtkScale::trough-side-details = 1
 
-	GtkScrollbar::activate-slider = 1
+	GtkScrollbar::activate-slider = 2
 	#GtkScrollbar::has-backward-stepper = 0
 	#GtkScrollbar::has-forward-stepper = 0
 	#GtkScrollbar::has-secondary-backward-stepper = 0
