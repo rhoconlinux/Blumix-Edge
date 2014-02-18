@@ -2308,7 +2308,7 @@ GtkColorButton.button {
 
 
 .primary-toolbar GtkComboBox,
-.primary-toolbar .button { /*borde del boton de la turba*/
+.primary-toolbar .button { /*borde del boton de la tulbarr.. esto da el tamaño del boton*/
     padding: 0px 2px 0px 2px; 
     border-width: 1px;
     border-color: transparent;
