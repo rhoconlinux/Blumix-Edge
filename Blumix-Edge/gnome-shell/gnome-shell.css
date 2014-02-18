@@ -274,8 +274,8 @@ stage {
     font-weight: bold;
 }
 
-/* Scroll Bars */
 
+/* Scroll Bars */
 StScrollBar {
     padding: 0px;
 }
@@ -320,8 +320,8 @@ StScrollBar StButton#vhandle:active {
 
 
 
-/* Check Boxes */
 
+/* Check Boxes */
 .check-box StBoxLayout {
     spacing: .8em;
 }
