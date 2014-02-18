@@ -1065,11 +1065,11 @@ GtkModelMenuItem GtkBox GtkImage {
     border-style: solid;
     border-radius: 3px;
     background-image: none;
-*/
-    padding-top: 5px; /*marco general de ABAJO de las tabs, levanta las tabs */
-    background-color: @bg_color; /*no afecta visible*/
     border-width: 3px 0 0 0;
-    border-color:blue; /*USELESS*/
+    border-color:blue; 
+    */
+    padding-top: 5px; /*marco general de ABAJO de las tabs, levanta las tabs \ si lo ponemos en left refiere al marco general de abajo */
+    background-color: @bg_color; /*no afecta visible*/
 }
 
 .notebook tab {
