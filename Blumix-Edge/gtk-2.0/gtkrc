@@ -262,6 +262,18 @@ style "murrine-scrollbar" = "murrine-button" {
   }
 }
 
+#sliders
+style "murrine-scale" {
+  GtkRange::slider-width  = 12
+  GtkScale::slider-length = 12
+
+  engine "murrine" {
+    roundness  = 2
+    trough_border_shades = { .98, 1.1 }
+  }
+}
+
+
 
 
 # Notebook
@@ -822,7 +834,7 @@ class "GtkCalendar" style "murrine-wide"
 
 class "GtkSpinButton" style "murrine-spinbutton"
 
-class "GtkScale" style "murrine-scale"
+#class "GtkScale" style "murrine-scale"
 class "GtkVScale" style "murrine-vscale"
 class "GtkHScale" style "murrine-hscale"
 
@@ -953,3 +965,9 @@ widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 widget "xfwm4-tabwin*" style "xfwm-tabwin"
 widget_class "*XfsmLogoutDialog*" style "xfsm-logout"
 widget_class "*XfsmLogoutDialog*GtkButton" style "xfsm-logout-button"
+
+
+
+
+#slider fix
+class "GtkScale"      style "murrine-scale"
