@@ -834,7 +834,7 @@ class "GtkCalendar" style "murrine-wide"
 
 class "GtkSpinButton" style "murrine-spinbutton"
 
-#class "GtkScale" style "murrine-scale"
+#fixed down bottom: class "GtkScale" style "murrine-scale"
 class "GtkVScale" style "murrine-vscale"
 class "GtkHScale" style "murrine-hscale"
 
