@@ -1067,8 +1067,6 @@ GtkModelMenuItem GtkBox GtkImage {
     background-image: none;
 */
     padding-top: 5px; /*marco general de ABAJO de las tabs, levanta las tabs */
-    padding-left: 5px; /*marco general de ABAJO de las tabs, levanta las tabs */
-
     background-color: @bg_color; /*no afecta visible*/
     /*  ;
     border-width: 3px 0 0 0;
