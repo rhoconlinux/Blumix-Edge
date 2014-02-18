@@ -62,6 +62,8 @@ stage {
     -panel-corner-border-color: transparent;
 }
 
+
+
 /*panel structure -------------------------------------------------------*/
 
 
@@ -113,6 +115,15 @@ stage {
     color: rgba(0,0,0,0.5);
 }
 
+
+/*Panel app menu icon tweak: desapear :P*/
+.panel-button #appMenuIcon {
+     width: 0;
+    app-icon-bottom-clip: 0;
+}
+
+
+/*
 .panel-button #appMenuIcon {
     app-icon-bottom-clip: 1px;
 }
@@ -131,6 +142,7 @@ stage {
     color: rgba(255,255,255,0.9);
     transition-duration: 100ms;
 }
+*/
 
 #panel.unlock-screen .panel-button,
 #panel.lock-screen .panel-button,
