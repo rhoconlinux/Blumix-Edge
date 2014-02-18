@@ -189,7 +189,7 @@ stage {
 }
 
 .panel-menu {
-    -boxpointer-gap: 6px;
+    -boxpointer-gap: 16px;
 }
 
 .panel-status-indicators-box,
