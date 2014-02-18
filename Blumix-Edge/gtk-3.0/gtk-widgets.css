@@ -195,7 +195,7 @@ GtkAssistant .sidebar .highlight {
 
 GtkAssistant .sidebar {
     padding: 20px;
-    border-width: 0 1px 0 0;
+    border-width: 0 0px 0 0;
     border-style: transparent; /*solid*/
     border-right-color: shade(@theme_bg_color, 0.8);
     border-radius: 0;
