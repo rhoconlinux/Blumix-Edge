@@ -266,10 +266,9 @@ style "murrine-scrollbar" = "murrine-button" {
 style "murrine-scale" {
   GtkRange::slider-width  = 12
   GtkScale::slider-length = 12
-
   engine "murrine" {
     roundness  = 2
-    trough_border_shades = { .98, 1.1 }
+    trough_border_shades = { .98, 0.1 }
   }
 }
 
