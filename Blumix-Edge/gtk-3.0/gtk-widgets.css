@@ -2254,7 +2254,7 @@ GtkColorButton.button {
  * toolbar *
  ***********/
 .toolbar {
-    padding: 4px;
+    padding: 0px;
     border-style: none;
     background-color: @toolbar_bg_color;
     background-image: none;
