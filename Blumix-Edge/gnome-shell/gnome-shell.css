@@ -334,6 +334,9 @@ StScrollBar StButton#vhandle:active {
     border: 1px solid transparent;
 }
 
+
+
+
 /* Check Boxes */
 
 .check-box StBoxLayout {
