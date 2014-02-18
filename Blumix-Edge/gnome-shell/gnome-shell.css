@@ -16,16 +16,18 @@ stage {
 /*--------------------------------------------------------------Panel */
 /*panel structure*/
 #panel {
-    color: rgba(255,255,255,0.9);
-    background-color: rgba(50,50,50,0.95);
-    font-weight: normal;
-    text-shadow: black 0px 1px 0;
     height: 1.86em;
     border-top-width: 0.5px;
     border-color: rgba(150,150,150,0.45);
     border-top-width: 1px;
     border-color: rgba(150,150,150,0.45);
-
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(50,50,50,0.95);
+    background-gradient-end: rgba(50,50,50,0.95);
+ 
+    font-weight: normal;
+    color: rgba(255,255,255,0.9);
+    text-shadow: black 0px 1px 0;   
 }
 
 .panel-corner {
