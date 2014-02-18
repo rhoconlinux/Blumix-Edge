@@ -20,10 +20,9 @@ stage {
     border-top-width: 0.5px;
     border-color: rgba(150,150,150,0.45);
     border-top-width: 1px;
-    border-color: rgba(150,150,150,0.45);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(50,50,50,0.95);
-    background-gradient-end: rgba(50,50,50,0.95);
+    background-gradient-end: rgba(10,10,10,0.95);
  
     font-weight: normal;
     color: rgba(255,255,255,0.9);
