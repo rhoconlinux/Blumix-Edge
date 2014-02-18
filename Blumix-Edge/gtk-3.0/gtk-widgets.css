@@ -1104,6 +1104,7 @@ background-image: radial-gradient(60% 55%, closest-side,
 
 
 .notebook tab.top {
+    padding-left: 9px;
     padding-top:9px;
     padding-right: 7px; /*espacio de aire cerca del boton de cerrar*/
     padding-bottom:5px; /*centra el texto verticalmente*/
