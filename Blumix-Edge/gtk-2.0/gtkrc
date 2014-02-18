@@ -250,14 +250,7 @@ style "handle" {
 class "GtkPaned"	style "handle"
 
 
-#steppers
-style "murrine-scrollbar" = "murrine-button" {
-  GtkRange::trough-under-steppers = 0
-  bg[NORMAL]   = shade (0.95, @bg_color)
-  engine "murrine" {
-    roundness  = 3
-  }
-}
+
 
 
 #sliders
