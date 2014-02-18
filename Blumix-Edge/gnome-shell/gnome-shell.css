@@ -38,8 +38,11 @@ stage {
     font-weight: normal;
     text-shadow: black 0px 1px 0;
     height: 1.86em;
+    border-top-width: 0.5px;
+    border-color: rgba(150,150,150,0.45);
     border-top-width: 1px;
     border-color: rgba(150,150,150,0.45);
+
 }
 
 .panel-corner {
@@ -61,8 +64,6 @@ stage {
     -panel-corner-background-color: transparent;
     -panel-corner-border-color: transparent;
 }
-
-
 
 /*panel structure -------------------------------------------------------*/
 
