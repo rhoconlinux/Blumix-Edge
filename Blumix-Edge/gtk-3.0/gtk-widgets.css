@@ -2237,7 +2237,7 @@ GtkColorButton.button {
  * toolbar *
  ***********/
 .toolbar {
-    padding: 30px;
+    padding: 0px; /*fix too much space*/
     border-style: none;
     background-color: @toolbar_bg_color;
     background-image: none;
@@ -2281,7 +2281,7 @@ GtkColorButton.button {
     -GtkWidget-window-dragging: true;
 
     padding: 0px;
-    border-width: 0 0 0px 0; /*separator of the toolbar and the resto of the window... es el segundo, el otro está arriba | aumenta separación*/
+    border-width: 0 0 0px 0; /*separator of the toolbar and the resto of the window... es el segundo, el otro está arriba | FIXED aumenta separación*/
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 1.0); /*shade(@toolbar_bg_color, 0.8) separador de la toobar mimetizado*/
     background-color: @toolbar_bg_color;
@@ -2292,7 +2292,7 @@ GtkColorButton.button {
 
 .primary-toolbar GtkComboBox,
 .primary-toolbar .button { /*borde del boton de la tulbarr.. esto da el tamaño del boton*/
-    padding: 0px 2px 0px 2px; 
+    padding: 0px 2px 0px 2px; /*fix too much space 18feb*/
     border-width: 1px;
     border-color: transparent;
     border-radius: 2px;
