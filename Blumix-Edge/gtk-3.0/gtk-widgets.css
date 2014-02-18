@@ -862,7 +862,7 @@ GtkComboBox .menu {
 .header-bar .menu,
 .header-bar .primary-toolbar .menu,
 .menu {
-    padding: 0px; /*engorda el contorno de la caja*/
+    padding: 10px; /*engorda el contorno de la caja*/
     border-radius: 4px;
     border-style: solid;
     background-color: shade(@menu_bg_color, 1.0); /*<<<<<<<<<<<<<<<<<<<< configuración de caja de menu, color de fondo*/
