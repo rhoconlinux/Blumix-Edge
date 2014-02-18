@@ -923,7 +923,7 @@ background-image: none;
 .menubar .menuitem:hover {
     padding-bottom: 3px ;
     border-color: @menubar_bg_color;
-        border-width: 0px; /*lo saqué! este es para controlar el grosor del borde, junto con el de arriba que controla el color, valores positivos achican el area*/
+        border-width: 2px; /*lo saqué! este es para controlar el grosor del borde, junto con el de arriba que controla el color, valores positivos achican el area*/
     background-color: mix(@menubar_bg_color, @menubar_fg_color, 0.21);
     background-image: none;
     color: shade(@menubar_fg_color, 1.08);
