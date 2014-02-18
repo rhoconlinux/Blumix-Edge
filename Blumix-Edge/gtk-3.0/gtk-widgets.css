@@ -940,7 +940,7 @@ background-image: none;
  * menuitem *
  ************/
 GtkTreeMenu .menuitem {
-    padding: 0;
+    padding: 3px;
     border-width: 5;
     border-radius: 3; /*?? roundness*/
 
