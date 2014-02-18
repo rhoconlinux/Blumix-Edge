@@ -262,7 +262,7 @@ style "murrine-scrollbar" = "murrine-button" {
 
 #sliders
 style "murrine-scale" {
-	bg[ACTIVE] = shade (0.87, @base_color) #087 porque es blanco entonces para dejarlo del musmo estulo
+	bg[ACTIVE] = shade (0.97, @base_color) #087 porque es blanco entonces para dejarlo del musmo estulo
   engine "murrine" {
     roundness  = 2
     trough_border_shades = { .08, 0.1 }
