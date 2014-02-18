@@ -273,6 +273,7 @@ stage {
 
 .unicode-arrow {
     font-size: 120%;
+    color: transparent;
 }
 
 .popup-submenu-menu-item:open {
