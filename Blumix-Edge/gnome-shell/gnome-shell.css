@@ -181,7 +181,7 @@ stage {
     padding: 0 5px;
 }
 
-/*panel menu - menues from the panel: */
+/*panel menu - menues popping up from the panel */
 .panel-menu {
     -boxpointer-gap: 6px;
 }
@@ -194,8 +194,9 @@ stage {
     padding: 0 0px;
 }
 
-/* System Menu */
 
+
+/* System Menu */
 .system-switch-user-submenu-icon {
     icon-size: 24px;
     border: 1px solid alpha(#fff,0.3);
