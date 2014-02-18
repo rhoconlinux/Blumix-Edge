@@ -793,7 +793,7 @@ style "chrome-gtk-frame" {
 
 	ChromeGtkFrame::scrollbar-trough-color = @bg_color
 	ChromeGtkFrame::scrollbar-slider-normal-color =  mix (0.21, @selected_bg_color, @bg_color)
-	ChromeGtkFrame::scrollbar-slider-prelight-color =  mix (0.31, @fg_color, @bg_color)
+	ChromeGtkFrame::scrollbar-slider-prelight-color =  mix (0.31, @selected_bg_color, @bg_color)
 }
 
 class "ChromeGtkFrame" style "chrome-gtk-frame"
