@@ -188,9 +188,6 @@ stage {
     icon-shadow: black 0px 2px 2px;
 }
 
-.panel-menu {
-    -boxpointer-gap: 16px;
-}
 
 .panel-status-indicators-box,
 .panel-status-menu-box {
@@ -200,6 +197,11 @@ stage {
 .system-status-icon {
     icon-size: 1.09em;
     padding: 0 5px;
+}
+
+/*panel menu - menues from the panel: */
+.panel-menu {
+    -boxpointer-gap: 6px;
 }
 
 .aggregate-menu {
