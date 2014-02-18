@@ -245,14 +245,12 @@ style "murrine-thin" {
 }
 
 #handlers
-
 style "handle" {
 }
 class "GtkPaned"	style "handle"
 
 
 #steppers
-
 style "murrine-scrollbar" = "murrine-button" {
   GtkRange::trough-under-steppers = 0
   bg[NORMAL]   = shade (0.95, @bg_color)
@@ -262,13 +260,13 @@ style "murrine-scrollbar" = "murrine-button" {
   }
 }
 
+
 #sliders
 style "murrine-scale" {
   engine "murrine" {
     roundness  = 2
     trough_border_shades = { .08, 0.1 }
-	bg[NORMAL] = shade (1.00, @bg_color)
-
+    border_shades = { 0.01, 0.01 }    
   }
 }
 
