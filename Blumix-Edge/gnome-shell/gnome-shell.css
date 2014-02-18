@@ -44,7 +44,7 @@ stage {
 
 .panel-corner {
     -panel-corner-radius: 6px;
-    -panel-corner-background-color: black;
+    -panel-corner-background-color: rgba(50,50,50,0.95);
     -panel-corner-border-width: 1px;
     -panel-corner-border-color: transparent;
 }
