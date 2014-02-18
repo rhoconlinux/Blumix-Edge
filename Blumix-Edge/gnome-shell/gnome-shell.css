@@ -13,12 +13,12 @@ stage {
 
 /* links */
 .shell-link {
-    color: #A348B1;
+    color: #A9B9FF;
     text-decoration: underline;
 }
 
 .shell-link:hover {
-    color: alpha(#A348B1,0.7);
+    color: alpha(#A9B9FF,0.7);
 }
 
 /* small */
@@ -112,7 +112,7 @@ StScrollBar StButton#vhandle:active {
     -slider-height: 0.3em;
     -slider-background-color: #333333;
     -slider-border-color: #5f5f5f;
-    -slider-active-background-color: #A348B1;
+    -slider-active-background-color: #A9B9FF;
     -slider-active-border-color: #B24FC2;
     -slider-border-width: 1px;
     -slider-handle-radius: 6px;
@@ -472,7 +472,7 @@ StScrollBar StButton#vhandle:active {
 
     color: rgba(255, 255, 255, 1.0);
     caret-color: rgba(255, 255, 255, 1.0);
-    /*border: 1px solid #A348B1;*/
+    /*border: 1px solid #A9B9FF;*/
     border: none;
     
     background-gradient-start: rgba(255, 255, 255, 0.1);
@@ -2511,7 +2511,7 @@ StScrollBar StButton#vhandle:active {
     background-gradient-start: #6793c4;
     background-gradient-end: #335d8f;
     background-gradient-direction: vertical;
-    border-color: #A348B1;
+    border-color: #A9B9FF;
 }
 
 .login-dialog .modal-dialog-button:default:focus {
