@@ -267,6 +267,8 @@ style "murrine-scale" {
   engine "murrine" {
     roundness  = 2
     trough_border_shades = { .08, 0.1 }
+	bg[NORMAL] = shade (1.00, @bg_color)
+
   }
 }
 
