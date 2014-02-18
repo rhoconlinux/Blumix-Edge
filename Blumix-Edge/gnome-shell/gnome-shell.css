@@ -14,7 +14,7 @@ stage {
 /* links */
 .shell-link {
     color: #A9B9FF;
-    text-decoration: underline;
+/*    text-decoration: underline;*/
 }
 
 .shell-link:hover {
