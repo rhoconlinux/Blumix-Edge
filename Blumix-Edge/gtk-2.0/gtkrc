@@ -266,7 +266,7 @@ style "murrine-scrollbar" = "murrine-button" {
 style "murrine-scale" {
   engine "murrine" {
     roundness  = 2
-    trough_border_shades = { .98, 0.1 }
+    trough_border_shades = { .08, 0.1 }
   }
 }
 
