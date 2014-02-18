@@ -257,6 +257,7 @@ style "murrine-thin" {
   engine "murrine" {
     roundness  = 2
     trough_border_shades = { .98, 1.1 }
+    color=@selected_bg_color
   }
 }
 
