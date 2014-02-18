@@ -17,8 +17,8 @@ stage {
 /*panel structure*/
 #panel {
     height: 1.86em;
-    border-top-width: 0.5px;
-    border-color: rgba(150,150,150,0.45);
+    border-top-width: 1px;
+    border-color: rgba(80,80,80,0.75);
     border-top-width: 1px;
     background-gradient-direction: vertical;
     background-gradient-start: rgba(50,50,50,0.95);
