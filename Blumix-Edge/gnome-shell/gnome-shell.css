@@ -181,18 +181,6 @@ stage {
     padding: 0 5px;
 }
 
-/*panel menu - menues popping up from the panel */
-.panel-menu {
-    -boxpointer-gap: 6px;
-}
-
-.aggregate-menu {
-    width: 360px;
-}
-
-.aggregate-menu .popup-menu-icon {
-    padding: 0 0px;
-}
 
 
 
@@ -233,7 +221,137 @@ stage {
 /*-------------------------------------------------------------------------end--panel*/
 
 
+/*-----------------popup menues*/
 
+/*panel menu - menues popping up from the panel */
+.panel-menu {
+    -boxpointer-gap: 6px;
+}
+
+.aggregate-menu {
+    width: 360px;
+}
+
+.aggregate-menu .popup-menu-icon {
+    padding: 0 0px;
+}
+
+
+
+/* PopupMenu */
+
+.popup-menu {
+    min-width: 200px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+}
+
+.popup-menu-ornament {
+    text-align: right;
+    width: 1em;
+}
+
+.popup-menu-boxpointer,
+.candidate-popup-boxpointer {
+    -arrow-border-radius: 6px;
+    -arrow-background-color:rgba(0,0,0,0.9);
+    -arrow-border-width: 1px;
+    -arrow-border-color: rgba(0,0,0,0.9);
+    -arrow-base: 0px; /*FIX ARROE POINTING MENU*/
+    -arrow-rise: 0px;
+}
+
+.unicode-arrow {
+    font-size: 120%;
+}
+
+.popup-submenu-menu-item:open {
+    background-color: #333333;
+}
+
+.popup-sub-menu {
+    background-gradient-start: rgba(255,255,255,0.05);
+    background-gradient-end: rgba(255,255,255,0.05);;
+    background-gradient-direction: vertical;
+    box-shadow: inset 0px 1px 4px 0 rgba(0,0,0,0.9);
+}
+
+.popup-sub-menu:scrolled .popup-menu-item:ltr {
+    padding-right: 0em;
+}
+
+.popup-sub-menu:scrolled .popup-menu-item:rtl {
+    padding-left: 0em;
+}
+
+.popup-sub-menu StScrollBar {
+    padding: 4px;
+}
+
+.popup-sub-menu StScrollBar StBin#trough {
+    border-width: 0px;
+}
+
+.popup-sub-menu StScrollBar StBin#vhandle {
+    background-color: #4c4c4c;
+    border-width: 0px;
+}
+
+.popup-menu-content {
+    padding: 1em 0em;
+}
+
+.popup-menu-item {
+    spacing: 12px;
+}
+
+.popup-menu-item:ltr {
+    padding: .4em 1.75em .4em 0em;
+}
+
+.popup-menu-item:rtl {
+    padding: .4em 0em .4em 1.75em;
+}
+
+.popup-menu-item:active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.popup-menu-item:insensitive {
+    color: rgba(255,255,255,0.5);
+}
+
+.popup-image-menu-item {
+}
+
+.popup-separator-menu-item {
+    -gradient-height: 1px;
+    -gradient-start: rgba(255,255,255,0.2);
+    -gradient-end: rgba(255,255,255,0.2);
+    -margin-horizontal: 0;
+    height: 1px;
+    padding: 2px 0px;
+}
+
+.popup-alternating-menu-item:alternate {
+    font-weight: bold;
+}
+
+.popup-status-menu-item {
+    font-weight: normal;
+    color: #999;
+}
+
+.popup-inactive-menu-item, .popup-inactive-menu-item:insensitive {
+    color: white;
+}
+
+.popup-menu-icon {
+    icon-size: 1.09em;
+}
+
+/*----------------------------------------end -----popup menues*/
 
 
 
@@ -356,118 +474,6 @@ StScrollBar StButton#vhandle:active {
     -slider-handle-radius: 6px;
 }
 
-/* PopupMenu */
-
-.popup-menu {
-    min-width: 200px;
-    padding-right: 4px;
-    padding-left: 4px;
-    padding-bottom: 4px;
-}
-
-.popup-menu-ornament {
-    text-align: right;
-    width: 1em;
-}
-
-.popup-menu-boxpointer,
-.candidate-popup-boxpointer {
-    -arrow-border-radius: 6px;
-    -arrow-background-color:rgba(0,0,0,0.9);
-    -arrow-border-width: 1px;
-    -arrow-border-color: rgba(0,0,0,0.9);
-    -arrow-base: 0px; /*FIX ARROE POINTING MENU*/
-    -arrow-rise: 0px;
-}
-
-.unicode-arrow {
-    font-size: 120%;
-}
-
-.popup-submenu-menu-item:open {
-    background-color: #333333;
-}
-
-.popup-sub-menu {
-    background-gradient-start: rgba(255,255,255,0.05);
-    background-gradient-end: rgba(255,255,255,0.05);;
-    background-gradient-direction: vertical;
-    box-shadow: inset 0px 1px 4px 0 rgba(0,0,0,0.9);
-}
-
-.popup-sub-menu:scrolled .popup-menu-item:ltr {
-    padding-right: 0em;
-}
-
-.popup-sub-menu:scrolled .popup-menu-item:rtl {
-    padding-left: 0em;
-}
-
-.popup-sub-menu StScrollBar {
-    padding: 4px;
-}
-
-.popup-sub-menu StScrollBar StBin#trough {
-    border-width: 0px;
-}
-
-.popup-sub-menu StScrollBar StBin#vhandle {
-    background-color: #4c4c4c;
-    border-width: 0px;
-}
-
-.popup-menu-content {
-    padding: 1em 0em;
-}
-
-.popup-menu-item {
-    spacing: 12px;
-}
-
-.popup-menu-item:ltr {
-    padding: .4em 1.75em .4em 0em;
-}
-
-.popup-menu-item:rtl {
-    padding: .4em 0em .4em 1.75em;
-}
-
-.popup-menu-item:active {
-    background-color: rgba(255,255,255,0.2);
-}
-
-.popup-menu-item:insensitive {
-    color: rgba(255,255,255,0.5);
-}
-
-.popup-image-menu-item {
-}
-
-.popup-separator-menu-item {
-    -gradient-height: 1px;
-    -gradient-start: rgba(255,255,255,0.2);
-    -gradient-end: rgba(255,255,255,0.2);
-    -margin-horizontal: 0;
-    height: 1px;
-    padding: 2px 0px;
-}
-
-.popup-alternating-menu-item:alternate {
-    font-weight: bold;
-}
-
-.popup-status-menu-item {
-    font-weight: normal;
-    color: #999;
-}
-
-.popup-inactive-menu-item, .popup-inactive-menu-item:insensitive {
-    color: white;
-}
-
-.popup-menu-icon {
-    icon-size: 1.09em;
-}
 
 /* Switches */
 .toggle-switch {
