@@ -1094,6 +1094,7 @@ background-image: radial-gradient(60% 55%, closest-side,
 */
 
 .notebook tab:active {
+    padding-left: 9px;
     border-color: shade(@theme_bg_color, 1.0); 
     background-color: @theme_bg_color;
     border-color:@bg_color;
