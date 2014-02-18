@@ -360,8 +360,8 @@ StScrollBar StButton#vhandle:active {
 
 .popup-menu {
     min-width: 200px;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 4px;
+    padding-left: 4px;
     padding-bottom: 4px;
 }
 
