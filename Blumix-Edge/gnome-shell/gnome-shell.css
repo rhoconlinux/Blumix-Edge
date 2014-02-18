@@ -88,17 +88,15 @@ stage {
     spacing: 4px;
 }
 
-
 .app-menu-icon {
     width: 24px;
     height: 24px;
 }
 
-/* used for the app menu header only */
+/* app menu title shadow on click */
 .label-shadow {
-    color: rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.55);
 }
-
 
 /*Panel app menu icon tweak: desapear :P*/
 .panel-button #appMenuIcon {
