@@ -159,7 +159,7 @@ stage {
 #panel.unlock-screen .panel-button:focus,
 #panel.lock-screen .panel-button:focus,
 #panel.login-screen .panel-button:focus {
-    color: white;
+    color: red;
 }
 
 .panel-button:hover {
