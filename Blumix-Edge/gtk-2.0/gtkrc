@@ -108,8 +108,8 @@ style "murrine-default" {
 	#GtkScrollbar::has-forward-stepper = 0
 	#GtkScrollbar::has-secondary-backward-stepper = 0
 	#GtkScrollbar::has-secondary-forward-stepper = 0
-	GtkScrollbar::min-slider-length = 5
-	#GtkScrollbar::slider-width = 12
+	GtkScrollbar::min-slider-length = 30
+	#GtkScrollbar::slider-width = 25
 	#GtkScrollbar::trough-border = 0
 
 	GtkScrolledWindow::scrollbar-spacing = 0 #check
