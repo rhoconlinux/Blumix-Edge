@@ -792,7 +792,7 @@ style "chrome-gtk-frame" {
 	ChromeGtkFrame::incognito-frame-gradient-color = @menubar_bg_color
 
 	ChromeGtkFrame::scrollbar-trough-color = @bg_color
-	ChromeGtkFrame::scrollbar-slider-normal-color =  @bg_color
+	ChromeGtkFrame::scrollbar-slider-normal-color =  mix (0.21, @fg_color, @bg_color)
 	ChromeGtkFrame::scrollbar-slider-prelight-color =  mix (0.31, @fg_color, @bg_color)
 }
 
