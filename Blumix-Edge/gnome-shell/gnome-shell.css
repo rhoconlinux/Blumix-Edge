@@ -247,6 +247,13 @@ stage {
     padding-bottom: 4px;
 }
 
+.popup-menu #appMenuIcon {
+    width: 0;
+    app-icon-bottom-clip: 0;
+}
+
+
+
 .popup-menu-ornament {
     text-align: right;
     width: 1em;
