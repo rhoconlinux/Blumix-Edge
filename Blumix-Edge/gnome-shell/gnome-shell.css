@@ -100,7 +100,7 @@ stage {
 
 /*Panel app menu icon tweak: desapear :P*/
 .panel-button #appMenuIcon {
-     width: 0;
+    width: 0;
     app-icon-bottom-clip: 0;
 }
 
