@@ -273,7 +273,7 @@ stage {
 
 .unicode-arrow {
     font-size: 120%;
-    color: transparent;
+    color: transparent; /*fix new arrow in app menu and system menu: invisible*/
 }
 
 .popup-submenu-menu-item:open {
