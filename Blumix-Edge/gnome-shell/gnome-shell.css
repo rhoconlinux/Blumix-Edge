@@ -2049,7 +2049,7 @@ StScrollBar StButton#vhandle:active {
     background-color: rgba(50,50,50,0.5); /*fondo del titulo*/ 
     border-color: transparent;
     border-width: 1px;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .run-dialog-error-box {
