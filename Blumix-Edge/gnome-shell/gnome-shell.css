@@ -2036,7 +2036,7 @@ StScrollBar StButton#vhandle:active {
     color: transparent;
     padding-bottom: 0.4em;
     border-radius: 1em;
-    background-color: rgba(50,50,50,0.9);
+    background-color: rgba(50,50,50,0.0); /*borde del titulo*/ 
     border: none;
     /*font-weight: bold;*/
 }
