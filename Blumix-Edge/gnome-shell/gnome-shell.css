@@ -2057,7 +2057,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .flashspot {
-    background-color: white;
+    background-color: red;
 }
 
 /* End Session Dialog */
