@@ -2035,10 +2035,10 @@ StScrollBar StButton#vhandle:active {
 /* alt+f2 Run Dialog title */
 .run-dialog-label { /*titulo de la caja de alt+f2 run dialog*/
     font-size: 10pt;
-    color: transparent;
+    color:rgba(50,50,50,0.7);
     padding-bottom: 0.4em;
     border-radius: 1em;
-    background-color: rgba(50,50,50,0.0); /*borde del titulo*/ 
+    background-color: rgba(50,50,50,0.0); /*fondo del titulo*/ 
     border: none;
     /*font-weight: bold;*/
 }
