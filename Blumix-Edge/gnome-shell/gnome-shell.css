@@ -2043,10 +2043,11 @@ StScrollBar StButton#vhandle:active {
     /*font-weight: bold;*/
 }
 
+/* alt+f2 Run Dialog entry box */
 .modal-dialog .run-dialog-entry {
     width: 50em;
-        background-color: rgba(50,50,50,0.5); /*fondo del titulo*/ 
-
+    background-color: rgba(50,50,50,0.5); /*fondo del titulo*/ 
+    border-color: transparent;
 }
 
 .run-dialog-error-box {
