@@ -2031,6 +2031,8 @@ StScrollBar StButton#vhandle:active {
 
 /* Run Dialog */
 
+
+/* alt+f2 Run Dialog title */
 .run-dialog-label { /*titulo de la caja de alt+f2 run dialog*/
     font-size: 10pt;
     color: transparent;
@@ -2047,7 +2049,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .modal-dialog .run-dialog-entry {
-    width: 20em;
+    width: 120em;
 }
 
 .lightbox {
