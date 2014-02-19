@@ -2049,7 +2049,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .modal-dialog .run-dialog-entry {
-    width: 120em;
+    width: 50em;
 }
 
 .lightbox {
