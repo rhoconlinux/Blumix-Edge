@@ -702,7 +702,9 @@ StScrollBar StButton#vhandle:active {
 
     font-size: 9pt;
     caret-size: 1px;
+/*
     selected-color: white;
+*/
     padding: 4px 12px 6px 12px;
 }
 
