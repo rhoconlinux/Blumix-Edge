@@ -2043,13 +2043,15 @@ StScrollBar StButton#vhandle:active {
     /*font-weight: bold;*/
 }
 
+.modal-dialog .run-dialog-entry {
+    width: 50em;
+        background-color: rgba(50,50,50,0.5); /*fondo del titulo*/ 
+
+}
+
 .run-dialog-error-box {
     padding-top: 15px;
     spacing: 5px;
-}
-
-.modal-dialog .run-dialog-entry {
-    width: 50em;
 }
 
 .lightbox {
