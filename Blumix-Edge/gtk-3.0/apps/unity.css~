@@ -21,5 +21,3 @@ UnityPanelWidget,
 .unity-panel .menuitem {
     border-width: 0px;
 }
-
-
