@@ -1070,16 +1070,17 @@ GtkModelMenuItem GtkBox GtkImage {
     border-width: 3px 0 0 0;
     border-color:blue; 
     */
-    padding-top: 5px; /*marco general de ABAJO de las tabs, levanta las tabs \ si lo ponemos en left refiere al marco general de abajo */
+    padding: 4px 0px 2px 0px; /*Ar-D-A-L marco general de ABAJO de las tabs, levanta las tabs \ si lo ponemos en left refiere al marco general de abajo */
     background-color: @bg_color; /*no afecta visible*/
 }
 
 .notebook tab {
-    padding-right: 9px;
+    padding: 0px 0px 0px 0px;
+    /*padding-right: 9px;
     padding-left: 9px;
     padding-bottom: 9px;
     padding-top: 0px;
-    
+*/    
     border-color:black;  /* shade(@theme_bg_color, 1.0); tab inactiva*/
     border-radius: 20px;
     border-width:1px;
@@ -1096,7 +1097,7 @@ background-image: radial-gradient(60% 55%, closest-side,
 */
 
 .notebook tab:active {
-    padding-left: 9px;
+    padding-left: 9px; /*ajusta texto dentro del boton*/
     border-color: shade(@theme_bg_color, 1.0); 
     background-color: @theme_bg_color;
     border-color:@bg_color;
@@ -1229,13 +1230,13 @@ border-top-right-radius:4px;
 }
 
 .notebook tab.left {
-    border-width: 0px 0px 0px 0px;
+    border-width: 0px 0px 0px 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 .notebook tab.left:active {
-    border-left-color: @theme_selected_bg_color;
+    border-left-color: red;
 }
 
 .notebook tab GtkLabel {
@@ -2239,9 +2240,9 @@ GtkColorButton.button {
  * toolbar *
  ***********/
 .toolbar {
-    padding: 0px; /*fix too much space*/
-    border-style: none;
-    background-color: @toolbar_bg_color;
+    padding: 0px 13px 4px 4px; /*fix too much space ...toolbar de los botones. Espacios izq der desde el borde de la ventana*/
+    border-style: none; /*fix gnote toolbar*/
+    background-color: @toolbar_bg_color; /*color fondo de la barra header / toolbar*/
     background-image: none;
     border-radius:5px;
 }
@@ -2282,8 +2283,8 @@ GtkColorButton.button {
 .primary-toolbar.toolbar {
     -GtkWidget-window-dragging: true;
 
-    padding: 0px;
-    border-width: 0 0 0px 0; /*separator of the toolbar and the resto of the window... es el segundo, el otro está arriba | FIXED aumenta separación*/
+    padding-bottom: 0px;
+    border-width: 0 0 0px 0; /*separator of the toolbar and the resto of the window... es el segundo, el otro está arriba | FIXED aumenta separación... SOLO APPS CON TABS TIPO GEDIT*/
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 1.0); /*shade(@toolbar_bg_color, 0.8) separador de la toobar mimetizado*/
     background-color: @toolbar_bg_color;
@@ -2310,8 +2311,8 @@ GtkColorButton.button {
 .header-bar GtkComboBox,
 .header-bar .button {
     border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: shade(@toolbar_bg_color, 1.08);
-    background-image: none;
+    background-color: shade(@toolbar_bg_color, 1.08); /*fondo de los botones de la header, cuando estan inactivos*/
+    background-image: url(assets/menuitem-radio-checked.svg);
     color: @toolbar_fg_color;
         border-radius: 4px; /*5 ene*/
 }
