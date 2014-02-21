@@ -275,7 +275,7 @@ NautilusNotebook .frame {
 
 NautilusWindow > GtkGrid > .pane-separator,
 NautilusWindow > GtkGrid > .pane-separator:hover {
-    border-width: 0 3px 0px 3px; /*arregla el border de la scroll en la separación con la sidebar*/
+    border-width: 0 3px 0px 13px; /*arregla el border de la scroll en la separación con la sidebar*/
     border-style: solid;
     padding: 2px 0px 2px 0px;
     border-color: shade(@base_color,1.0); /*disminuir para hacer aparecer el separador*/
