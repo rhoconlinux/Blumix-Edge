@@ -345,7 +345,7 @@ column-header .button,
 column-header .button:active,
 column-header .button:focus,
 column-header .button:active:focus {
-    border-color: shade(@theme_base_color, 1.0); /*linea separador vertical columnas*/
+    border-color: shade(@bg_color, 1.0); /*linea separador vertical columnas*/
     border-bottom-color: shade(@theme_base_color, 1.0); /*fondo de cabezales columnas*/
     background-color: shade(@theme_base_color, 1.0);
     background-image: none;
