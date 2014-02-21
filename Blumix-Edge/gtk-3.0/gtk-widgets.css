@@ -152,7 +152,7 @@ GtkClutterOffscreen {
     transition: border 400ms ease-in;
 }
 
-*{    transition: 500ms ease-in-out;
+*{    transition: 300ms ease-in-out;
 }
 
 
