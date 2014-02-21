@@ -152,8 +152,13 @@ GtkClutterOffscreen {
     transition: border 400ms ease-in;
 }
 
-/**{    transition: 300ms ease-in-out;
-}*/
+
+/* ACTIVANDO TODAS LAS ANIMACIONES JEJE
+
+*{    transition: 300ms ease-in-out;
+}
+
+*/
 
 
 
