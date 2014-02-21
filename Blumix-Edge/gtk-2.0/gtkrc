@@ -358,10 +358,10 @@ style "murrine-treeview-header" = "murrine-button" {
     	xthickness = 0 #5 a ver que hace
 	ythickness = 0
 
-	bg[NORMAL] = @base_color
-	bg[SELECTED] = @base_color
+	bg[NORMAL] = @bg_color
+	bg[SELECTED] = @bg_color
 
-	fg[NORMAL] = @base_color
+	fg[NORMAL] = @bg_color
 
 }
 
