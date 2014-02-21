@@ -352,8 +352,8 @@ column-header .button:active:focus {
     border-width: 1px;
     border-top-left-radius: 4px;/*fix column corners*/
         border-top-right-radius: 4px; /*fix column corners*/
-        border-bottom-left-radius: -4px;/*fix column corners*/
-        border-bottom-right-radius: -4px; /*fix column corners*/
+        border-bottom-left-radius: 4px;/*fix column corners*/
+        border-bottom-right-radius: 4px; /*fix column corners*/
 }
 
 
@@ -378,6 +378,7 @@ column-header:last-child .button {
  ****************/
 .content-view.view {
     background-color: @theme_base_color; /*5 ene @theme_base_color*/
+    border-radius: 4px;
 }
 
 .content-view.view:prelight {
