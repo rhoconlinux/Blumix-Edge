@@ -406,7 +406,7 @@ style "murrine-spinbutton" = "murrine-button" {
 }
 
 style "murrine-radiocheck" = "murrine-default" {
-	bg[SELECTED] = @selected_bg_color
+	bg[SELECTED] = @base_color#fondo de la cajita de los checkboxes. blanco va. 
 	text[NORMAL] = @selected_bg_color
 	text[PRELIGHT] = @selected_bg_color
     GtkCheckButton::indicator-spacing = 2
