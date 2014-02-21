@@ -907,7 +907,7 @@ GtkComboBox .menu {
     -GtkWidget-window-dragging: true;
 
     border-style: none;
-    background-color: red;
+    background-color: shade(@menubar_bg_color,1.1);
     background-image: none;
     color: @menubar_fg_color;
 }
