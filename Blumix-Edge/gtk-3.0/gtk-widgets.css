@@ -352,6 +352,8 @@ column-header .button:active:focus {
     border-width: 1px;
     border-top-left-radius: 4px;/*fix column corners*/
         border-top-right-radius: 4px; /*fix column corners*/
+        border-bottom-left-radius: 4px;/*fix column corners*/
+        border-bottom-right-radius: 4px; /*fix column corners*/
 }
 
 
