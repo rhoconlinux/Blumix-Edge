@@ -951,6 +951,7 @@ GtkTreeMenu .menuitem {
     padding: 1px; /*menu click derecho: separacion entre renglones puros*/
     border-width: 5;
     border-radius: 3; /*?? roundness*/
+    background-color: red;
 
 }
 
