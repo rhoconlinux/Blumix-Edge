@@ -961,7 +961,7 @@ GtkTreeMenu .menuitem {
     border-style: solid;
     border-color: transparent;
     border-radius: 3; /*menu item selection roundness*/
-    background-color: @theme_selected_bg_color;
+    background-color: transparent; /*fondo fijo de los elementos de la caja del click derecho*/
     background-image: none;
     color: @menu_fg_color;
 
