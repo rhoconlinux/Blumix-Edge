@@ -355,12 +355,12 @@ style "murrine-treeview-header" = "murrine-button" {
   	engine "murrine" {
 		roundness = 2
 	}
-    	xthickness = 0 #5 a ver que hace
-	ythickness = 0
 
+    #Fix column header colors---------------------------------
+    xthickness = 0 #5 a ver que hace
+	ythickness = 0
 	bg[NORMAL] = @bg_color
 	bg[SELECTED] = @bg_color
-
 	fg[NORMAL] = @bg_color
 
 }
