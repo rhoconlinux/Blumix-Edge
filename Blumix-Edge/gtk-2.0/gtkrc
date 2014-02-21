@@ -769,8 +769,6 @@ style "murrine-treeview-header" = "murrine-button" {
   	engine "murrine" {
 		roundness = 2
         ythickness = 0
-GtkTreeView::odd_row_color = "#220000"
-GtkTreeView::even_row_color = "#000000"
 	}
 }
 
