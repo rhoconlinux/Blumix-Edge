@@ -345,9 +345,9 @@ column-header .button,
 column-header .button:active,
 column-header .button:focus,
 column-header .button:active:focus {
-    border-color: shade(@bg_color, 1.0); /*linea separador vertical columnas*/
-    border-bottom-color: shade(@bg_color, 1.0); /*fondo de cabezales columnas*/
-    background-color: shade(@bg_color, 1.0);
+    border-color: shade(@base_color, 1.0); /*linea separador vertical columnas*/
+    border-bottom-color: shade(@base_color, 1.0); /*fondo de cabezales columnas*/
+    background-color: shade(@base_color, 1.0);
     background-image: none;
     border-width: 1px;
     border-top-left-radius: 4px;/*fix column corners*/
@@ -378,8 +378,6 @@ column-header:last-child .button {
  ****************/
 .content-view.view {
     background-color: @theme_base_color; /*5 ene @theme_base_color*/
-    border-radius: 4px;
-    border-width: 1px;
 }
 
 .content-view.view:prelight {
