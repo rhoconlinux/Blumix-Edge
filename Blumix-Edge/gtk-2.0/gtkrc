@@ -350,7 +350,7 @@ style "murrine-progressbar" = "murrine-wide" {
 
 
 
-#columns header stiles
+#columns header stiles------------------------------------------fixcolumns
 style "murrine-treeview-header" = "murrine-button" {
   	engine "murrine" {
 		roundness = 2
