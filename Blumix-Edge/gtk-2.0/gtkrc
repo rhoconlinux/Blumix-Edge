@@ -362,6 +362,15 @@ style "murrine-treeview-header" = "murrine-button" {
 	bg[NORMAL] = @bg_color
 	bg[SELECTED] = @bg_color
 	fg[NORMAL] = @bg_color
+        engine "pixmap" # for similarity to the GTK3 theme
+	{
+		image
+		{
+			function	= BOX
+			file		= "assets/background-noise-toolbar.png"
+			stretch		= FALSE
+		}
+	}
 
 }
 
