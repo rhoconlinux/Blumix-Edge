@@ -373,7 +373,6 @@ NautilusQueryEditor .toolbar:backdrop:nth-child(2) {
 NautilusWindow .sidebar .image {
     color: 	@sidebar_icon;
 	icon-shadow: 1px 1px @theme_shadow_color;
-    background-color: red;
 }
 
 NautilusWindow .sidebar .image:prelight {
