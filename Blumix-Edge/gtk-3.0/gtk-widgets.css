@@ -973,7 +973,12 @@ GtkTreeMenu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.5;
 }
 
-.menu .menuitem:active,
+.menu .menuitem:active{
+    border-color: shade(@theme_selected_bg_color, 0.9);
+    background-color: #FFFFFF; /*fondo de cada item, no de la caja de menu*/
+    background-image: none;
+    border-radius: 3; /*menuitems click derechos y desplegables, para cada elemento, bg #B2B2B2*/
+}
 .menu .menuitem:hover {
     border-color: shade(@theme_selected_bg_color, 0.9);
     background-color: @theme_selected_bg_color; /*fondo de cada item, no de la caja de menu*/
