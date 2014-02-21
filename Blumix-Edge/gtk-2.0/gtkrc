@@ -348,11 +348,7 @@ style "murrine-progressbar" = "murrine-wide" {
 	}
 }
 
-style "murrine-treeview-header" = "murrine-button" {
-  	engine "murrine" {
-		roundness = 2
-	}
-}
+
 
 style "murrine-treeview" {
   	engine "murrine" {
@@ -761,6 +757,29 @@ widget "*WnckPager*" style "workspace-switcher"
 
 widget "*Xfce*Panel*" style "murrine-panel"
 class "*Xfce*Panel*" style "murrine-panel"
+
+
+
+
+
+
+
+#***********************************headers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Thunar Styles
 
