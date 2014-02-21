@@ -350,7 +350,7 @@ style "murrine-progressbar" = "murrine-wide" {
 
 
 
-#column header stiles
+#columns header stiles
 style "murrine-treeview-header" = "murrine-button" {
   	engine "murrine" {
 		roundness = 2
@@ -367,7 +367,7 @@ style "murrine-treeview-header" = "murrine-button" {
 		      image
                 {
 			     function	= BOX
-			     file		= "assets/rect4073.png"
+			     file		= "assets/columns-white.png"
 			     stretch		= FALSE
 		          }
 	       }
