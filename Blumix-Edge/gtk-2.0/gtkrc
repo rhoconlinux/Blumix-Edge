@@ -498,7 +498,7 @@ style "murrine-menu-item" = "murrine-wider" {
 style "murrine-separator-menu-item" = "murrine-thin" { }
 
 style "murrine-menubar" {
-	bg[NORMAL] = @menubar_bg_color
+	bg[NORMAL] = @selected_bg_color
 	bg[PRELIGHT] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
 	bg[SELECTED] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
 	bg[ACTIVE] = shade (0.9, @menubar_bg_color)
