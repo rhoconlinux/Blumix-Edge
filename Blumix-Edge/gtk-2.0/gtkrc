@@ -406,7 +406,7 @@ style "murrine-spinbutton" = "murrine-button" {
 }
 
 style "murrine-radiocheck" = "murrine-default" {
-	bg[SELECTED] = @base_color
+	bg[SELECTED] = @selected_bg_color
 	text[NORMAL] = @selected_bg_color
 	text[PRELIGHT] = @selected_bg_color
     GtkCheckButton::indicator-spacing = 2
