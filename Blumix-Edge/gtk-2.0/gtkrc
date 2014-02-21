@@ -498,7 +498,7 @@ style "murrine-menu-item" = "murrine-wider" {
 style "murrine-separator-menu-item" = "murrine-thin" { }
 
 style "murrine-menubar" {
-	bg[NORMAL] = @selected_bg_color
+	bg[NORMAL] = @menubar_bg_color #fondo de la barra de menu... todo el fondo de lado a lado. 
 	bg[PRELIGHT] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
 	bg[SELECTED] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
 	bg[ACTIVE] = shade (0.9, @menubar_bg_color)
@@ -535,7 +535,7 @@ style "murrine-menubaritem" {
 	bg[INSENSITIVE] = @menubar_bg_color
 
 	fg[NORMAL] = @menubar_fg_color
-	fg[PRELIGHT] = shade (1.08, @menubar_fg_color)
+	fg[PRELIGHT] = @selected_bg_color
 	fg[SELECTED] = shade (1.08, @menubar_fg_color)
 	fg[ACTIVE] = @menubar_fg_color
 	fg[INSENSITIVE] = mix (0.5, @menubar_bg_color, @menubar_fg_color)
