@@ -890,7 +890,7 @@ GtkComboBox .menu {
 .menu.button:insensitive,
 .menu.button {
     border-width: 0;
-    background-color: @menu_bg_color;
+    background-color: @theme_selected_bg_color;
     background-image: none;
 }
 
