@@ -928,7 +928,7 @@ GtkComboBox .menu {
     border-style: solid;
     border-color: transparent; /*igual que el fondo*/
     background-color: transparent;/*transparent*/ /*este es transparente porque es como la selección pero todo el tiempo*/ 
-background-image: none;
+    background-image: none;
     color: @menubar_fg_color;
     border-radius: 5; /*elementos de la barra de menu, por ejemplo los menues de la terminal = full rounding for mac style*/ 
 }
@@ -979,7 +979,7 @@ GtkTreeMenu .menuitem {
     background-color: @theme_selected_bg_color; /*fondo de cada item, no de la caja de menu*/
     background-image: none;
     border-radius: 3; /*menuitems click derechos y desplegables, para cada elemento, bg #B2B2B2*/
-transition: 200ms ease-in-out;
+transition: 70ms ease-in-out;
 }
 
 .menu .menuitem:active,
