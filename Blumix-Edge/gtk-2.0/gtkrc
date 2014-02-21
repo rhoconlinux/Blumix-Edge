@@ -367,7 +367,7 @@ style "murrine-treeview-header" = "murrine-button" {
 		      image
                 {
 			     function	= BOX
-			     file		= "assets/rect4073.png"
+			     file		= "assets/background-noise-toolbar.png"
 			     stretch		= FALSE
 		          }
 	       }
