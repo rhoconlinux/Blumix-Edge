@@ -26,7 +26,7 @@ gtk-color-scheme = "tooltip_fg_color:#e6e6e6\ntoolbar_bg_color:#e6e6e6\ntooltip_
 #-----------
 gtk-color-scheme = "selected_bg_color:#A9B9FF\nselected_fg_color:#f9f9f9"
 gtk-color-scheme = "menu_bg_color:#e6e6e6"
-gtk-color-scheme = "panel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc"
+gtk-color-scheme = "panel_bg_color:#2d2d2d\npanel_fg_color:#777777"
 
 #textos
 #----------
