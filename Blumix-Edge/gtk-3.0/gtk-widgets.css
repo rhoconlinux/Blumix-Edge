@@ -39,8 +39,8 @@
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false;
     -GtkScrollbar-min-slider-length: 100;
-    -GtkScrolledWindow-scrollbar-spacing: 0;
-    -GtkScrolledWindow-scrollbars-within-bevel: 1;
+    -GtkScrolledWindow-scrollbar-spacing: 2;
+    -GtkScrolledWindow-scrollbars-within-bevel: 0;
     -GtkStatusbar-shadow-type: none;
     -GtkTextView-error-underline-color: @error_color;
     -GtkToolButton-icon-spacing: 6;
@@ -338,20 +338,27 @@ column-header .button,
 column-header .button:active,
 column-header .button:focus,
 column-header .button:active:focus {
-    border-color: shade(@theme_base_color, 0.9);
-    border-bottom-color: shade(@theme_base_color, 0.8);
-    background-color: shade(@theme_base_color, 0.97);
+    border-color: shade(@theme_base_color, 1.0); /*linea separador vertical columnas*/
+    border-bottom-color: shade(@theme_base_color, 1.0); /*fondo de cabezales columnas*/
+    background-color: shade(@theme_base_color, 1.0);
     background-image: none;
+    border-width: 1px;
+    border-top-left-radius: 4px;/*fix column corners*/
+        border-top-right-radius: 4px; /*fix column corners*/
 }
 
+*{    transition: 800ms ease-in-out;
+}
 column-header .button:hover,
 column-header .button:active:hover,
 column-header .button:hover:focus,
 column-header .button:active:hover:focus {
-    border-color: shade(@theme_base_color, 0.9);
-    border-bottom-color: shade(@theme_base_color, 0.8);
-    background-color: shade(@theme_base_color, 0.99);
+    border-color: shade(@theme_base_color, 1.0);
+    border-bottom-color: shade(@theme_base_color, 0.85); /*column hover animation! podria ser theme_selected_bg_color... :)*/
+    background-color: shade(@theme_base_color, 1.0);
     background-image: none;
+    transition: 800ms ease-in-out;
+
 }
 
 column-header:last-child .button {
@@ -483,7 +490,6 @@ GtkComboBox.combobox-entry .entry:focus,
 GtkComboBox.combobox-entry .entry:insensitive {
     border-width: 1px 0 1px 1px;
         border-radius:4px;
-
 /*    border-top-right-radius: 0;
     border-bottom-right-radius: 0;*/
 }
@@ -1075,7 +1081,7 @@ GtkModelMenuItem GtkBox GtkImage {
 }
 
 .notebook tab {
-    padding: 0px 0px 0px 0px;
+padding-left: 6px;
     /*padding-right: 9px;
     padding-left: 9px;
     padding-bottom: 9px;
@@ -1083,8 +1089,7 @@ GtkModelMenuItem GtkBox GtkImage {
 */    
     border-color:black;  /* shade(@theme_bg_color, 1.0); tab inactiva*/
     border-radius: 20px;
-    border-width:1px;
-    
+    border-width:0px;
     background-color: @theme_bg_color; /*tab inactiva*/
 }
 
@@ -1097,7 +1102,7 @@ background-image: radial-gradient(60% 55%, closest-side,
 */
 
 .notebook tab:active {
-    padding-left: 9px; /*ajusta texto dentro del boton*/
+    padding-left: 6px; /*ajusta texto dentro del boton... fix centering con el de tab.top*/
     border-color: shade(@theme_bg_color, 1.0); 
     background-color: @theme_bg_color;
     border-color:@bg_color;
@@ -1134,7 +1139,7 @@ background-image: radial-gradient(60% 55%, closest-side,
                 inset 0 -1px shade(@theme_bg_color, 0.8); /*abajo*/
     
     border-width:0px; /*0-1... USELESS*/
-    color: red; /*useless*/
+    color: @bg_color; /*useless*/
 
 }
     /*padding-right: 9px;
@@ -1212,7 +1217,7 @@ border-top-right-radius:4px;
 }
 
 .notebook tab.right:active {
-    border-right-color: @theme_selected_bg_color;
+    border-right-color: @bg_color;
  color: #333333;   
 }
 
@@ -1224,7 +1229,7 @@ border-top-right-radius:4px;
 }
 
 .notebook tab.bottom:active {
-    border-bottom-color: @theme_selected_bg_color;
+    border-bottom-color: @bg_color; /*todos estos eran selected_color... bah, transparentes ya.*/
     border-width:0px;
     color: #333333;
 }
@@ -1236,7 +1241,7 @@ border-top-right-radius:4px;
 }
 
 .notebook tab.left:active {
-    border-left-color: red;
+    border-left-color: @bg_color;
 }
 
 .notebook tab GtkLabel {
@@ -1331,6 +1336,8 @@ GtkProgressBar {
     border-color: shade(@theme_selected_bg_color, 0.9);
     background-color: @theme_selected_bg_color;
     background-image: none;
+        border-radius: 4px; /*proposed fix bug #3 */
+
 }
 
 .progressbar.vertical {
@@ -1529,30 +1536,29 @@ GtkLevelBar.vertical {
 
 /*fondo de la scrollbar*/
 .scrollbar {
-    border-width: 4px;/*1*/
+    border-width: 1px;/*1*/
     border-color:@bg_color
     border-style: solid;
-    padding: 2px;
+    padding: 2px; /*tendria que ser el ancho, pero toma otra cosa que 2 y se va todo a la mierda*/ 
     border-radius: 5px;
     
-    -GtkRange-slider-width: 6; /*ancho de la scroll*/
+    -GtkRange-slider-width: 6; /*ancho de la scroll... menor, centro más finito... se combina con el de abajo*/
     -GtkRange-stepper-size: 0;
     -GtkRange-stepper-spacing: 0;
-    -GtkRange-trough-border: 3;
+    -GtkRange-trough-border: 3; /*invertido: es el centro del scroll más osuro, menor numero = mas gordo*/
 
     -GtkScrollbar-has-backward-stepper: 0;
     -GtkScrollbar-has-forward-stepper: 0;
-    
     -GtkScrollbar-min-slider-length: 30;	
 }
 
 .scrollbars-junction,
 .scrollbar.trough {
     /*border-width: 0;*/
-    border-width: 1px;
-    border-color: @bg_color; /*fix border de la scrollbar*/
+    border-width: 2px;
+    border-color: @bg_color; /*fix border de la scrollbar... fix de fix extra border*/
     border-radius: 1px; /*fix border de la scrollbar*/
-    background-color: shade(@theme_bg_color, 0.99); /*@theme_bg_color para gris @base_color para blanco*/
+    background-color: shade(@bg_color, 0.99); /*@theme_bg_color para gris @base_color para blanco... NO TOCAR PARA BLUMIX, ES EL FONDO GRIS*/
     background-image: none;
     /*padding: 12px;*/
 }
@@ -1598,7 +1604,7 @@ GtkLevelBar.vertical {
 
 /* overlay scrollbar */
 OsThumb {
-    color: shade(@theme_bg_color, 0.7);
+    color: shade(@base_color, 0.7);
 }
 
 OsThumb:selected,
@@ -1657,13 +1663,13 @@ OsScrollbar:insensitive {
 .separator {
     border-width: 0px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.9);
+    border-color: shade(@base_color, 0.9);
     color: shade(@theme_bg_color, 0.9);
 }
 
 .button .separator,
 .button.separator {
-    border-color: shade(@theme_bg_color, 0.95);
+    border-color: shade(@base_color, 0.95);
 }
 
 .button .separator:insensitive,
@@ -1725,16 +1731,55 @@ GtkComboBox .separator {
 /***********
  * sidebar *
  ***********/
+
+/*
 .sidebar,
 .sidebar.view,
 .sidebar .view,
-.sidebar GtkScrolledWindow {/*forndo de la sidebar*/
+.sidebar GtkScrolledWindow {
+    background-color: @base_color;
+    padding-right:0;
+    background-image: none;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.1);
+}
+*/
+
+
+/*descomposición de la sidebar-------------------------------*/
+.sidebar {
+    background-color: @bg_color; /*fix bug geary... resuelve el cuadrado en la sidebar. tuve que descomponerlo.*/
+    padding-right:0;
+    background-image: none;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.1);
+}
+
+.sidebar.view {
     background-color: @base_color;
     padding-right:0;
     background-image: none;
     color: mix(@theme_fg_color, @theme_bg_color, 0.1);
 }
 
+.sidebar .view {/*forndo de la sidebar*/
+    background-color: @base_color; /*perfecto... fondo puro, especifico de la sidebar*/
+    padding-right:0;
+    background-image: none;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.1);
+}
+
+.sidebar GtkScrolledWindow {/*yeah! ... ANGULO INTERIOR de la sidebar*/
+    background-color: @base_color; /*FIX EXTRA BORDER POR EL FIX DEL BUG, CUANDO ARREGLE LA TOOLBAR*/
+    padding-right:0;
+    background-image: none;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.1);
+    border-color: @bg_color;
+    border-width: 1px;
+}
+/*descomposición de la sidebar-------------------------------*/
+
+
+
+/*sidebar selected item -- barra lateral, fondo de items seleccionados*/
 .sidebar row:selected,
 .sidebar row:selected:hover,
 .sidebar row:selected:focus,
@@ -3071,11 +3116,14 @@ border-radius:4px; /*5 ene*/
  * search bars *
  ***************/
 .search-bar {
-    border-width: 0 0 1px;
+    border-width: 1px 1px 1px 1px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.98);
+    border-color: @theme_bg_color;
+    background-color: @theme_bg_color;
         border-radius:4px;
+/*
+    padding: 10px 10px 10px 10px;
+*/
 
 }
 
@@ -3096,6 +3144,8 @@ border-radius:4px; /*5 ene*/
     background-image: none;
     color: @theme_text_color;
 }
+
+
 
 /*******
  * osd *

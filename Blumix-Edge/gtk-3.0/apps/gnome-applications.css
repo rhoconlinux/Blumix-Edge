@@ -151,20 +151,27 @@ NautilusWindow .pane-separator {
 /*fondo de la scrollbar*/
 NautilusWindow .scrollbar {
     border-width: 1px;/*1*/
+    border-color:@base_color
     border-style: solid;
-    border-color: #dedede;
-    padding: 0px;
-/*    border-radius: 3px;*/
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 0px;
-        -GtkRange-slider-width: 6; /*ancho de la scroll*/
+    padding: 2px; /*tendria que ser el ancho, pero toma otra cosa que 2 y se va todo a la mierda*/ 
+    border-radius: 5px;
+    
+    -GtkRange-slider-width: 6; /*ancho de la scroll... menor, centro más finito... se combina con el de abajo*/
     -GtkRange-stepper-size: 0;
     -GtkRange-stepper-spacing: 0;
-    -GtkRange-trough-border: 3;
+    -GtkRange-trough-border: 4; /*invertido: es el centro del scroll más osuro, menor numero = mas gordo*/
 
+    -GtkScrollbar-has-backward-stepper: 0;
+    -GtkScrollbar-has-forward-stepper: 0;
+    -GtkScrollbar-min-slider-length: 30;	
 }
 
-NautilusWindow .scrollbars-junction,
+
+
+
+
+
+NautilusWindow .scrollbars-junction, /*angulos internos de la scrollbar*/
 NautilusWindow .scrollbar.trough {
     /*border-width: 3px;*/
     /*border-left: 4px;*/
@@ -178,6 +185,7 @@ NautilusWindow .scrollbar.trough {
     background-color: shade(@base_color, 1.0); /*@theme_bg_color para gris @base_color para blanco*/
     background-image: none;
     border-color:shade(@base_color, 1.0);
+    border-width: 4px;
     
 }
 
@@ -192,6 +200,7 @@ NautilusWindow .scrollbar.button:active:hover {
     color: shade(@base_color, 0.85); /*modo gris: shade(@theme_bg_color, 0.6)*/
 }
 
+
 NautilusWindow .scrollbar.slider {
     border-width: 3px;
     padding: 3px;
@@ -201,6 +210,7 @@ NautilusWindow .scrollbar.slider {
     border-radius: 7px;
     background-color: shade(@base_color, 0.8);
 }
+
 
 /*mouse over*/
 NautilusWindow .scrollbar.slider:hover,
@@ -265,12 +275,12 @@ NautilusNotebook .frame {
 
 NautilusWindow > GtkGrid > .pane-separator,
 NautilusWindow > GtkGrid > .pane-separator:hover {
-    border-width: 0 2px 0 0;
+    border-width: 0 3px 0px 3px; /*arregla el border de la scroll en la separación con la sidebar*/
     border-style: solid;
-    padding: 2px 4px;
+    padding: 2px 0px 2px 0px;
     border-color: shade(@base_color,1.0); /*disminuir para hacer aparecer el separador*/
-    background-color: @sidebar_bg;
-    color: shade (@theme_bg_color, 0.9);
+    background-color: @base_color;
+    color: shade (@base_color, 1.0);
     background-image: radial-gradient(60% 55%, closest-side, 
                                     shade(@theme_bg_color, 0.08),
                                     shade(@theme_bg_color, 1.0) 85%,
@@ -279,8 +289,9 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
 
 NautilusWindow > GtkGrid > .pane-separator:backdrop,
 NautilusWindow > GtkGrid > .pane-separator:hover:backdrop {
-    border-color: @unfocused_borders;
-    background-color: @sidebar_bg_unfocused;
+    border-color: @base_color;
+    background-color: @base_color;
+    border-width: 4px;
 }
 
 NautilusNotebook.notebook {
@@ -321,28 +332,30 @@ NautilusToolbar .button:active *:insensitive {
 NautilusQueryEditor .search-bar.toolbar {
     border-top-width: 0;
     border-bottom-width: 0;
+    border-bottom-color: @borders;
 }
+
 
 NautilusQueryEditor .toolbar {
     padding-top: 3px;
     padding-bottom: 2px;
 
-    border-width: 1px 0 0 0;
+    border-width: 0px 0 0 0;
     border-style: solid;
 }
 
 NautilusQueryEditor .toolbar:nth-child(2) {
-    border-color: @borders;
+    border-color: transparent;
 }
 
 NautilusQueryEditor .toolbar:last-child,
 NautilusQueryEditor .search-bar.toolbar:only-child {
-    border-bottom-width: 1px;
-    border-bottom-color: @borders;
+    border-bottom-width: 0px;
+    border-bottom-color: transparent;
 }
 
 NautilusQueryEditor .toolbar:backdrop:nth-child(2) {
-    border-color: @unfocused_borders;
+    border-color: transparent;
 }
 
 
@@ -367,17 +380,17 @@ NautilusWindow .sidebar .image:prelight {
 }
 
 NautilusWindow .primary-toolbar.toolbar {
-	/* search-toolbar */
+	/* nautilus search-toolbar */
     background-image: url("assets/background-noise-toolbar.png"),
                       -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@bg_color, 1.09)),
                                      color-stop (0.20, shade(@bg_color, 1.08)),
-                                     to   (shade(@bg_color, 1.07)));
+                                     to   (shade(@bg_color, 1.08)));
     background-repeat: repeat;
     background-position: top left;
 color: #333;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 0px 0px;
     border-radius: 0px;
     border-style: solid;
     border-color: shade(@theme_bg_dark_color, 0.98) transparent shade(@theme_bg_dark_color, 0.95) transparent;
