@@ -152,6 +152,8 @@ GtkClutterOffscreen {
     transition: border 400ms ease-in;
 }
 
+*{    transition: 800ms ease-in-out;
+}
 
 
 
@@ -347,8 +349,7 @@ column-header .button:active:focus {
         border-top-right-radius: 4px; /*fix column corners*/
 }
 
-*{    transition: 800ms ease-in-out;
-}
+
 column-header .button:hover,
 column-header .button:active:hover,
 column-header .button:hover:focus,
