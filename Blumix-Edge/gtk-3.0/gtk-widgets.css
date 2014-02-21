@@ -1736,6 +1736,42 @@ GtkComboBox .separator {
     -GtkWidget-vertical-separator: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /***********
  * sidebar *
  ***********/
@@ -1755,7 +1791,7 @@ GtkComboBox .separator {
 
 /*descomposición de la sidebar-------------------------------*/
 .sidebar {
-    background-color: @bg_color; /*fix bug geary... resuelve el cuadrado en la sidebar. tuve que descomponerlo.*/
+    background-color: @bg_color; /*fix bug geary... resuelve el cuadrado en la sidebar a la izq del scroll. tuve que descomponerlo.*/
     padding-right:0;
     background-image: none;
     color: mix(@theme_fg_color, @theme_bg_color, 0.1);
