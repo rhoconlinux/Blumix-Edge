@@ -973,7 +973,7 @@ GtkTreeMenu .menuitem {
     background-color: @theme_selected_bg_color; /*fondo de cada item, no de la caja de menu*/
     background-image: none;
     border-radius: 3; /*menuitems click derechos y desplegables, para cada elemento, bg #B2B2B2*/
-        transition: 10ms ease-in-out;
+        transition: 200ms ease-in-out;
 }
 
 .menu .menuitem:active,
