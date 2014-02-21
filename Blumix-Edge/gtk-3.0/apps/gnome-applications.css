@@ -497,6 +497,7 @@ NautilusWindow .sidebar .scrollbar.trough.vertical {
 
 NautilusWindow .sidebar .frame {
     border-width: 1px;
+    padding: 0px 0px 0px 30px;
     border-style: none;	
 }
 
