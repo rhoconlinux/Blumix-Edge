@@ -93,7 +93,7 @@ GtkClutterOffscreen {
             /*general enhacement item selection... rounded ...bug #20*/
             /*general enhacement new gtk3.10 sidebars... runded corners*/
     
-            /*border-radius:8px;*/ 
+            border-radius:8px;
     border-top-color: shade(@theme_selected_bg_color, 0.9);
     border-bottom-color:shade(@theme_selected_bg_color, 0.9);
     border-right-color:shade(@theme_selected_bg_color, 0.9);
