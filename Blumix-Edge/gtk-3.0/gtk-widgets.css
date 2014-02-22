@@ -1715,7 +1715,7 @@ OsScrollbar:insensitive {
 .header-bar .separator,
 .header-bar .separator:insensitive {
     border-color: shade(@toolbar_bg_color, 0.95);
-    color: transparent;
+    color: @bg_color;
     border-radius:4px; 
 }
 
