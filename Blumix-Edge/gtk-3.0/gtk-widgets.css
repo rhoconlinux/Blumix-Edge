@@ -1749,6 +1749,7 @@ OsScrollbar:insensitive {
 
 GtkComboBox .separator {
     border-style: none;
+        border-color: transparent;
 
     /* always disable separators */
     -GtkWidget-wide-separators: true;
