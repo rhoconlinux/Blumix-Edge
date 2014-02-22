@@ -88,10 +88,12 @@ GtkClutterOffscreen {
 
 *:selected,
 *:selected:focus {
-    background-color: @theme_selected_bg_color;
+    background-color: transparent; /*@theme_selected_bg_color ...fix no back in new gtk3.10 sidebars*/
     color: @theme_selected_fg_color;
-    /*general enhacement item selection... rounded ...bug #20*/
-        /*general enhacement new gtk3.10 sidebars*/
+            /*general enhacement item selection... rounded ...bug #20*/
+            /*general enhacement new gtk3.10 sidebars... runded corners*/
+    
+            /*border-radius:8px;*/ 
     border-top-color: shade(@theme_selected_bg_color, 0.9);
     border-bottom-color:shade(@theme_selected_bg_color, 0.9);
     border-right-color:shade(@theme_selected_bg_color, 0.9);
@@ -99,7 +101,7 @@ GtkClutterOffscreen {
     background-image: none;
     color: @theme_selected_fg_color;
     border-width: 1px; 
-    border-radius:8px; 
+    
     padding: 5px 5px 5px 15px; 
     
 }
