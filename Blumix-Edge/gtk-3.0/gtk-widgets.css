@@ -140,7 +140,7 @@ GtkClutterOffscreen {
  * visual effects *
  ******************/
 /* transitions */
-*button {
+.button {
     transition: border 400ms ease-in-out;
     border-radius: 4px; /*22ene*/
 }
