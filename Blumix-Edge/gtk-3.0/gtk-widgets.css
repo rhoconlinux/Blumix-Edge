@@ -1845,7 +1845,7 @@ GtkComboBox .separator {
 .sidebar row:prelight,
 .sidebar .view row:prelight { /*mouse over las categorias... por ejemplo la sidebar de nautilus*/
     border-width: 1px;
-    border-color: shade(@theme_bg_color, 1.05);
+    border-color: red;
     background-color: transparent;
     background-image: none; /*bug #12 fix*/
     color: @theme_fg_color;
