@@ -1813,7 +1813,7 @@ GtkComboBox .separator {
 }
 
 .sidebar GtkScrolledWindow {/*yeah! ... ANGULO INTERIOR de la sidebar*/
-    background-color: @base_color; /*FIX EXTRA BORDER POR EL FIX DEL BUG, CUANDO ARREGLE LA TOOLBAR*/
+    background-color: @base_color; /*(FIX EXTRA BORDER) POR EL FIX DEL BUG de la scrollbar, CUANDO ARREGLE LA TOOLBAR*/
     padding-right:0;
     background-image: none;
     color: mix(@theme_fg_color, @theme_bg_color, 0.1);
