@@ -973,7 +973,7 @@ GtkComboBox .menu {
  ************/
 GtkTreeMenu .menuitem {
     padding: 1px; /*menu click derecho: separacion entre renglones puros*/
-    border-width: 5;
+    border-width: 1px;
     border-radius: 3; /*?? roundness*/
 }
 
@@ -998,6 +998,7 @@ GtkTreeMenu .menuitem {
     background-image: none;
     border-radius: 3; /*menuitems click derechos y desplegables, para cada elemento, bg #B2B2B2*/
 transition: 300ms ease-in-out;
+      padding: 1px; 
 }
 
 .menu .menuitem:active,
