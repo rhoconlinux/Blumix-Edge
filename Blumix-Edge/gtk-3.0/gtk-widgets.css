@@ -90,6 +90,17 @@ GtkClutterOffscreen {
 *:selected:focus {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
+    /*general enhacement item selection... rounded*/
+    border-top-color: shade(@theme_selected_bg_color, 0.9);
+    border-bottom-color:shade(@theme_selected_bg_color, 0.9);
+    border-right-color:shade(@theme_selected_bg_color, 0.9);
+    border-left-color:shade(@theme_selected_bg_color, 0.9);
+    background-image: none;
+    color: @theme_selected_fg_color;
+    border-width: 1px; /*enhance bug #19 NAUTILUS ROUNDED SIDEBAR ITEMS*/
+    border-radius:4px; /*enhance bug #19*/
+    padding: 5px 5px 5px 15px; /*enhance bug #19*/
+    
 }
 
 *:active {
