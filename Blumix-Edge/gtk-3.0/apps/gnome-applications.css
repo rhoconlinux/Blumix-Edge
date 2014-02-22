@@ -574,7 +574,7 @@ NautilusWindow .pane-separator {
     padding-right: 6px;
     border-width: 1px;
     border-right-width: 0;
-    border-radius: 5px;
+    border-radius: 5px 5px 5px 5px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
