@@ -417,7 +417,7 @@ color: #333;
 
 
 NautilusWindow .toolbar {
-	/* DISTRIBUXIÓN DE LA BARRA PRINCIPAL DE NAUTILUS  */
+	/* DISTRIBUCIÓN DE LA BARRA PRINCIPAL DE NAUTILUS  */
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;    
     padding: 7px 5px 7px 5px; /*ESPACIADO Y DISTRIBUCION DE BOTONES, 5 ene*/
