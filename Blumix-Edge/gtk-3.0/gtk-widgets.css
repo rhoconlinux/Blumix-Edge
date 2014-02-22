@@ -95,7 +95,7 @@ GtkClutterOffscreen {
     border-color: transparent;
     background-image: none;
     color: shade(@theme_selected_bg_color,0.8);
-    border-width: 1px; 
+    border-width: 0px; 
     padding: 0px 10px 0px 0px ; 
     }
 
