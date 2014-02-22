@@ -1344,6 +1344,9 @@ border-top-right-radius:4px;
     color: transparent;
 }
 
+*separator{
+border-color: transparent;
+}
 /*************************
  * progressbar and scale *
  *************************/
