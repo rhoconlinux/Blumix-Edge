@@ -106,6 +106,19 @@ GtkClutterOffscreen {
 
 *:active {
     background-color: shade(@theme_bg_color, 0.85);
+        background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    /*general enhacement item selection... rounded ...bug #20*/
+        /*general enhacement new gtk3.10 sidebars*/
+    border-top-color: shade(@theme_selected_bg_color, 0.9);
+    border-bottom-color:shade(@theme_selected_bg_color, 0.9);
+    border-right-color:shade(@theme_selected_bg_color, 0.9);
+    border-left-color:shade(@theme_selected_bg_color, 0.9);
+    background-image: none;
+    color: @theme_selected_fg_color;
+    border-width: 1px; 
+    border-radius:8px; 
+    padding: 5px 5px 5px 15px; 
 }
 
 *:insensitive,
