@@ -458,6 +458,7 @@ NautilusWindow .toolbar .button {
 
 NautilusToolbar .button {
     icon-shadow: 1px 1px @theme_shadow_color;
+        border-radius:4px;
 }
 
 NautilusToolbar .button *:active {
