@@ -1690,7 +1690,7 @@ OsScrollbar:insensitive {
 .view.separator,
 .separator {
     border-width: 0px;
-    border-style: none;
+    border-style: none; /*no funciona.....*/
     border-color: transparent;
     color: shade(@theme_bg_color, 0.9);
 }
