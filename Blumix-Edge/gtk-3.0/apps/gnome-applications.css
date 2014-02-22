@@ -537,7 +537,8 @@ NautilusWindow .pane-separator {
 .toolbar.menubar NautilusPathBar.linked .button *, 
 .toolbar.menubar NautilusPathBar .button * {
 	color: shade(@theme_fg_dark_color, 1.00);
-/*padding-bottom:30px*/;/*forma de los botones y tamaño*/
+/*padding-bottom:30px*//*forma de los botones y tamaño*/
+    border-radius: 4px;
 }
 
 
