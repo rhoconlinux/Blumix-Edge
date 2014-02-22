@@ -92,8 +92,10 @@ GtkClutterOffscreen {
     color: @theme_selected_fg_color;
     background-image: linear-gradient(to right,
                                       alpha(@theme_selected_bg_color, 0.0),
-                                      alpha(@theme_selected_bg_color, 0.2) 30%,
-                                      alpha(@theme_selected_bg_color, 0.02));
+                                      alpha(@theme_selected_bg_color, 0.0) 30%,
+                                        alpha(@theme_selected_bg_color, 0.9) 32%,
+                                        alpha(@theme_selected_bg_color, 0.0) 33%,
+                                      alpha(@theme_selected_bg_color, 0.00));
 }
 
 *:active {
