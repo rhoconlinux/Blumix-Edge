@@ -952,10 +952,10 @@ GtkComboBox .menu {
     background-image: none;
     color: shade(@text_color, 1.28);
     background-image: #b2b2b2;
-    border-bottom-left-radius:
-    border-bottom-right-radius:
-    border-top-left-radius:
-    border-top-left-radius:
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
         
     /*box-shadow: 0 0 1px #333;*/ /*perfecta salida, mac-ish next project*/
 
