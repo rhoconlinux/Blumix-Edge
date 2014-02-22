@@ -928,7 +928,7 @@ GtkComboBox .menu {
 /***************
  * menubaritem *
  ***************/
-.menubar.menuitem,
+.menubar.menuitem, /*----------------------------menues de barra superior the gtk3*/
 .menubar .menuitem {
     padding: 5px 5px 5px 5px; /*arriba derecha abajo izquierda... si diferencia entre 1 y 3 entonces hay un movimiento*/ 
     border-width: 1px 1px 1px 1px;
