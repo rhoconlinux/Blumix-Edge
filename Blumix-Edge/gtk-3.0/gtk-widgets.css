@@ -492,7 +492,7 @@ GtkCalendar.button,
 GtkCalendar.button:hover,
 GtkCalendar.button:insensitive {
     border-width: 0;
-    background-color: transparent;
+    background-color: red;
     background-image: none;
 }
 
