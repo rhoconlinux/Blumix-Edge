@@ -298,10 +298,7 @@ GtkAssistant .sidebar {
 .cell:selected:focus {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
-    
-    border-color: red;
-    border-radius: 4px;
-    border-width: 1px;
+
 }
 
 
@@ -318,6 +315,8 @@ row:selected:focus {
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
 }
+
+
 
 /*******************
  * check and radio *
@@ -392,6 +391,9 @@ column-header:last-child .button {
 .content-view.view:selected,
 .content-view.view:active {
     background-color: @theme_selected_bg_color;
+        border-color: red;
+    border-radius: 4px;
+    border-width: 1px;
 }
 
 .content-view.view:insensitive {
