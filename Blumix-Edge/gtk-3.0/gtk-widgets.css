@@ -1692,7 +1692,7 @@ OsScrollbar:insensitive {
     border-width: 0px;
     border-style: none; /*no funciona.....*/
     border-color: transparent;
-    color: transparent; /*este es el puto que controla los borders Solve Bug #21 */
+    color: @bg_color; /*este es el puto que controla los borders Solve Bug #21 */
 }
 
 .button .separator,
