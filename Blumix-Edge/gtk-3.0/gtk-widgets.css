@@ -131,6 +131,8 @@ GtkClutterOffscreen {
 
 *:hover {
     -gtk-image-effect: highlight;
+      border-color: transparent;
+    border-width: 0px 0px 0px 0px; 
 }
 
 .gtkstyle-fallback {
