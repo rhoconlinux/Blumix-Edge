@@ -492,7 +492,7 @@ GtkCalendar.button,
 GtkCalendar.button:hover,
 GtkCalendar.button:insensitive {
     border-width: 0;
-    background-color: red;
+    background-color: transparent;
     background-image: none;
 }
 
@@ -848,7 +848,7 @@ GtkInfoBar {
     -GtkButton-inner-border: 0;
 
     border-style: none;
-    background-color: transparent;
+    background-color: red;
     background-image: none;
 }
 
