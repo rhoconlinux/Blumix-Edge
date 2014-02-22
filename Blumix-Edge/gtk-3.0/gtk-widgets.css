@@ -1838,8 +1838,9 @@ GtkComboBox .separator {
     background-color: @theme_selected_bg_color;
     background-image: none;
     color: @theme_selected_fg_color;
+    border-width: 1px;
     border-radius:4px; /*enhance bug */
-    padding: 5px 5px 5px 15px;
+    padding: 5px 5px 5px 15px; /*enhance bug */
 }
 
 .sidebar row:prelight,
@@ -1848,7 +1849,7 @@ GtkComboBox .separator {
     border-bottom-color:shade(@theme_selected_bg_color, 0.9);
     border-right-color:shade(@theme_selected_bg_color, 0.9);
     border-left-color:shade(@theme_selected_bg_color, 0.9);
-    background-color: rgba(@theme_selected_bg_color, 99%);
+    background-color: transparent; /*fix bug */
     background-image: none;
     color: @theme_selected_fg_color;
     border-radius:4px; /*enhance bug */
