@@ -1848,7 +1848,7 @@ GtkComboBox .separator {
     border-bottom-color:shade(@theme_selected_bg_color, 0.9);
     border-right-color:shade(@theme_selected_bg_color, 0.9);
     border-left-color:shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    background-color: rgba(@theme_selected_bg_color, 0.2);
     background-image: none;
     color: @theme_selected_fg_color;
     border-radius:4px; /*enhance bug */
