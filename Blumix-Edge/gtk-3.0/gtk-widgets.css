@@ -1344,9 +1344,7 @@ border-top-right-radius:4px;
     color: transparent;
 }
 
-*separator{
-border-color: transparent;
-}
+
 /*************************
  * progressbar and scale *
  *************************/
@@ -1693,7 +1691,7 @@ OsScrollbar:insensitive {
 .separator {
     border-width: 0px;
     border-style: solid;
-    border-color: shade(@base_color, 0.9);
+    border-color: shade(@base_color, 1.0);
     color: shade(@theme_bg_color, 0.9);
 }
 
