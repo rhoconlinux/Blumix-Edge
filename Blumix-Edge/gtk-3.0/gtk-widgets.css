@@ -96,21 +96,27 @@ GtkClutterOffscreen {
                                         alpha(@theme_selected_bg_color, 0.0) 99.3%,
                                         alpha(@theme_selected_bg_color, 0.0) 100%,
                                       alpha(@theme_selected_bg_color, 0.00));
-    border-color:@bg_color;
+    border-color:transparent;
     border-width: 1px;
     border-radius: 4px;
+    box-shadow: inset 1px 0 shade(@theme_selected_bg_color, 0.85),
+                inset 0 1px shade(@theme_selected_bg_color, 0.85),
+                inset -1px 0 shade(@theme_selected_bg_color, 0.85),
+                inset 0 -1px shade(@theme_selected_bg_color, 0.85);
+    
+    /*------------este ultimo mod de inshadows rompe el efecto de nautilus :(*/
 }
 
 *:active {
     background-color: shade(@theme_bg_color, 1.1);
       border-color:@bg_color;
-    border-width: 1px;
+    border-width: 0px;
 }
 
 *:insensitive,
 *:insensitive:insensitive {
     color: mix(@theme_fg_color, @theme_bg_color, 0.5);
-        background-color: shade(@theme_bg_color, 1.1);
+        background-color: transparent;
 }
 
 /* apply effects to insensitive and prelit images */
@@ -146,7 +152,7 @@ GtkClutterOffscreen {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
       border-color:@bg_color;
-    border-width: 1px;
+    border-width: 0px;
 }
 
 /******************
@@ -272,7 +278,7 @@ GtkAssistant .sidebar {
 .button:active *:insensitive {
     border-color: shade(@theme_bg_color, 0.75);
     background-color: shade(@theme_bg_color, 0.80);
-    background-image: none;
+
 }
 
 /* default button */
@@ -302,7 +308,7 @@ GtkAssistant .sidebar {
  * cell and row *
  ****************/
 .cell {
-    border-width: 1px 0; /*4 ene*/
+    border-width: 0px 0px 0px 0px; /*4 ene*/
     border-radius: 0;
 }
 
@@ -310,14 +316,14 @@ GtkAssistant .sidebar {
 .cell:selected:focus {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
-
+    border-width: 0px 0px 0px 0px; /*4 ene*/
 }
 
 
 row:selected,
 row:selected:hover,
 row:selected:focus {
-    border-width: 1px 0;
+    border-width: 0px 0px 0px 0px; /*22 feb*/
     border-style: solid;
     border-color: shade(@theme_selected_bg_color, 0.9);
     background-color: @theme_selected_bg_color;
@@ -386,7 +392,7 @@ column-header .button:active:hover:focus {
 }
 
 column-header:last-child .button {
-    border-width: 0 0 1px 0;
+    border-width: 0 0 0px 0;
 }
 
 /****************
@@ -407,7 +413,7 @@ column-header:last-child .button {
 }
 
 .content-view.view:insensitive {
-    background-color: shade(@theme_base_color, 0.9);
+    background-color: shade(red, 0.9);
 }
 
 GdMainIconView.content-view {
@@ -909,7 +915,7 @@ GtkComboBox .menu {
 .menu.button:insensitive,
 .menu.button {
     border-width: 0;
-    background-color: @theme_selected_bg_color;
+    background-color: transparent; /*fix cuando el menu es muy largo y aparecen los botones con flechas*/
     background-image: none;
 }
 
@@ -1360,25 +1366,46 @@ border-top-right-radius:4px;
 /*************************
  * progressbar and scale *
  *************************/
-GtkProgressBar {
+GtkProgressBar,
+.GtkProgressBar,
+*GtkProgressBar
+{
     padding: 0;
-    border-width: 1px;
+    border-width: 0px;
     border-radius: 4px; /*checkear linkhoi*/
 }
 
-.progressbar,
+.progressbar{
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: shade(@theme_selected_bg_color, 0.9);
+    background-color: @theme_selected_bg_color; /*solo la barra de progreso activa*/
+    background-image: none;
+    border-radius: 4px; /*PARTIAL proposed fix bug #3 */
+}
+
 .progressbar row,
 .progressbar row:hover,
-.progressbar row:selected,
+.progressbar row:selected {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 1.08);
+    background-color: @theme_selected_bg_color; /*solo la barra de progreso activa*/
+    background-image: none;
+    border-radius: 4px; /*PARTIAL proposed fix bug #3 */
+}
 .progressbar row:selected:focus {
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
     border-color: shade(@theme_selected_bg_color, 0.9);
     background-color: @theme_selected_bg_color;
     background-image: none;
-        border-radius: 4px; /*proposed fix bug #3 */
+    border-radius: 4px; /*proposed fix bug #3 */
 
 }
+
+
 
 .progressbar.vertical {
     background-color: @theme_selected_bg_color;
@@ -1388,14 +1415,15 @@ GtkProgressBar {
 .trough,
 .trough row,
 .trough row:hover,
+.trough row:insensitive,
 .trough row:selected,
 .trough row:selected:focus {
-    border-width: 1px;
-    
+    border-width: 0px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 1.08);
+    background-color: shade(@theme_bg_color, 1.08); /*resto de la barra de progreso*/
     background-image: none;
+    border-radius: 4px; /*New. COMPLETE fix bug #3 */
 }
 
 .trough.vertical {
@@ -1710,12 +1738,10 @@ OsScrollbar:insensitive {
 
 .button .separator,
 .button.separator {
-    border-color: transparent;
 }
 
 .button .separator:insensitive,
 .button.separator:insensitive {
-    border-color: transparent;
 }
 
 .primary-toolbar GtkSeparatorToolItem,
@@ -1749,7 +1775,7 @@ OsScrollbar:insensitive {
 .toolbar .button.separator:insensitive,
 .header-bar .button .separator:insensitive,
 .header-bar .button.separator:insensitive {
-    border-color: transparent;
+
 }
 
 .menuitem.separator {
@@ -1761,8 +1787,7 @@ OsScrollbar:insensitive {
 }
 
 GtkComboBox .separator {
-    border-style: none;
-        border-color: transparent;
+
     /* always disable separators */
     -GtkWidget-wide-separators: true;
     -GtkWidget-horizontal-separator: 0;
@@ -1863,16 +1888,17 @@ GtkComboBox .separator {
 .sidebar .view row:selected,
 .sidebar .view row:selected:hover,
 .sidebar .view row:selected:focus {
-    border-top-color: shade(@theme_selected_bg_color, 0.9);
+/*    border-top-color: shade(@theme_selected_bg_color, 0.9);
     border-bottom-color:shade(@theme_selected_bg_color, 0.9);
     border-right-color:shade(@theme_selected_bg_color, 0.9);
-    border-left-color:shade(@theme_selected_bg_color, 0.9);
+    border-left-color:shade(@theme_selected_bg_color, 0.9);*/
     background-color: @theme_selected_bg_color;
     background-image: none;
     color: @theme_selected_fg_color;
-    border-width: 1px; /*enhance bug #19 NAUTILUS ROUNDED SIDEBAR ITEMS*/
+    border-width: 0px; /*enhance bug #19 NAUTILUS ROUNDED SIDEBAR ITEMS.. border 1 funciona solo. Border 0: counter fix del mod en instancias gtk3.10... bien arriba y general*/ 
     border-radius:4px; /*enhance bug #19*/
     padding: 5px 5px 5px 15px; /*enhance bug #19*/
+    
 }
 
 .sidebar row:prelight,
@@ -2370,7 +2396,7 @@ GtkColorButton.button {
  * toolbar *
  ***********/
 .toolbar {
-    padding: 0px 13px 4px 4px; /*fix too much space ...toolbar de los botones. Espacios izq der desde el borde de la ventana*/
+    padding: 3px 13px 4px 4px; /*fix too much wasted space ...toolbar de los botones. Espacios izq der desde el borde de la ventana... ArDAL*/
     border-style: none; /*fix gnote toolbar*/
     background-color: @toolbar_bg_color; /*color fondo de la barra header / toolbar*/
     background-image: none;
@@ -2597,6 +2623,8 @@ GtkColorButton.button {
     border-color: @bg_color;
 }
 
+
+
 /******************
  * linked buttons *                       -----------------------------toolbar buttons, botones encadenados!
  *****************/
@@ -2688,6 +2716,7 @@ border-radius: 4px;
     border-radius: 0px;
     border-right-width: 0;
     border-left-width: 0;
+    
     /*border-color: red; ARREGLANDO BOTONES DE NAUTILUS*/
 }
 
@@ -3195,6 +3224,7 @@ border-radius:4px; /*5 ene*/
     color: @theme_selected_fg_color;
     border-radius:0px; /*5 ene - force override cause selection items rounded*/
     /*next proyect mac like :O*/
+    border-width: 0px;
 }
 
 /***************
