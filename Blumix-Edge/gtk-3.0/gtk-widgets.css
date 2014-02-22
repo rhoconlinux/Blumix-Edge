@@ -936,7 +936,7 @@ GtkComboBox .menu {
     border-color: transparent; /*igual que el fondo*/
     background-color: transparent;/*transparent*/ /*este es transparente porque es como la selección pero todo el tiempo*/ 
     background-image: none;
-    color: shade(@text_color,1.1);
+    color: shade(@text_color,1.2);
     border-radius: 5; /*elementos de la barra de menu, por ejemplo los menues de la terminal = full rounding for mac style*/ 
 }
 
