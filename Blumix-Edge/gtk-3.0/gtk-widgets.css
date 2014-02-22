@@ -946,9 +946,9 @@ GtkComboBox .menu {
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
     padding-bottom: 3px ;
-    border-color: shade(@menubar_bg_color,0.7);
+    border-color: shade(@menubar_bg_color,0.85);
         border-width: 2px; /*lo saqué! este es para controlar el grosor del borde, junto con el de arriba que controla el color, valores positivos achican el area*/
-    background-color: shade(@menubar_bg_color,0.8);
+    background-color: shade(@menubar_bg_color,0.95);
     background-image: none;
     color: shade(@text_color, 1.28);
     background-image: #b2b2b2;
