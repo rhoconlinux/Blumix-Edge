@@ -109,6 +109,7 @@ WnckPager, WnckTasklist {
     border-width: 1px;
 }
 
+/*
 .nautilus-desktop.nautilus-canvas-item {
 	color: #d2d2d2;
 	text-shadow: none;
@@ -117,6 +118,7 @@ WnckPager, WnckTasklist {
     border-width: 1px;
     
 }
+*/
 
 .nautilus-desktop.nautilus-canvas-item:active {
 	color: #d2d2d2;
