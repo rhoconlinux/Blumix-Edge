@@ -92,9 +92,9 @@ GtkClutterOffscreen {
     color: @text_color;
     background-image: linear-gradient(to right,
                                       alpha(@theme_selected_bg_color, 0.0),
-                                      alpha(@theme_selected_bg_color, 0.0) 2%,
-                                        alpha(@theme_selected_bg_color, 0.9) 3%,
-                                        alpha(@theme_selected_bg_color, 0.0) 4%,
+                                      alpha(@theme_selected_bg_color, 0.0) 98%,
+                                        alpha(@theme_selected_bg_color, 0.9) 98.3%,
+                                        alpha(@theme_selected_bg_color, 0.0) 99%,
                                       alpha(@theme_selected_bg_color, 0.00));
     border-color:@bg_color;
     border-width: 1px;
