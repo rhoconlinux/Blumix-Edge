@@ -416,16 +416,16 @@ GdMainIconView.content-view {
 }
 
 GtkIconView.content-view.check {
-    background-color: shade(@theme_base_color, 0.9);
+    background-color: transparent;
 }
 
 GtkIconView.content-view.check:active {
-    background-color: shade(@theme_base_color, 0.9);
+    background-color: transparent;
 }
 
 .content-view.view.check,
 .content-view.view.check:active {
-    background-color: shade(@theme_base_color, 0.9);
+    background-color: transparent;
 }
 
 GtkIconView.content-view.check:prelight,
