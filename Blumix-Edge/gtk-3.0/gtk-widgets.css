@@ -91,6 +91,10 @@ GtkClutterOffscreen {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
     /*new gtk 3.10 sidebar items*/
+        background-image: linear-gradient(to bottom,
+                                      alpha(white, 0.3),
+                                      alpha(white, 0.2) 30%,
+                                      alpha(black, 0.02));
 }
 
 *:active {
