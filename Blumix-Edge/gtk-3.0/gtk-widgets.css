@@ -3477,7 +3477,7 @@ GtkProgressBar.osd.progressbar {
 
 .osd GtkIconView.cell:selected,
 .osd GtkIconView.cell:selected:focus {
-    background-color: red;
+    background-color: transparent;
     border-style: solid;
     border-radius: 2px;
     border-width: 3px;
