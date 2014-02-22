@@ -90,11 +90,11 @@ GtkClutterOffscreen {
 *:selected:focus {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
-    /**/
+    /*new gtk 3.10 sidebar items*/
 }
 
 *:active {
-    background-color: shade(@base_color, 1.0);
+    background-color: shade(@theme_bg_color, 0.85);
 }
 
 *:insensitive,
@@ -140,7 +140,7 @@ GtkClutterOffscreen {
  * visual effects *
  ******************/
 /* transitions */
-.button {
+*button {
     transition: border 400ms ease-in-out;
     border-radius: 4px; /*22ene*/
 }
