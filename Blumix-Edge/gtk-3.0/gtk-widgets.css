@@ -94,7 +94,7 @@ GtkClutterOffscreen {
 }
 
 *:active {
-    background-color: shade(@theme_bg_color, 1.15);
+    background-color: shade(@theme_bg_color, 1.1);
 }
 
 *:insensitive,
