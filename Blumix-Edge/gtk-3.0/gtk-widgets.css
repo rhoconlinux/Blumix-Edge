@@ -1852,8 +1852,8 @@ GtkComboBox .separator {
     background-color: transparent; /*FIX bug #12 NAUTILUS SIDEBAR ITEMS MOUSEOVER*/
     background-image: none;
     border-width: 1px;
-    color: @theme_selected_fg_color;
-    border-radius:4px; /*enhance bug */
+    color: @theme_selected_bg_color;
+    border-radius:4px;
     padding: 5px 5px 5px 15px;
 }
 
