@@ -922,7 +922,7 @@ GtkComboBox .menu {
     border-style: none;
     background-color: shade(@menubar_bg_color,1.0);
     background-image: none;
-    color: shade(@text_color,1.0);
+    color: #333333;
 }
 
 /***************
