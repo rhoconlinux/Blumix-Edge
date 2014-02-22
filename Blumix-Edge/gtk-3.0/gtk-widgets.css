@@ -101,7 +101,6 @@ GtkClutterOffscreen {
 
 *:selected:focus {
     background-color: transparent; /*@theme_selected_bg_color ...fix no back in new gtk3.10 sidebars*/
-    color: @theme_selected_fg_color;
             /*general enhacement item selection... rounded ...bug #20*/
             /*general enhacement new gtk3.10 sidebars... runded corners*/
     border-radius:8px;
