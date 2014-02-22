@@ -1727,7 +1727,7 @@ OsScrollbar:insensitive {
 .toolbar .button.separator,
 .header-bar .button .separator,
 .header-bar .button.separator {
-    border-color: shade(@toolbar_bg_color, 0.95);
+    border-color: transparent;
 }
 
 .primary-toolbar .button .separator:insensitive,
