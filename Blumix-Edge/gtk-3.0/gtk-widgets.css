@@ -950,6 +950,7 @@ GtkComboBox .menu {
 
 .menubar .menuitem *:hover {
     color: shade(@menubar_fg_color, 1.08);
+    font: bold;
 }
 
 /************
