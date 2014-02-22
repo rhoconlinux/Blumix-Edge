@@ -1690,13 +1690,13 @@ OsScrollbar:insensitive {
     border-width: 0px;
     border-style: none; /*no funciona.....*/
     border-color: transparent;
-    color: red; /*este es el puto que controla los borders Solve Bug #21 */
+    color: @bg_color; /*este es el puto que controla los borders Solve Bug #21 */
 }
 .view.separator{
     border-width: 0px;
     border-style: none; /*no funciona.....*/
     border-color: transparent;
-    color: @bg_color; /*este es el puto que controla los borders Solve Bug #21 */
+    color: red; /*este es el puto que controla los borders Solve Bug #21 */
 }
 .separator {
     border-width: 0px;
