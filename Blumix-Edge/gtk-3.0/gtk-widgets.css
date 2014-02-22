@@ -1838,9 +1838,9 @@ GtkComboBox .separator {
     background-color: @theme_selected_bg_color;
     background-image: none;
     color: @theme_selected_fg_color;
-    border-width: 1px;
-    border-radius:4px; /*enhance bug */
-    padding: 5px 5px 5px 15px; /*enhance bug */
+    border-width: 1px; /*enhance bug #19*/
+    border-radius:4px; /*enhance bug #19*/
+    padding: 5px 5px 5px 15px; /*enhance bug #19*/
 }
 
 .sidebar row:prelight,
