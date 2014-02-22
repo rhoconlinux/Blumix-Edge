@@ -89,7 +89,7 @@ GtkClutterOffscreen {
 *:selected,
 *:selected:focus { /*new gtk 3.10 sidebar items control... awesome con gradients*/
     background-color: @bg_color;
-    color: @theme_selected_fg_color;
+    color: @text_color;
     background-image: linear-gradient(to right,
                                       alpha(@theme_selected_bg_color, 0.0),
                                       alpha(@theme_selected_bg_color, 0.0) 30%,
