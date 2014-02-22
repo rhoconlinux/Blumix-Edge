@@ -473,7 +473,8 @@ NautilusToolbar .button *:active:insensitive {
 
 .toolbar NautilusPathBar .button *:active,
 .toolbar NautilusPathBar .button *:hover {
-	
+	    border-radius:4px;
+
 }
 
 NautilusFloatingBar {
