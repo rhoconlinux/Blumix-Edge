@@ -1847,7 +1847,7 @@ GtkComboBox .separator {
     border-color: shade(@theme_bg_color, 1.05);
     background-color: transparent;
     background-image: none;
-    color: @theme_fg_color;
+    color: red;
     font-weight: bold;
 }
 
