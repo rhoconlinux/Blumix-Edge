@@ -98,7 +98,7 @@ GtkClutterOffscreen {
     background-image: none;
     color: @theme_selected_fg_color;
     border-width: 1px; /*enhance bug #19 NAUTILUS ROUNDED SIDEBAR ITEMS*/
-    border-radius:4px; /*enhance bug #19*/
+    border-radius:8px; /*enhance bug #19*/
     padding: 5px 5px 5px 15px; /*enhance bug #19*/
     
 }
