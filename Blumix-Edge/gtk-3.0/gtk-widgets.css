@@ -1690,14 +1690,14 @@ OsScrollbar:insensitive {
 .view.separator,
 .separator {
     border-width: 0px;
-    border-style: solid;
-    border-color: shade(@base_color, 1.0);
+    border-style: none;
+    border-color: transparent;
     color: shade(@theme_bg_color, 0.9);
 }
 
 .button .separator,
 .button.separator {
-    border-color: shade(@base_color, 0.95);
+    border-color: transparent;
 }
 
 .button .separator:insensitive,
