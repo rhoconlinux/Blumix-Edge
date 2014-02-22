@@ -88,35 +88,13 @@ GtkClutterOffscreen {
 
 *:selected,
 *:selected:focus {
-    border-color: transparent;
-    border-width: 0px 0px 0px 0px; 
-
-    background-image: none;
-    background-color: transparent; /*@theme_selected_bg_color ...fix no back in new gtk3.10 sidebars*/
-            /*general enhacement item selection... rounded ...bug #20*/
-            /*general enhacement new gtk3.10 sidebars... runded corners*/
-
-    color: shade(@theme_selected_bg_color,0.8);
-    padding: 0px 10px 0px 0px ; 
-    }
-
-*:active { /*click before release!*/
-        color: shade(@theme_selected_bg_color,0.8);
-      border-color: transparent;
-    border-width: 0px 0px 0px 0px; 
-
-    /*background-color: shade(@theme_bg_color, 0.85);
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
-    border-top-color: shade(@theme_selected_bg_color, 0.9);
-    border-bottom-color:shade(@theme_selected_bg_color, 0.9);
-    border-right-color:shade(@theme_selected_bg_color, 0.9);
-    border-left-color:shade(@theme_selected_bg_color, 0.9);
-    background-image: none;
-    color: @theme_selected_fg_color;
-    border-width: 1px; 
-    border-radius:8px; 
-    padding: 5px 5px 5px 15px; */
+    /**/
+}
+
+*:active {
+    background-color: shade(@theme_bg_color, 0.85);
 }
 
 *:insensitive,
@@ -131,8 +109,6 @@ GtkClutterOffscreen {
 
 *:hover {
     -gtk-image-effect: highlight;
-      border-color: transparent;
-    border-width: 0px 0px 0px 0px; 
 }
 
 .gtkstyle-fallback {
