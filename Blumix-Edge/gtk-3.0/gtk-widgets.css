@@ -102,6 +102,8 @@ GtkClutterOffscreen {
 
 *:active { /*click before release!*/
         color: shade(@theme_selected_bg_color,0.8);
+      border-color: transparent;
+    border-width: 0px 0px 0px 0px; 
 
     /*background-color: shade(@theme_bg_color, 0.85);
     background-color: @theme_selected_bg_color;
