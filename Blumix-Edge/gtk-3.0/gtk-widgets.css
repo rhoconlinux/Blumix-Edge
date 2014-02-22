@@ -979,7 +979,7 @@ GtkTreeMenu .menuitem {
 
 .menuitem,
 .menu .menuitem {
-    padding: 3px;
+    padding: 1px; /*diferencia entre este padding y el arriba da movimiento*/
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
