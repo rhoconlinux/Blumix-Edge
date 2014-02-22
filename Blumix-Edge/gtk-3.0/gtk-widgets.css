@@ -1692,7 +1692,6 @@ OsScrollbar:insensitive {
     border-width: 0px;
     border-style: none; /*no funciona.....*/
     border-color: transparent;
-    color: shade(@theme_bg_color, 0.9);
 }
 
 .button .separator,
@@ -1750,7 +1749,6 @@ OsScrollbar:insensitive {
 GtkComboBox .separator {
     border-style: none;
         border-color: transparent;
-
     /* always disable separators */
     -GtkWidget-wide-separators: true;
     -GtkWidget-horizontal-separator: 0;
