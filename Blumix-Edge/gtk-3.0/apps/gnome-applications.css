@@ -412,6 +412,8 @@ color: #333;
     padding: 3px 5px 3px;
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;    
+        background-color: @base_color; /*23feb*/
+
 }
 
 
