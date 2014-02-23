@@ -1003,7 +1003,7 @@ GtkTreeMenu .menuitem {
     /*meter un 30 en este padding hace un efecto de desplazamiento  */
     border-width: 1px;
     border-style: solid;
-    border-color: transparent;
+    border-color: @bg_color;
     border-radius: 3; /*menu item selection roundness*/
     background-color: @bg_color; /*fondo fijo de los elementos de la caja del click derecho*/
     background-image: none;
