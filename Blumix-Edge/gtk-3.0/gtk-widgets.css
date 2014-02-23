@@ -2408,7 +2408,7 @@ GtkColorButton.button {
  * toolbar *
  ***********/
 .toolbar {
-    padding: 3px 13px 4px 6px; /*fix too much wasted space ...toolbar de los botones. Espacios izq der desde el borde de la ventana... URDL*/
+    padding: 3px 13px 4px 4px; /*fix too much wasted space ...toolbar de los botones. Espacios izq der desde el borde de la ventana... ULDR*/
     border-style: none; /*fix gnote toolbar*/
     background-color: @toolbar_bg_color; /*color fondo de la barra header / toolbar*/
     background-image: none;
