@@ -1000,6 +1000,7 @@ GtkTreeMenu .menuitem {
 .menuitem,
 .menu .menuitem {
     padding:  3px 3px 3px 30px; /*diferencia entre este padding y el arriba da movimiento*/
+    /*meter un 30 en este padding hace un efecto de desplazamiento*/
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
