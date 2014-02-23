@@ -103,9 +103,7 @@ GtkClutterOffscreen {
                 inset 0 1px shade(@theme_selected_bg_color, 0.85),
                 inset -1px 0 shade(@theme_selected_bg_color, 0.85),
                 inset 0 -1px shade(@theme_selected_bg_color, 0.85);
-/*
-    padding: 1px 1px 1px 1px;
-*/
+    /*padding: 1px 1px 1px 1px;*/
     
     /*------------este ultimo mod de inshadows rompe el efecto de nautilus :(*/
 }
