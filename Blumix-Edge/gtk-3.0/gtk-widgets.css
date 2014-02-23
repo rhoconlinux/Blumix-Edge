@@ -1005,7 +1005,7 @@ GtkTreeMenu .menuitem {
     border-style: solid;
     border-color: transparent;
     border-radius: 3; /*menu item selection roundness*/
-    background-color: transparent; /*fondo fijo de los elementos de la caja del click derecho*/
+    background-color: @bg_color; /*fondo fijo de los elementos de la caja del click derecho*/
     background-image: none;
     color: @menu_fg_color;
 
@@ -1019,7 +1019,7 @@ GtkTreeMenu .menuitem {
     background-image: none;
     border-radius: 3; /*menuitems click derechos y desplegables, para cada elemento, bg #B2B2B2*/
 transition: 300ms ease-in-out;
-      padding:  3px 3px 3px 11px;
+      padding:  3px 3px 3px 11px; /*despliega animación muy copada si meto diferencia en R-L con respecto a arriba*/
 }
 
 
