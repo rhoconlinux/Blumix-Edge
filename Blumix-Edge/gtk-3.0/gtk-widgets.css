@@ -1378,7 +1378,7 @@ GtkProgressBar,
 .progressbar{
     border-right-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 0.9);
+    border-color: shade(@theme_bg_color, 1.08);
     background-color: @theme_selected_bg_color; /*solo la barra de progreso activa*/
     background-image: none;
     border-radius: 4px; /*PARTIAL proposed fix bug #3 */
