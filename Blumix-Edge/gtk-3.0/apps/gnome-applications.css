@@ -421,6 +421,7 @@ NautilusWindow .toolbar {
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;    
     padding: 7px 5px 7px 5px; /*ESPACIADO Y DISTRIBUCION DE BOTONES, 5 ene*/
+    background-color: @base_color;
 }
 
 
@@ -535,17 +536,12 @@ NautilusWindow .pane-separator {
 }
 
 
-*NautilusPathBar{
-background-color: @base_color;
-}
 
 .toolbar.menubar NautilusPathBar.linked .button *, 
 .toolbar.menubar NautilusPathBar .button * {
 	color: shade(@theme_fg_dark_color, 1.00);
 /*padding-bottom:30px*//*forma de los botones y tamaño*/
     border-radius: 4px;
-    background-color: @base_color;
-
 }
 
 
