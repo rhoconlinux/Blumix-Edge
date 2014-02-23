@@ -421,7 +421,7 @@ NautilusWindow .toolbar {
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;    
     padding: 7px 5px 7px 5px; /*ESPACIADO Y DISTRIBUCION DE BOTONES, 5 ene*/
-    background-color: @base_color;
+    background-color: @base_color; /*23feb*/
 }
 
 
