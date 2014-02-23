@@ -904,9 +904,9 @@ GtkComboBox .menu {
     padding: 3px 3px 3px 3px; /*engorda el contorno de la caja CLICK DERECHO*/
     border-radius: 4px; 
     border-style: solid;
-    background-color: @bg_color; /*<<<<<<<<<<<<<<<<<<<< configuración de caja de menu, color de fondo*/
+    background-color: shade(@bg_color,1.1); /*<<<<<<<<<<<<<<<<<<<< configuración de caja de menu, color de fondo*/
     color: @menu_fg_color;
-    border-color:@bg_color;
+    border-color:shade(@bg_color,1.1);
     border-top-width: 1px;
  /*box-shadow: 0 0 1px #333;*/
 }
@@ -1010,7 +1010,7 @@ GtkTreeMenu .menuitem {
     color: @menu_fg_color;
 
     -GtkMenuItem-arrow-scaling: 0.5;
-    /*estos border y back colors no terminan de colorear la caja del menu, si combinan con */
+    /*estos border y back colors no terminan de colorear la caja del menu, si combinan con .menu ~line 930*/
 }
 
 .menu .menuitem:active,
