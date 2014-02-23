@@ -1640,6 +1640,7 @@ GtkLevelBar.vertical {
     border-radius: 0;
     background-color: transparent;
     background-image: none;
+    border-color: shade(@base_color, 0.9);
     color: shade(@base_color, 0.9); /*modo gris: shade(@theme_bg_color, 0.6)*/
 }
 
