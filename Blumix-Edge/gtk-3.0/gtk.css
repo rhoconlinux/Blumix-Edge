@@ -12,7 +12,7 @@
 /* default color scheme */
 @define-color fg_color #555555;
 @define-color base_color #f9f9f9;
-@define-color text_color #333333;
+@define-color text_color #555555;
 @define-color selected_bg_color #91A6FF; /*plank workaround: exclusive color for dock item glow*/
 @define-color selected_fg_color #f9f9f9; /*text color: when selected*/
 @define-color tooltip_bg_color #333333;
