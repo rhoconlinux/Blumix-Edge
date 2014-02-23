@@ -904,9 +904,9 @@ GtkComboBox .menu {
     padding: 3px 3px 3px 3px; /*engorda el contorno de la caja CLICK DERECHO*/
     border-radius: 4px; 
     border-style: solid;
-    background-color: shade(@menu_bg_color, 1.0); /*<<<<<<<<<<<<<<<<<<<< configuración de caja de menu, color de fondo*/
+    background-color: @bg_color; /*<<<<<<<<<<<<<<<<<<<< configuración de caja de menu, color de fondo*/
     color: @menu_fg_color;
-    border-color:shade(@menu_bg_color, 0.8);;
+    border-color:@bg_color;
     border-top-width: 1px;
  /*box-shadow: 0 0 1px #333;*/
 }
