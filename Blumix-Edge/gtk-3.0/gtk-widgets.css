@@ -448,7 +448,7 @@ GtkIconView {
 	/* gnome-control-center view hack */
 	border-width: 0px;
     border-style: none;
-    padding: 10px;	
+    padding: 2px;	
 
 	/* ubuntu-12 */ 
 	background-color: @theme_bg_color;
@@ -1924,7 +1924,7 @@ GtkComboBox .separator {
     border-width: 1px;
     color: @theme_selected_bg_color;
     border-radius:4px;
-    padding: 5px 5px 5px 1px;
+    padding: 5px 5px 5px 15px;
 }
 
 .sidebar row:selected:prelight,
