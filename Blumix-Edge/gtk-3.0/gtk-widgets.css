@@ -1640,7 +1640,7 @@ GtkLevelBar.vertical {
     border-radius: 0;
     background-color: transparent;
     background-image: none;
-    color: shade(@base_color, 0.85); /*modo gris: shade(@theme_bg_color, 0.6)*/
+    color: shade(@base_color, 0.9); /*modo gris: shade(@theme_bg_color, 0.6)*/
 }
 
 .scrollbar.slider {
