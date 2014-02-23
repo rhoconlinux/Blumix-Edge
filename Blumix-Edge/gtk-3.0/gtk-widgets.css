@@ -1002,7 +1002,7 @@ GtkTreeMenu .menuitem {
 
 .menuitem,
 .menu .menuitem { /*caja click derecho*/
-    padding:  3px 3px 3px 3px; /*diferencia entre este padding y el arriba da movimiento... atados a los de abajo*/
+    padding:  3px 3px 3px 1px; /*diferencia entre este padding y el arriba da movimiento... atados a los de abajo*/
     /*meter un 30 en este padding hace un efecto de desplazamiento  */
     border-width: 1px;
     border-style: solid;
@@ -1023,7 +1023,7 @@ GtkTreeMenu .menuitem {
     background-image: none;
     border-radius: 3; /*menuitems click derechos y desplegables, para cada elemento, bg #B2B2B2*/
 transition: 300ms ease-in-out;
-      padding:  3px 3px 3px 3px; /*despliega animación muy copada si meto diferencia en R-L con respecto a arriba 3px 3px 3px 11px*/ 
+      padding:  3px 3px 3px 1px; /*despliega animación muy copada si meto diferencia en R-L con respecto a arriba 3px 3px 3px 11px*/ 
 }
 
 
