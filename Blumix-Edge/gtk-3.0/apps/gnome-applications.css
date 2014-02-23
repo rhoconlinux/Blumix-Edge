@@ -153,8 +153,7 @@ NautilusWindow .sidebar .frame {
 
 NautilusWindow * {
 	-GtkPaned-handle-size: 1;
-        background-color: @base_color; /*23feb*/
-
+    
 }
 
 NautilusWindow .pane-separator {
