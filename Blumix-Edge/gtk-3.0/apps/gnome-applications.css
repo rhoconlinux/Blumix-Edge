@@ -417,11 +417,6 @@ color: #333;
 }
 
 
-NautilusWindow .header-bar* {
-    background-color: @base_color; /*23feb*/
-    color: @base_color; /*23feb*/
-}
-
 
 NautilusWindow .toolbar {
 	/* DISTRIBUCIÓN DE LA BARRA PRINCIPAL DE NAUTILUS  */
