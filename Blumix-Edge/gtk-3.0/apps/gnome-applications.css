@@ -393,6 +393,11 @@ NautilusWindow .sidebar .image:prelight {
     color: 	shade(@sidebar_icon, 1.10);
 }
 
+NautilusWindow .primary-toolbar {
+background-color: @base_color; /*23feb*/
+}
+
+
 NautilusWindow .primary-toolbar.toolbar {
 	/* nautilus search-toolbar */
     background-image: url("assets/background-noise-toolbar.png"),
