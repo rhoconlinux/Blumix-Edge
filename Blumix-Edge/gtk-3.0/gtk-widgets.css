@@ -992,7 +992,7 @@ GtkComboBox .menu {
  * menuitem *
  ************/
 GtkTreeMenu .menuitem {
-    padding: 3px; /*menu click derecho: separacion entre renglones puros*/
+    padding: 3px 3px 3px 30px; /*URDL menu click derecho: separacion entre renglones puros*/
     border-width: 1px;
     border-radius: 3; /*?? roundness*/
 }
