@@ -1023,7 +1023,7 @@ GtkTreeMenu .menuitem {
     background-image: none;
     border-radius: 3; /*menuitems click derechos y desplegables, para cada elemento, bg #B2B2B2*/
 transition: 300ms ease-in-out;
-      padding:  3px 3px 3px 11px; /*despliega animación muy copada si meto diferencia en R-L con respecto a arriba*/
+      padding:  3px 3px 3px 3px; /*despliega animación muy copada si meto diferencia en R-L con respecto a arriba 3px 3px 3px 11px*/ 
 }
 
 
