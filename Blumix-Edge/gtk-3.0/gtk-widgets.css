@@ -1636,7 +1636,7 @@ GtkLevelBar.vertical {
 .scrollbar.button,
 .scrollbar.button:active,
 .scrollbar.button:active:hover {
-    border-width: 0;
+    border-width: 1px;
     border-radius: 0;
     background-color: transparent;
     background-image: none;
