@@ -1909,7 +1909,7 @@ GtkComboBox .separator {
     color: @theme_selected_fg_color;
     border-width: 0px; /*enhance bug #19 NAUTILUS ROUNDED SIDEBAR ITEMS.. border 1 funciona solo. Border 0: counter fix del mod en instancias gtk3.10... bien arriba y general*/ 
     border-radius:4px; /*enhance bug #19*/
-    padding: 5px 5px 5px 15px; /*enhance bug #19*/
+    padding: 5px 5px 5px 5px; /*enhance bug #19*/
     
 }
 
