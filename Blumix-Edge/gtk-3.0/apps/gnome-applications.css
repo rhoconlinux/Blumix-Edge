@@ -417,7 +417,7 @@ color: #333;
 }
 
 
-NautilusWindow .header* {
+NautilusWindow .header-bar* {
     background-color: @base_color; /*23feb*/
 }
 
