@@ -951,7 +951,7 @@ GtkComboBox .menu {
  ***************/
 .menubar.menuitem, /*----------------------------menues de barra superior the gtk3*/
 .menubar .menuitem {
-    padding: 5px 5px 5px 5px; /*arriba derecha abajo izquierda... si diferencia entre 1 y 3 entonces hay un movimiento*/ 
+    padding: 5px 2px 5px 5px; /*arriba derecha abajo izquierda... si diferencia entre 1 y 3 entonces hay un movimiento*/ 
     border-width: 1px 1px 1px 1px;
     border-style: solid;
     border-color: transparent; /*igual que el fondo*/
@@ -963,7 +963,7 @@ GtkComboBox .menu {
 
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {  /*----------------------------menues de barra superior the gtk3*/
-    padding: 5px 5px 5px 5px; /*diferencia entre este padding y el de arriba da movimiento en el mouse over*/
+    padding: 5px 2px 5px 5px; /*diferencia entre este padding y el de arriba da movimiento en el mouse over*/
     border-color: shade(@menubar_bg_color,0.85);
     border-width: 1px 1px 0px 1px; /*lo saqué! este es para controlar el grosor del borde, junto con el de arriba que controla el color, valores positivos achican el area*/
     background-color: shade(@menubar_bg_color,0.95);
