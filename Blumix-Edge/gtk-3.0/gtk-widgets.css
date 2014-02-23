@@ -906,6 +906,7 @@ GtkComboBox .menu {
     border-style: solid;
     background-color: shade(@menu_bg_color, 1.0); /*<<<<<<<<<<<<<<<<<<<< configuración de caja de menu, color de fondo*/
     color: @menu_fg_color;
+    border-color:red;
  /*box-shadow: 0 0 1px #333;*/
 }
 
