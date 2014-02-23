@@ -534,6 +534,11 @@ NautilusWindow .pane-separator {
                                     to   (shade(@theme_bg_color, 0.65)));
 }
 
+
+*NautilusPathBar{
+background-color: @base_color;
+}
+
 .toolbar.menubar NautilusPathBar.linked .button *, 
 .toolbar.menubar NautilusPathBar .button * {
 	color: shade(@theme_fg_dark_color, 1.00);
