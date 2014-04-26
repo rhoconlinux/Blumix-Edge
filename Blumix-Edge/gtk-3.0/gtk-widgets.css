@@ -3739,6 +3739,7 @@ GtkBubbleWindow .toolbar {
     
 }
 
+
 .tiled .titlebar {
     border-radius: 0;
 }
@@ -3747,10 +3748,6 @@ GtkBubbleWindow .toolbar {
     border-radius: 0;
 }
 
-/* this is the default titlebar that is added by GTK
- * when client-side decorations are in use and the application
- * did not set a custom titlebar.
- */
 .titlebar.default-decoration {
     border: none;
     box-shadow: none;
