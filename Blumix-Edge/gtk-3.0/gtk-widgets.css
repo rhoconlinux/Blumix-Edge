@@ -3734,7 +3734,7 @@ GtkBubbleWindow .toolbar {
                                       @wm_bg_a,
                                       @wm_bg_b);
     border-radius: 7px 7px 0px 0px;
-        border-color:#cecece; /*fixed header separator border in inactive window*/
+    border-color:#cecece; /*fixed header separator border in inactive window*/
     border-width:0px; /*fixed header separator border in inactive window*/
     
 }
@@ -3747,6 +3747,7 @@ GtkBubbleWindow .toolbar {
 .maximized .titlebar {
     border-radius: 0;
 }
+
 
 .titlebar.default-decoration {
     border: none;
@@ -3816,7 +3817,7 @@ GtkBubbleWindow .toolbar {
 }
 
 .window-frame {
-    border-radius: 7px 7px 0 0;
+    border-radius: 7px 7px 0 0; /*border rounding - rounded border on csd*/
     /* lamefun trick to get rounded borders regardless of CSD use */
     border-width: 1px;    
     border-color: @bg_color;
