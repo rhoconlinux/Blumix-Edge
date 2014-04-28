@@ -129,6 +129,21 @@ GtkClutterOffscreen {
     -gtk-image-effect: highlight;
 }
 
+
+
+.buttons *:backdrop {
+    background-color: transparent;
+
+}
+*:backdrop {
+    background-color: @bg_color;
+
+}
+
+
+
+
+
 .gtkstyle-fallback {
     background-color: @theme_bg_color;
     color: @theme_fg_color;
@@ -234,7 +249,8 @@ GtkAssistant .sidebar {
 /**********
  * button *
  **********/
-.button {
+.button
+{
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
 
@@ -281,6 +297,14 @@ GtkAssistant .sidebar {
     background-color: shade(@theme_bg_color, 0.80);
 
 }
+
+.button :backdrop{
+    border-color: shade(@theme_selected_bg_color, 0.8);
+    background-color: alpha(@theme_selected_bg_color, 0.0);
+    border-radius:4px;
+}
+
+
 
 /* default button */
 .button.default {
