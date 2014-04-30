@@ -318,6 +318,7 @@ NautilusNotebook .frame { /*ventana central de nautilus, el frame es la garcha d
     border-width: 0px; /*fixed: forzado a cero para que funcione el fix del scroll... puede ser interesante esta feature*/
 }
 
+
 Nautilus .button {
     icon-shadow: 0 1px @button_text_shadow;
         border-radius:4px;
