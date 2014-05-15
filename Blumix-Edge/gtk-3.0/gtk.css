@@ -8,7 +8,6 @@
 @define-color toolbar_bg_color #e2e2e2;
 */
 
-
 /* default color scheme */
 @define-color fg_color #555555;
 @define-color base_color #f0f0f0;
@@ -168,8 +167,6 @@ NO DUPS CHECK
 @define-color wm_button_bg_active_a shade (@theme_bg_color, 0.7);
 @define-color wm_button_bg_active_b shade (@theme_bg_color, 0.9);
 @define-color wm_button_bg_active_c shade (@theme_bg_color, 0.9);
-
-
 
 
 
